@@ -166,7 +166,7 @@ build-parent:      ## Build the custom parent Docker image.
 	docker build --build-arg PARENT_BUILD_ARG_1=${PARENT_BUILD_ARG_1} --progress=${DOCKER_BUILD_PROGRESS} -f Dockerfile-parent -t ${PARENT_IMAGE} .
 
 rebuild-parent:    ## Force rebuild of the custom Docker image.
-	docker build --build-arg PARENT_BUILD_ARG_1=${PARENT_BUILD_ARG_1} --env-file=repro.env --progress=${DOCKER_BUILD_PROGRESS} --no-cache -f Dockerfile-parent -t ${PARENT_IMAGE} .
+	docker build --build-arg PARENT_BUILD_ARG_1=${PARENT_BUILD_ARG_1} --progress=${DOCKER_BUILD_PROGRESS} --no-cache -f Dockerfile-parent -t ${PARENT_IMAGE} .
 
 pull-parent:       ## Pull the custom parent image from Docker Hub.
 	docker pull ${PARENT_IMAGE}
