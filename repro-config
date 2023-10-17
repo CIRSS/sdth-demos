@@ -1,9 +1,9 @@
-REPRO_NAME=repro-template
+REPRO_NAME=sdth-demos
 REPRO_DOCKER_ORG=cirss
 REPRO_IMAGE_TAG=latest
 
-REPRO_IMAGE=${REPRO_DOCKER_ORG}/${REPRO_NAME}:${REPRO_IMAGE_TAG}
-PARENT_IMAGE=${REPRO_DOCKER_ORG}/${REPRO_NAME}-parent:${REPRO_IMAGE_TAG}
+PYTHON_VERSION=3.10.12
+PARENT_IMAGE=${REPRO_DOCKER_ORG}/python-dev-${PYTHON_VERSION}-parent:latest
 
 image:             build-image   ## 
 start:             start-repro   ## 
