@@ -1,0 +1,965 @@
+=========================== bash cell | import sdtl ============================
+
+# Destroy the dataset
+geist destroy --dataset kb --quiet
+
+# Import the SDTL JSON-LD file
+geist create --dataset kb --inputformat json-ld --inputfile data/sdth.jsonld --infer owl
+
+--------------------------------- cell outputs ---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+===================== bash cell | export sdtl as ntriples ======================
+
+# Export as N-TRIPLES
+geist export --dataset kb --outputformat nt | sort
+
+--------------------------------- cell outputs ---------------------------------
+
+"<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" <http://www.w3.org/2002/07/owl#sameAs> "<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" .
+"<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" <http://www.w3.org/2002/07/owl#sameAs> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+"HHcateg" <http://www.w3.org/2002/07/owl#sameAs> "HHcateg" .
+"HHsize" <http://www.w3.org/2002/07/owl#sameAs> "HHsize" .
+"ID" <http://www.w3.org/2002/07/owl#sameAs> "ID" .
+"MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" <http://www.w3.org/2002/07/owl#sameAs> "MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" .
+"MergedData" <http://www.w3.org/2002/07/owl#sameAs> "MergedData" .
+"MergedData.to_csv(\"SmallTestMerged.csv\")" <http://www.w3.org/2002/07/owl#sameAs> "MergedData.to_csv(\"SmallTestMerged.csv\")" .
+"PPEDUCAT" <http://www.w3.org/2002/07/owl#sameAs> "PPEDUCAT" .
+"PPHHSIZE" <http://www.w3.org/2002/07/owl#sameAs> "PPHHSIZE" .
+"PPRENT" <http://www.w3.org/2002/07/owl#sameAs> "PPRENT" .
+"PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" <http://www.w3.org/2002/07/owl#sameAs> "PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" .
+"PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" <http://www.w3.org/2002/07/owl#sameAs> "PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" .
+"PersonalData" <http://www.w3.org/2002/07/owl#sameAs> "PersonalData" .
+"PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" <http://www.w3.org/2002/07/owl#sameAs> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+"PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" <http://www.w3.org/2002/07/owl#sameAs> "PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" .
+"PoliticalData" <http://www.w3.org/2002/07/owl#sameAs> "PoliticalData" .
+"Q1010" <http://www.w3.org/2002/07/owl#sameAs> "Q1010" .
+"Q244_NEW" <http://www.w3.org/2002/07/owl#sameAs> "Q244_NEW" .
+"Q27" <http://www.w3.org/2002/07/owl#sameAs> "Q27" .
+"Q3" <http://www.w3.org/2002/07/owl#sameAs> "Q3" .
+"Q330A" <http://www.w3.org/2002/07/owl#sameAs> "Q330A" .
+"Q330C" <http://www.w3.org/2002/07/owl#sameAs> "Q330C" .
+"Q356" <http://www.w3.org/2002/07/owl#sameAs> "Q356" .
+"SmallTestMerged.csv" <http://www.w3.org/2002/07/owl#sameAs> "SmallTestMerged.csv" .
+"SmallTestPersonal.csv" <http://www.w3.org/2002/07/owl#sameAs> "SmallTestPersonal.csv" .
+"SmallTestPolitical.csv" <http://www.w3.org/2002/07/owl#sameAs> "SmallTestPolitical.csv" .
+"\"command\": \"Compute\"" <http://www.w3.org/2002/07/owl#sameAs> "\"command\": \"Compute\"" .
+"\"command\": \"Load\"" <http://www.w3.org/2002/07/owl#sameAs> "\"command\": \"Load\"" .
+"\"command\": \"NoTransformOp\"" <http://www.w3.org/2002/07/owl#sameAs> "\"command\": \"NoTransformOp\"" .
+"\"command\": \"SetDataType\"" <http://www.w3.org/2002/07/owl#sameAs> "\"command\": \"SetDataType\"" .
+"\"command\": \"SetValueLabels\"" <http://www.w3.org/2002/07/owl#sameAs> "\"command\": \"SetValueLabels\"" .
+"import pandas as pd" <http://www.w3.org/2002/07/owl#sameAs> "import pandas as pd" .
+"sdtest:ProgStep001" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep001" .
+"sdtest:ProgStep002" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep002" .
+"sdtest:ProgStep003" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep003" .
+"sdtest:ProgStep004" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep004" .
+"sdtest:ProgStep005a" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep005a" .
+"sdtest:ProgStep005b" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep005b" .
+"sdtest:ProgStep005c" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep005c" .
+"sdtest:ProgStep006" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep006" .
+"sdtest:ProgStep007" <http://www.w3.org/2002/07/owl#sameAs> "sdtest:ProgStep007" .
+"sdth:DataframeInstance" <http://www.w3.org/2002/07/owl#sameAs> "sdth:DataframeInstance" .
+"sdth:FileInstance" <http://www.w3.org/2002/07/owl#sameAs> "sdth:FileInstance" .
+"sdth:Program" <http://www.w3.org/2002/07/owl#sameAs> "sdth:Program" .
+"sdth:ProgramStep" <http://www.w3.org/2002/07/owl#sameAs> "sdth:ProgramStep" .
+"sdth:VariableInstance" <http://www.w3.org/2002/07/owl#sameAs> "sdth:VariableInstance" .
+<http://DDI/SDTH/DataframeInstance> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/DataframeInstance> .
+<http://DDI/SDTH/FileInstance> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/FileInstance> .
+<http://DDI/SDTH/ProgramStep> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/ProgramStep> .
+<http://DDI/SDTH/VariableInstance> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/VariableInstance> .
+<http://DDI/SDTH/assignsVariable> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/assignsVariable> .
+<http://DDI/SDTH/consumesDataframe> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/consumesDataframe> .
+<http://DDI/SDTH/elaborationOf> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/elaborationOf> .
+<http://DDI/SDTH/hasName> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/hasName> .
+<http://DDI/SDTH/hasProgramStep> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/hasProgramStep> .
+<http://DDI/SDTH/hasSDTL> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/hasSDTL> .
+<http://DDI/SDTH/hasSourceCode> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/hasSourceCode> .
+<http://DDI/SDTH/hasVarInstance> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/hasVarInstance> .
+<http://DDI/SDTH/loadsFile> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/loadsFile> .
+<http://DDI/SDTH/producesDataframe> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/producesDataframe> .
+<http://DDI/SDTH/savesFile> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/savesFile> .
+<http://DDI/SDTH/usesVariable> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/usesVariable> .
+<http://DDI/SDTH/wasDerivedFrom> <http://www.w3.org/2002/07/owl#sameAs> <http://DDI/SDTH/wasDerivedFrom> .
+<http://ddi-l/CodeList> <http://www.w3.org/2002/07/owl#sameAs> <http://ddi-l/CodeList> .
+<http://ddi-l/NumericDomain> <http://www.w3.org/2002/07/owl#sameAs> <http://ddi-l/NumericDomain> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasName> "PoliticalData" .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#DFIns001> <http://DDI/SDTH/wasDerivedFrom> <http://test/#FileIns001> .
+<http://test/#DFIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns001> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns001> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns002> <http://DDI/SDTH/wasDerivedFrom> <http://test/#FileIns002> .
+<http://test/#DFIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns002> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns002> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns003> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns002> .
+<http://test/#DFIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns003> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns003> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014a> .
+<http://test/#DFIns004a> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns003> .
+<http://test/#DFIns004a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns004a> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns004a> .
+<http://test/#DFIns004b> <http://DDI/SDTH/elaborationOf> <http://test/#DFIns004a> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014b> .
+<http://test/#DFIns004b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns004b> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns004b> .
+<http://test/#DFIns004c> <http://DDI/SDTH/elaborationOf> <http://test/#DFIns004b> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#DFIns004c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns004c> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns004c> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasName> "MergedData" .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#DFIns005> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns001> .
+<http://test/#DFIns005> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns004c> .
+<http://test/#DFIns005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns005> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#DFIns005> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasName> "SmallTestPolitical.csv" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#FileIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#FileIns001> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#FileIns001> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasName> "SmallTestPersonal.csv" .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#FileIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#FileIns002> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#FileIns002> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasName> "SmallTestMerged.csv" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#FileIns003> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns005> .
+<http://test/#FileIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#FileIns003> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#FileIns003> .
+<http://test/#ProgStep001> <http://DDI/SDTH/hasSDTL> "\"command\": \"NoTransformOp\"" .
+<http://test/#ProgStep001> <http://DDI/SDTH/hasSourceCode> "import pandas as pd" .
+<http://test/#ProgStep001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep001> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep001> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns001> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns003> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns004> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns005> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns006> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns007> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep002> <http://DDI/SDTH/hasSDTL> "\"command\": \"Load\"" .
+<http://test/#ProgStep002> <http://DDI/SDTH/hasSourceCode> "PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" .
+<http://test/#ProgStep002> <http://DDI/SDTH/loadsFile> <http://test/#FileIns001> .
+<http://test/#ProgStep002> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns001> .
+<http://test/#ProgStep002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep002> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep002> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns012> .
+<http://test/#ProgStep003> <http://DDI/SDTH/hasSDTL> "\"command\": \"Load\"" .
+<http://test/#ProgStep003> <http://DDI/SDTH/hasSourceCode> "PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" .
+<http://test/#ProgStep003> <http://DDI/SDTH/loadsFile> <http://test/#FileIns002> .
+<http://test/#ProgStep003> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns002> .
+<http://test/#ProgStep003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep003> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep003> .
+<http://test/#ProgStep004> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep004> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns002> .
+<http://test/#ProgStep004> <http://DDI/SDTH/hasSDTL> "\"command\": \"Compute\"" .
+<http://test/#ProgStep004> <http://DDI/SDTH/hasSourceCode> "PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" .
+<http://test/#ProgStep004> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns003> .
+<http://test/#ProgStep004> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep004> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep004> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014a> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/hasSDTL> "\"command\": \"Compute\"" .
+<http://test/#ProgStep005a> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#ProgStep005a> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004a> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep005a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep005a> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep005a> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014b> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/hasSDTL> "\"command\": \"SetDataType\"" .
+<http://test/#ProgStep005b> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#ProgStep005b> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004b> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014a> .
+<http://test/#ProgStep005b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep005b> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep005b> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014c> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/hasSDTL> "\"command\": \"SetValueLabels\"" .
+<http://test/#ProgStep005c> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#ProgStep005c> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004c> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014b> .
+<http://test/#ProgStep005c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep005c> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep005c> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns001> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns003> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns004> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns005> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns006> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns007> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns012> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014c> .
+<http://test/#ProgStep006> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns001> .
+<http://test/#ProgStep006> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns004c> .
+<http://test/#ProgStep006> <http://DDI/SDTH/hasSourceCode> "MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" .
+<http://test/#ProgStep006> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns005> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns001> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns003> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns004> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns005> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns006> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns007> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns012> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014c> .
+<http://test/#ProgStep006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep006> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep006> .
+<http://test/#ProgStep007> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns005> .
+<http://test/#ProgStep007> <http://DDI/SDTH/hasSourceCode> "MergedData.to_csv(\"SmallTestMerged.csv\")" .
+<http://test/#ProgStep007> <http://DDI/SDTH/savesFile> <http://test/#FileIns003> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns001> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns003> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns004> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns005> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns006> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns007> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns012> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014c> .
+<http://test/#ProgStep007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep007> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgStep007> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns001> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004b> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004c> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns005> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns001> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep001> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep004> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005b> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005c> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep006> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep007> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns001> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns004> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns005> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns006> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns007> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns008> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns009> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns010> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns011> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns012> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns013> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014b> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014c> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep001" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep002" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep003" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep004" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005a" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005b" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005c" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep006" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep007" .
+<http://test/#ProgramEx5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:Program" .
+<http://test/#ProgramEx5> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#ProgramEx5> .
+<http://test/#VarIns001> <http://DDI/SDTH/hasName> "Q3" .
+<http://test/#VarIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns001> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns001> .
+<http://test/#VarIns002> <http://DDI/SDTH/hasName> "Q244_NEW" .
+<http://test/#VarIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns002> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns002> .
+<http://test/#VarIns003> <http://DDI/SDTH/hasName> "Q356" .
+<http://test/#VarIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns003> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns003> .
+<http://test/#VarIns004> <http://DDI/SDTH/hasName> "Q330A" .
+<http://test/#VarIns004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns004> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns004> .
+<http://test/#VarIns005> <http://DDI/SDTH/hasName> "Q330C" .
+<http://test/#VarIns005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns005> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns005> .
+<http://test/#VarIns006> <http://DDI/SDTH/hasName> "Q27" .
+<http://test/#VarIns006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns006> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns006> .
+<http://test/#VarIns007> <http://DDI/SDTH/hasName> "Q1010" .
+<http://test/#VarIns007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns007> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns007> .
+<http://test/#VarIns008> <http://DDI/SDTH/hasName> "ID" .
+<http://test/#VarIns008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns008> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns008> .
+<http://test/#VarIns009> <http://DDI/SDTH/hasName> "PPEDUCAT" .
+<http://test/#VarIns009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns009> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns009> .
+<http://test/#VarIns010> <http://DDI/SDTH/hasName> "PPHHSIZE" .
+<http://test/#VarIns010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns010> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns010> .
+<http://test/#VarIns011> <http://DDI/SDTH/hasName> "PPRENT" .
+<http://test/#VarIns011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns011> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns011> .
+<http://test/#VarIns012> <http://DDI/SDTH/hasName> "ID" .
+<http://test/#VarIns012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns012> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns012> .
+<http://test/#VarIns013> <http://DDI/SDTH/hasName> "HHsize" .
+<http://test/#VarIns013> <http://DDI/SDTH/wasDerivedFrom> <http://test/#VarIns010> .
+<http://test/#VarIns013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns013> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns013> .
+<http://test/#VarIns014a> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#VarIns014a> <http://DDI/SDTH/wasDerivedFrom> <http://test/#VarIns013> .
+<http://test/#VarIns014a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns014a> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns014a> .
+<http://test/#VarIns014b> <http://DDI/SDTH/elaborationOf> <http://test/#VarIns014a> .
+<http://test/#VarIns014b> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#VarIns014b> <http://ddi-l/NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<http://test/#VarIns014b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns014b> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns014b> .
+<http://test/#VarIns014c> <http://DDI/SDTH/elaborationOf> <http://test/#VarIns014b> .
+<http://test/#VarIns014c> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#VarIns014c> <http://ddi-l/CodeList> "<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" .
+<http://test/#VarIns014c> <http://ddi-l/NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<http://test/#VarIns014c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns014c> <http://www.w3.org/2002/07/owl#sameAs> <http://test/#VarIns014c> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+<http://www.w3.org/2001/XMLSchema#NCName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#NCName> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#NCName> .
+<http://www.w3.org/2001/XMLSchema#NMTOKEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#NMTOKEN> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#NMTOKEN> .
+<http://www.w3.org/2001/XMLSchema#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#Name> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#Name> .
+<http://www.w3.org/2001/XMLSchema#anyURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#anyURI> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/2001/XMLSchema#base64Binary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#base64Binary> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#base64Binary> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3.org/2001/XMLSchema#byte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#byte> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/2001/XMLSchema#dateTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#dateTimeStamp> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.w3.org/2001/XMLSchema#hexBinary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#hexBinary> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#hexBinary> .
+<http://www.w3.org/2001/XMLSchema#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#int> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3.org/2001/XMLSchema#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#language> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#language> .
+<http://www.w3.org/2001/XMLSchema#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#long> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.w3.org/2001/XMLSchema#negativeInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#negativeInteger> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#negativeInteger> .
+<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.w3.org/2001/XMLSchema#nonPositiveInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#nonPositiveInteger> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#nonPositiveInteger> .
+<http://www.w3.org/2001/XMLSchema#normalizedString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#normalizedString> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#normalizedString> .
+<http://www.w3.org/2001/XMLSchema#positiveInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#positiveInteger> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.w3.org/2001/XMLSchema#short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#short> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#short> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#time> .
+<http://www.w3.org/2001/XMLSchema#token> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#token> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#token> .
+<http://www.w3.org/2001/XMLSchema#unsignedByte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#unsignedByte> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#unsignedByte> .
+<http://www.w3.org/2001/XMLSchema#unsignedInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#unsignedInt> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<http://www.w3.org/2001/XMLSchema#unsignedLong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#unsignedLong> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#unsignedLong> .
+<http://www.w3.org/2001/XMLSchema#unsignedShort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#unsignedShort> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Nothing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Nothing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Nothing> .
+<http://www.w3.org/2002/07/owl#Nothing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2002/07/owl#Nothing> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2002/07/owl#Nothing> .
+<http://www.w3.org/2002/07/owl#Nothing> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#Nothing> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> .
+<http://www.w3.org/2002/07/owl#deprecated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#deprecated> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#deprecated> .
+<http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#equivalentClass> .
+<http://www.w3.org/2002/07/owl#incompatibleWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#incompatibleWith> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#incompatibleWith> .
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#priorVersion> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#versionInfo> .
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======================== bash cell | query object names ========================
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?s ?sname
+    WHERE {
+        ?s  sdth:hasName ?sname .
+    } ORDER BY ?s ?sname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+Object Names:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.s }} has name {{ row.sname }}
+{% endfor %}
+    
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+Object Names:
+
+    <http://test/#DFIns001> has name "PoliticalData"
+    <http://test/#DFIns002> has name "PersonalData"
+    <http://test/#DFIns003> has name "PersonalData"
+    <http://test/#DFIns004a> has name "PersonalData"
+    <http://test/#DFIns004b> has name "PersonalData"
+    <http://test/#DFIns004c> has name "PersonalData"
+    <http://test/#DFIns005> has name "MergedData"
+    <http://test/#FileIns001> has name "SmallTestPolitical.csv"
+    <http://test/#FileIns002> has name "SmallTestPersonal.csv"
+    <http://test/#FileIns003> has name "SmallTestMerged.csv"
+    <http://test/#VarIns001> has name "Q3"
+    <http://test/#VarIns002> has name "Q244_NEW"
+    <http://test/#VarIns003> has name "Q356"
+    <http://test/#VarIns004> has name "Q330A"
+    <http://test/#VarIns005> has name "Q330C"
+    <http://test/#VarIns006> has name "Q27"
+    <http://test/#VarIns007> has name "Q1010"
+    <http://test/#VarIns008> has name "ID"
+    <http://test/#VarIns009> has name "PPEDUCAT"
+    <http://test/#VarIns010> has name "PPHHSIZE"
+    <http://test/#VarIns011> has name "PPRENT"
+    <http://test/#VarIns012> has name "ID"
+    <http://test/#VarIns013> has name "HHsize"
+    <http://test/#VarIns014a> has name "HHcateg"
+    <http://test/#VarIns014b> has name "HHcateg"
+    <http://test/#VarIns014c> has name "HHcateg"
+    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========= bash cell | wasDerivedFrom query for variable name HHcatege ==========
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?sname ?oname
+    WHERE {
+        ?s  sdth:wasDerivedFrom+ ?o .
+        ?s  sdth:hasName ?sname .
+        ?o  sdth:hasName ?oname .
+        FILTER (?sname = "HHcateg")
+    } ORDER BY ?sname ?oname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+wasDerivedFrom query for variable name HHcateg:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.sname }} is derived from {{ row.oname }}
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+wasDerivedFrom query for variable name HHcateg:
+
+    "HHcateg" is derived from "HHsize"
+    "HHcateg" is derived from "PPHHSIZE"
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======== bash cell | has an impact on query for variable name PPHHSIZE =========
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?sname ?oname
+    WHERE {
+        ?s  sdth:wasDerivedFrom+ ?o .
+        ?s  sdth:hasName ?sname .
+        ?o  sdth:hasName ?oname .
+        FILTER (?oname = "PPHHSIZE")
+    } ORDER BY ?sname ?oname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+Has an impact on query for variable name PPHHSIZE:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.oname }} has an impact on {{ row.sname }}
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+Has an impact on query for variable name PPHHSIZE:
+
+    "PPHHSIZE" has an impact on "HHcateg"
+    "PPHHSIZE" has an impact on "HHsize"
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+=========== bash cell | ProgramSteps affecting variable name HHcateg ===========
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT ?sname ?oname ?pscode
+    WHERE {
+        ?s  sdth:wasDerivedFrom+ ?o .
+        ?s  sdth:hasName ?sname .
+        ?o  sdth:hasName ?oname .
+        ?pstep sdth:assignsVariable ?o.
+        ?pstep sdth:hasSourceCode ?pscode.
+        FILTER (?sname = "HHcateg")
+    } ORDER BY ?sname ?oname ?pscode
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+ProgramSteps affecting variable name HHcateg:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.sname }} is affected by {{ row.oname }} in command [{{ row.pscode }}]
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+ProgramSteps affecting variable name HHcateg:
+
+    "HHcateg" is affected by "HHsize" in command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"]
+    "HHcateg" is affected by "HHsize" in command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"]
+    "HHcateg" is affected by "PPHHSIZE" in command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"]
+    "HHcateg" is affected by "PPHHSIZE" in command ["PersonalData = pd.read_csv("SmallTestPersonal.csv")"]
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+===== bash cell | Variables indirectly affected by ProgramStep ProgStep004 =====
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?sname ?oname ?pscode
+    WHERE {
+        ?s  sdth:wasDerivedFrom+ ?o .
+        ?s  sdth:hasName ?sname .
+        ?o  sdth:hasName ?oname .
+        
+        {
+            SELECT ?o  ?pscode
+            WHERE {
+                ?pstep sdth:assignsVariable ?o.
+                ?pstep sdth:hasSourceCode ?pscode.
+                FILTER (?pstep = sdtest:ProgStep004 )
+            }
+        }
+    } ORDER BY ?sname ?oname ?pscode
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+Variables indirectly affected by ProgramStep ProgStep004:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.sname }} is affected by {{ row.oname }}, which is modified in command [{{ row.pscode }}]
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+Variables indirectly affected by ProgramStep ProgStep004:
+
+    "HHcateg" is affected by "HHsize", which is modified in command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"]
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+=== bash cell | Find a File containing variable PPHHSIZE that is Loaded in the Program ===
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?sname ?pscode
+    WHERE {
+        ?s  sdth:hasVarInstance ?v .
+        ?v  sdth:hasName 'PPHHSIZE' .
+        ?ps  sdth:loadsFile ?s .
+        ?ps sdth:hasSourceCode ?pscode .
+        ?s sdth:hasName ?sname .
+    } ORDER BY ?sname ?pscode
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+Find a File containing variable PPHHSIZE that is Loaded in the Program:
+
+{% for _, row in res_df.iterrows() %}
+    Command [{{ row.pscode }}] loads {{ row.sname }} containing variable 'PPHHSIZE'
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+Find a File containing variable PPHHSIZE that is Loaded in the Program:
+
+    Command ["PersonalData = pd.read_csv("SmallTestPersonal.csv")"] loads "SmallTestPersonal.csv" containing variable 'PPHHSIZE'
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========== bash cell | elaborationOf query for variable name HHcateg ===========
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?s ?o ?sname ?oname ?pscode
+    WHERE {
+        ?s sdth:elaborationOf+ ?o .
+		?s sdth:hasName ?sname .
+		?o sdth:hasName ?oname .
+	    ?pstep sdth:usesVariable ?o.
+        ?pstep sdth:hasSDTL ?pscode.
+        FILTER (?sname = "HHcateg")
+    } ORDER BY ?s ?o ?sname ?oname ?pscode
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+elaborationOf query for variable name HHcateg:
+
+{% for _, row in res_df.iterrows() %}
+    {{ row.s }} named {{ row.sname }} is elaboration of {{ row.o }} named {{ row.oname }} in command {{ row.pscode }}
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+elaborationOf query for variable name HHcateg:
+
+    <http://test/#VarIns014b> named "HHcateg" is elaboration of <http://test/#VarIns014a> named "HHcateg" in command ""command": "SetDataType""
+    <http://test/#VarIns014c> named "HHcateg" is elaboration of <http://test/#VarIns014a> named "HHcateg" in command ""command": "SetDataType""
+    <http://test/#VarIns014c> named "HHcateg" is elaboration of <http://test/#VarIns014b> named "HHcateg" in command ""command": "SetValueLabels""
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========== bash cell | usesVariable query for variable name PPHHSIZE ===========
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?psource ?oname
+    WHERE {
+        ?pstep sdth:usesVariable+ ?o .
+		?pstep sdth:hasSourceCode ?psource .
+		?o sdth:hasName ?oname .
+        FILTER (?oname = "PPHHSIZE")
+    } ORDER BY ?psource ?oname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+usesVariable query for variable name PPHHSIZE:
+
+{% for _, row in res_df.iterrows() %}
+    Command [{{ row.psource }}] is affected by {{ row.oname }}
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+usesVariable query for variable name PPHHSIZE:
+
+    Command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"] is affected by "PPHHSIZE"
+    Command ["MergedData.to_csv("SmallTestMerged.csv")"] is affected by "PPHHSIZE"
+    Command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"] is affected by "PPHHSIZE"
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+=== bash cell | usesVariable query for indirect effects of variable name PPHHSIZE ===
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?psource ?sname ?oname
+    WHERE {
+        ?pstep  sdth:usesVariable+ ?s .
+		?pstep  sdth:hasSourceCode ?psource .
+	  
+		{
+            SELECT distinct  ?s  ?sname ?oname
+            WHERE {
+                ?s  sdth:wasDerivedFrom+ ?o .
+                ?s  sdth:hasName ?sname .
+                ?o  sdth:hasName ?oname .
+                FILTER (?oname = "PPHHSIZE" )  
+            }
+        }
+    } ORDER BY ?psource ?sname ?oname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+usesVariable query for indirect effects of variable name PPHHSIZE:
+
+{% for _, row in res_df.iterrows() %}
+    Command [{{ row.psource }}] is affected by {{ row.sname }} which is affected by {{ row.oname }}
+{% endfor %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+usesVariable query for indirect effects of variable name PPHHSIZE:
+
+    Command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"] is affected by "HHsize" which is affected by "PPHHSIZE"
+    Command ["MergedData.to_csv("SmallTestMerged.csv")"] is affected by "HHsize" which is affected by "PPHHSIZE"
+    Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHcateg" which is affected by "PPHHSIZE"
+    Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHsize" which is affected by "PPHHSIZE"
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+=== bash cell | usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE ===
+
+geist report << __END_TEMPLATE__
+
+{% query isfilepath=False as res_str %}
+    PREFIX sdth: <http://DDI/SDTH/>
+    PREFIX sdtest: <http://test/#>	
+
+    SELECT distinct ?psource ?oname
+	WHERE {
+		{
+			?pstep  sdth:usesVariable+ ?o .
+			?pstep  sdth:hasSourceCode ?psource .
+			?o  sdth:hasName ?oname .
+			FILTER (?oname = "PPHHSIZE")
+		}
+
+		UNION
+
+		{
+			?pstep  sdth:usesVariable+ ?s2 .
+			?pstep  sdth:hasSourceCode ?psource .
+		  
+			{
+                SELECT distinct  ?s2   ?oname
+			    WHERE {
+                    ?s2  sdth:wasDerivedFrom+ ?o2 .
+                    ?s2  sdth:hasName ?oname .
+                    ?o2  sdth:hasName ?o2name .
+                    FILTER (?o2name = "PPHHSIZE" )  
+                }
+			}
+		}
+	} ORDER BY ?psource ?oname
+{% endquery %}
+{% set res_df = res_str | json2df %}
+
+usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE:
+
+{% for _, row in res_df.iterrows() %}
+    Command [{{ row.psource }}] is affected by {{ row.oname }}
+{% endfor %}
+
+{% destroy dataset="kb" %}
+
+__END_TEMPLATE__
+
+--------------------------------- cell outputs ---------------------------------
+
+
+usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE:
+
+    Command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"] is affected by "HHsize"
+    Command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"] is affected by "PPHHSIZE"
+    Command ["MergedData.to_csv("SmallTestMerged.csv")"] is affected by "HHsize"
+    Command ["MergedData.to_csv("SmallTestMerged.csv")"] is affected by "PPHHSIZE"
+    Command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"] is affected by "PPHHSIZE"
+    Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHcateg"
+    Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHsize"
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

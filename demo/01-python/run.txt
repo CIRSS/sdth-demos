@@ -1,0 +1,130 @@
+======================= bash cell | load political data ========================
+
+python << END_PYTHON
+
+import pandas as pd
+
+PoliticalData = pd.read_csv("data/SmallTestPolitical.csv")
+print(PoliticalData)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+   ID   Test
+0   1  test1
+1   2  test2
+2   3  test3
+3   5  test5
+4   6  test6
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======================== bash cell | load personal data ========================
+
+python << END_PYTHON
+
+import pandas as pd
+
+PersonalData = pd.read_csv("data/SmallTestPersonal.csv")
+print(PersonalData)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+   ID  PPHHSIZE
+0   1         6
+1   2         2
+2   3        20
+3   4         5
+4   5         8
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+====================== bash cell | add the hhsize column =======================
+
+python << END_PYTHON
+
+import pandas as pd
+
+PersonalData = pd.read_csv("data/SmallTestPersonal.csv")
+PersonalData = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'])
+print(PersonalData)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+   ID  PPHHSIZE  HHsize
+0   1         6       6
+1   2         2       2
+2   3        20      20
+3   4         5       5
+4   5         8       8
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+====================== bash cell | add the hhcateg column ======================
+
+python << END_PYTHON
+
+import pandas as pd
+
+PersonalData = pd.read_csv("data/SmallTestPersonal.csv")
+PersonalData = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'])
+PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'])
+print(PersonalData)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+   ID  PPHHSIZE  HHsize HHcateg
+0   1         6       6     5-6
+1   2         2       2       2
+2   3        20      20     10+
+3   4         5       5     5-6
+4   5         8       8     7-9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========== bash cell | merge the personal data and the political data ==========
+
+python << END_PYTHON
+
+import pandas as pd
+
+PoliticalData = pd.read_csv("data/SmallTestPolitical.csv")
+PersonalData = pd.read_csv("data/SmallTestPersonal.csv")
+PersonalData   = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'])
+PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'])
+MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")
+print(MergedData)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+   ID  PPHHSIZE  HHsize HHcateg   Test
+0   1         6       6     5-6  test1
+1   2         2       2       2  test2
+2   3        20      20     10+  test3
+3   5         8       8     7-9  test5
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======================= bash cell | save the merged data =======================
+
+python << END_PYTHON
+
+import pandas as pd
+
+PoliticalData = pd.read_csv("data/SmallTestPolitical.csv")
+PersonalData = pd.read_csv("data/SmallTestPersonal.csv")
+PersonalData   = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'])
+PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'])
+MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")
+MergedData.to_csv("products/SmallTestMerged.csv", index=False)
+
+END_PYTHON
+
+--------------------------------- cell outputs ---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
