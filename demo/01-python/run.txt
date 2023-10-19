@@ -10,12 +10,20 @@ print(PoliticalData)
 END_PYTHON
 
 --------------------------------- cell outputs ---------------------------------
-   ID   Test
-0   1  test1
-1   2  test2
-2   3  test3
-3   5  test5
-4   6  test6
+              Q3 Q244_NEW  ...        Q1010   ID
+0       Stay out   Oppose  ...   Republican    1
+1    Active part  Support  ...     Democrat    2
+2    Active part   Oppose  ...  Independent    3
+3       Stay out  Support  ...   Republican    4
+4    Active part  Support  ...   Republican    5
+..           ...      ...  ...          ...  ...
+292  Active part   Oppose  ...          NaN  293
+293  Active part  Support  ...     Democrat  294
+294  Active part      NaN  ...   Republican  295
+295          NaN      NaN  ...  Independent  296
+296  Active part  Support  ...     Democrat  297
+
+[297 rows x 8 columns]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -31,12 +39,20 @@ print(PersonalData)
 END_PYTHON
 
 --------------------------------- cell outputs ---------------------------------
-   ID  PPHHSIZE
-0   1         6
-1   2         2
-2   3        20
-3   4         5
-4   5         8
+                       PPEDUCAT  ...   ID
+0    Bachelors degree or higher  ...    1
+1    Bachelors degree or higher  ...    2
+2    Bachelors degree or higher  ...    3
+3    Bachelors degree or higher  ...    4
+4    Bachelors degree or higher  ...    5
+..                          ...  ...  ...
+292                 High school  ...  293
+293  Bachelors degree or higher  ...  294
+294                Some college  ...  295
+295                 High school  ...  296
+296                Some college  ...  297
+
+[297 rows x 4 columns]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -53,12 +69,20 @@ print(PersonalData)
 END_PYTHON
 
 --------------------------------- cell outputs ---------------------------------
-   ID  PPHHSIZE  HHsize
-0   1         6       6
-1   2         2       2
-2   3        20      20
-3   4         5       5
-4   5         8       8
+                       PPEDUCAT  PPHHSIZE  ...   ID  HHsize
+0    Bachelors degree or higher         3  ...    1       3
+1    Bachelors degree or higher         2  ...    2       2
+2    Bachelors degree or higher         1  ...    3       1
+3    Bachelors degree or higher         2  ...    4       2
+4    Bachelors degree or higher         8  ...    5       8
+..                          ...       ...  ...  ...     ...
+292                 High school         4  ...  293       4
+293  Bachelors degree or higher         2  ...  294       2
+294                Some college         2  ...  295       2
+295                 High school         3  ...  296       3
+296                Some college         3  ...  297       3
+
+[297 rows x 5 columns]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -76,12 +100,20 @@ print(PersonalData)
 END_PYTHON
 
 --------------------------------- cell outputs ---------------------------------
-   ID  PPHHSIZE  HHsize HHcateg
-0   1         6       6     5-6
-1   2         2       2       2
-2   3        20      20     10+
-3   4         5       5     5-6
-4   5         8       8     7-9
+                       PPEDUCAT  PPHHSIZE  ... HHsize  HHcateg
+0    Bachelors degree or higher         3  ...      3      3-4
+1    Bachelors degree or higher         2  ...      2        2
+2    Bachelors degree or higher         1  ...      1        1
+3    Bachelors degree or higher         2  ...      2        2
+4    Bachelors degree or higher         8  ...      8      7-9
+..                          ...       ...  ...    ...      ...
+292                 High school         4  ...      4      3-4
+293  Bachelors degree or higher         2  ...      2        2
+294                Some college         2  ...      2        2
+295                 High school         3  ...      3      3-4
+296                Some college         3  ...      3      3-4
+
+[297 rows x 6 columns]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -101,11 +133,20 @@ print(MergedData)
 END_PYTHON
 
 --------------------------------- cell outputs ---------------------------------
-   ID  PPHHSIZE  HHsize HHcateg   Test
-0   1         6       6     5-6  test1
-1   2         2       2       2  test2
-2   3        20      20     10+  test3
-3   5         8       8     7-9  test5
+                       PPEDUCAT  PPHHSIZE  ...               Q27        Q1010
+0    Bachelors degree or higher         3  ...               NaN   Republican
+1    Bachelors degree or higher         2  ...  Somewhat support     Democrat
+2    Bachelors degree or higher         1  ...               NaN  Independent
+3    Bachelors degree or higher         2  ...               NaN   Republican
+4    Bachelors degree or higher         8  ...               NaN   Republican
+..                          ...       ...  ...               ...          ...
+292                 High school         4  ...               NaN          NaN
+293  Bachelors degree or higher         2  ...               NaN     Democrat
+294                Some college         2  ...  Somewhat support   Republican
+295                 High school         3  ...   Strongly oppose  Independent
+296                Some college         3  ...               NaN     Democrat
+
+[297 rows x 13 columns]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

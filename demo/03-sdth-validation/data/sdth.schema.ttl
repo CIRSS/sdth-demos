@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ddi-l: <http://ddi-l/> .
+@prefix sdtest: <http://test/#> .
+@prefix sdth: <http://DDI/SDTH/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sdo: <https://schema.org/> .
+
+<http://DDI/SDTH/validation>
+	a owl:Ontology ;
+  	skos:prefLabel "SDTH SHACL validation shapes"@en ;
+	skos:definition """This file is contains SHACL shapes for validating graph data that conforms to the SDTH standard"""@en ;
+	dcterms:publisher [
+		a sdo:Organization ;
+		sdo:name "DDI Alliance"@en ;
+		sdo:url "https://ddialliance.org/"^^xsd:anyURI ;
+	] ;
+	dcterms:creator "George Alter"@en ;
+	dcterms:created "2023-08-01"^^xsd:date ;
+    dcterms:license "LICENSE URL HERE"^^xsd:anyURI ;
+	dcterms:rights "(c) 2023 DDI Alliance"@en ; 	
+	owl:versionInfo "version of these shapes" .
+
+###############################################################
+## Shapes for SDTH classes  ###############################
+###############################################################
+
+## Shape for sdth:Program and sdth:ProgramStep ############
+sdtest:ProgramShape
+	a sh:NodeShape;
+	sh:targetClass sdth:Program, sdth:ProgramStep ;
+	sh:closed true ;
+	sh:ignoredProperties (rdf:type sdth:hasProgramStep sdth:loadsFile sdth:savesFile sdth:consumesDataframe sdth:producesDataframe sdth:usesVariable sdth:assignsVariable );
+	sh:property <s2-hasSDTL>, <s3-hasSourceCode>, <s4-assignsVariable> .
+
+## Shape for sdth:FileInstance  ###########################
+sdtest:FileShape
+	a sh:NodeShape ;
+	sh:targetClass sdth:FileInstance ;	
+	sh:closed true ;
+	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf  sdth:hasName sdth:loadsFile sdth:savesFile );
+	sh:property <s1-hasVarInstance> ,  <s5-hasName> .
+
+## Shape for sdth:DataframeInstance  ###########################
+sdtest:DataframeShape
+	a sh:NodeShape ;
+	sh:targetClass sdth:DataframeInstance ;
+	sh:closed true ;
+	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf  sdth:consumesDataframe sdth:producesDataframe );
+	sh:property  <s1-hasVarInstance> ,  <s5-hasName> .
+
+## Shape for sdth:VariableInstance  ###########################
+sdtest:VariableShape
+	a sh:NodeShape ;
+	sh:targetClass sdth:VariableInstance ;
+	sh:closed true ;
+	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf sdth:usesVariable sdth:assignsVariable  sdth:hasVarInstance ddi-l:NumericDomain ddi-l:CodeList  );
+	sh:property <s5-hasName> .
+
+###############################################################
+## Shapes for SDTH properties  ################################
+###############################################################
+
+##  Property:  sdth:hasVarInstance ############################
+<s1-hasVarInstance>
+	a sh:PropertyShape ;
+	sh:path sdth:hasVarInstance ;
+	sh:minCount 1 ;
+	sh:severity sh:Warning ;
+	sh:message "Files and dataframes should have at least one variable instance"@en .
+
+##  Property:  sdth:hasSDTL ############################
+<s2-hasSDTL>
+	a sh:PropertyShape ;
+	sh:path sdth:hasSDTL;
+	sh:datatype xsd:string ;
+	sh:message "ProgramSteps can have a text string containing SDTL"@en .
+
+##  Property:  sdth:hasSourceCode ############################
+<s3-hasSourceCode>
+	a sh:PropertyShape ;
+	sh:path sdth:hasSourceCode;
+	sh:datatype xsd:string ;
+	sh:message "ProgramSteps can have a text string containing source code"@en .
+
+##  Property:  sdth:assignsVariable ############################
+<s4-assignsVariable>
+	a sh:PropertyShape ;
+	sh:path sdth:assignsVariable ;
+	sh:message "ProgramSteps can have an outbound relation describing a variable that was assigned some value"@en .
+
+##  Property:  sdth:hasName ############################
+<s5-hasName>
+	a sh:PropertyShape ;
+	sh:path sdth:hasName ;
+	sh:datatype xsd:string ;
+	sh:minCount 1 ;
+	sh:severity sh:Warning ;
+	sh:message "A FileInstance, DataframeInstance, or a VariableInstance should have a name"@en .

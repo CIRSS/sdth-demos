@@ -1,0 +1,20 @@
+Node: sdtest:DFIns002 
+Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:DFIns004a 
+Error Message: Node sdtest:DFIns004a is closed. It cannot have value: sdtest:VarIns001
+Suggested Node(s) to be Updated: ['sdtest:VarIns001']
+
+Node: sdtest:FileIns001 
+Error Message: Node sdtest:FileIns001 is closed. It cannot have value: sdtest:VarIns001
+Suggested Node(s) to be Updated: ['sdtest:VarIns001']
+
+Node: sdtest:FileIns003 
+Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:ProgStep002 
+Error Message: Node sdtest:ProgStep002 is closed. It cannot have value: sdtest:VarIns001
+Suggested Node(s) to be Updated: ['sdtest:VarIns001']
+

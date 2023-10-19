@@ -1,6 +1,298 @@
-ID,Test
-1,test1
-2,test2
-3,test3
-5,test5
-6,test6
+Q3,Q244_NEW,Q356,Q330A,Q330C,Q27,Q1010,ID
+Stay out,Oppose,I somewhat oppose it,,Somewhat reliable,,Republican,1
+Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Democrat,2
+Active part,Oppose,I somewhat support it,,Somewhat reliable,,Independent,3
+Stay out,Support,I somewhat oppose it,,Not very reliable,,Republican,4
+Active part,Support,I somewhat oppose it,,Somewhat reliable,,Republican,5
+Active part,Support,I somewhat support it,,,,Independent,6
+Active part,Support,I somewhat support it,Very reliable,,,Democrat,7
+Active part,Oppose,I strongly oppose it,,,,Republican,8
+Active part,Support,I somewhat support it,,,Somewhat support,Independent,9
+Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Independent,10
+Active part,Support,I strongly oppose it,Somewhat reliable,,,Independent,11
+Stay out,Oppose,I somewhat oppose it,,Not at all reliable,Strongly oppose,Republican,12
+Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Independent,13
+Active part,Support,I somewhat support it,Very reliable,,,Republican,14
+Active part,Oppose,I somewhat oppose it,,,,Republican,15
+Active part,Support,I somewhat support it,,Somewhat reliable,,Other,16
+Active part,Support,I somewhat oppose it,,,,Republican,17
+Active part,Support,I somewhat support it,,,Somewhat support,Democrat,18
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican,19
+Stay out,Support,I somewhat oppose it,Somewhat reliable,,,Independent,20
+Active part,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Republican,21
+Active part,Support,I somewhat oppose it,,,,Other,22
+Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent,23
+Active part,Oppose,I strongly oppose it,,Somewhat reliable,,Democrat,24
+Active part,Support,I somewhat support it,,,,Democrat,25
+Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Republican,26
+Stay out,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Independent,27
+Active part,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Democrat,28
+Active part,Support,I somewhat support it,,,,Other,29
+Stay out,Support,I strongly oppose it,,Not at all reliable,,Independent,30
+Active part,Support,I somewhat support it,,Not at all reliable,,Democrat,31
+Active part,Oppose,I somewhat oppose it,,,,Independent,32
+Active part,Support,I somewhat oppose it,,,,Independent,33
+Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat,34
+Active part,Support,I somewhat oppose it,,Somewhat reliable,Somewhat support,Independent,35
+Active part,Support,I somewhat oppose it,Very reliable,,Strongly support,Other,36
+Active part,Support,I somewhat support it,,Not at all reliable,Somewhat support,Independent,37
+Active part,Support,I somewhat support it,Somewhat reliable,,,Republican,38
+Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat oppose,Democrat,39
+Stay out,Support,I somewhat oppose it,,Not very reliable,Somewhat oppose,Republican,40
+Active part,Oppose,I strongly support it,Very reliable,,Somewhat support,Republican,41
+Stay out,Support,I somewhat support it,,,Somewhat support,Democrat,42
+Active part,Support,I somewhat support it,Very reliable,,,Independent,43
+Stay out,Support,I somewhat oppose it,Not very reliable,,,Independent,44
+Stay out,Support,I somewhat oppose it,,,,Republican,45
+Active part,Support,I somewhat oppose it,Very reliable,,Strongly support,Democrat,46
+Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Democrat,47
+Active part,Support,I strongly support it,,Not at all reliable,Somewhat support,Independent,48
+Stay out,,,Somewhat reliable,,,Democrat,49
+Stay out,Oppose,I strongly oppose it,,,Somewhat oppose,Republican,50
+Active part,Support,I somewhat oppose it,Very reliable,,,Democrat,51
+Active part,Support,I somewhat oppose it,,Somewhat reliable,Strongly support,Independent,52
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Independent,53
+Active part,Support,I somewhat oppose it,,,,Democrat,54
+Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent,55
+Active part,Support,I somewhat oppose it,,,Somewhat support,Independent,56
+Active part,Support,I somewhat oppose it,Not very reliable,,,Independent,57
+Active part,Support,I somewhat support it,,,,Republican,58
+Stay out,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Independent,59
+Stay out,Support,I strongly support it,,,Somewhat support,Democrat,60
+Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Democrat,61
+Active part,Oppose,I somewhat support it,,Not at all reliable,,Independent,62
+Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat,63
+Stay out,Support,I strongly support it,Very reliable,,Strongly support,Independent,64
+Stay out,Support,I somewhat support it,Very reliable,,,Democrat,65
+Active part,Oppose,I somewhat support it,Very reliable,,Strongly support,Democrat,66
+Active part,Support,I somewhat support it,,Not very reliable,,Democrat,67
+Active part,,I somewhat oppose it,,,,Republican,68
+Active part,Oppose,I somewhat support it,Somewhat reliable,,,Democrat,69
+Active part,Support,I somewhat oppose it,,Somewhat reliable,Strongly oppose,Democrat,70
+Active part,Support,I somewhat oppose it,,,,Republican,71
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Democrat,72
+Stay out,Oppose,I strongly oppose it,Not at all reliable,,Strongly oppose,Other,73
+Stay out,Support,I somewhat support it,,,Somewhat support,Democrat,74
+Active part,Support,I strongly support it,,Very reliable,,Democrat,75
+Stay out,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Republican,76
+Active part,Support,I strongly oppose it,Somewhat reliable,,,Democrat,77
+Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat,78
+Stay out,Support,I somewhat support it,,,,Democrat,79
+Stay out,Support,I somewhat oppose it,,,Somewhat support,Republican,80
+Active part,Support,I somewhat support it,,,Strongly support,Independent,81
+Active part,Support,I somewhat support it,,,Somewhat support,Republican,82
+Active part,Oppose,I somewhat support it,,,,Republican,83
+Stay out,Support,I somewhat support it,,Not at all reliable,,Republican,84
+Active part,Support,I somewhat oppose it,,,,Other,85
+Active part,Support,I somewhat oppose it,,,,Democrat,86
+Active part,Oppose,I somewhat support it,Somewhat reliable,,,Independent,87
+Stay out,,,Somewhat reliable,,Somewhat support,Democrat,88
+Active part,Support,I somewhat oppose it,Very reliable,,,Democrat,89
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Republican,90
+Stay out,Oppose,I strongly oppose it,Somewhat reliable,,,Independent,91
+Active part,Support,I somewhat support it,,Not very reliable,Somewhat oppose,Independent,92
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Republican,93
+Active part,Oppose,I somewhat oppose it,,,Somewhat support,Other,94
+Stay out,Support,I somewhat support it,,,Somewhat support,Republican,95
+Active part,Support,I somewhat oppose it,,Not very reliable,,Democrat,96
+Active part,Oppose,I strongly oppose it,,Not at all reliable,,Republican,97
+Stay out,Support,,Somewhat reliable,,Somewhat support,Democrat,98
+Active part,Support,I strongly support it,,,,Republican,99
+Stay out,Oppose,I somewhat support it,,Not very reliable,Strongly support,Independent,100
+Active part,Support,I somewhat oppose it,Very reliable,,Somewhat support,Democrat,101
+Active part,Oppose,I somewhat support it,,Not very reliable,Somewhat support,Democrat,102
+Active part,Support,I somewhat oppose it,,,,Democrat,103
+Active part,Support,I somewhat support it,,Somewhat reliable,,Republican,104
+,,,,,,Republican,105
+Stay out,Support,I somewhat oppose it,Very reliable,,Somewhat support,Independent,106
+Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Independent,107
+Active part,Support,I strongly support it,,Not very reliable,Somewhat support,Democrat,108
+Stay out,Support,I strongly support it,,,,Democrat,109
+Stay out,Support,I somewhat support it,,Not at all reliable,Somewhat support,Democrat,110
+Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat oppose,Democrat,111
+Active part,Support,I somewhat oppose it,,Not very reliable,,Republican,112
+Active part,Support,I strongly support it,,Not very reliable,Somewhat support,Democrat,113
+Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat,114
+Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Republican,115
+Stay out,Support,I somewhat support it,,,,Other,116
+Active part,Support,I somewhat oppose it,,,,Republican,117
+Active part,Support,I somewhat support it,,,Somewhat support,Republican,118
+Active part,Support,I somewhat oppose it,,Somewhat reliable,,Democrat,119
+Active part,Support,I somewhat support it,,Not at all reliable,,Democrat,120
+Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat,121
+Active part,Support,I somewhat oppose it,,,Strongly support,Independent,122
+Active part,Support,I somewhat oppose it,,,Strongly support,Republican,123
+Stay out,Support,I strongly support it,,Somewhat reliable,,Independent,124
+Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Democrat,125
+Active part,Support,I somewhat support it,,,Somewhat support,Republican,126
+Active part,Support,I somewhat oppose it,Somewhat reliable,,,Republican,127
+Active part,Support,I somewhat support it,,,,Independent,128
+Active part,Support,I somewhat support it,Somewhat reliable,,,Independent,129
+Active part,Oppose,I somewhat oppose it,,Somewhat reliable,Somewhat support,Republican,130
+Active part,Support,I somewhat support it,,,,Democrat,131
+Active part,Support,I somewhat oppose it,,Somewhat reliable,,Other,132
+Active part,,,,,,Other,133
+Stay out,Oppose,I somewhat support it,Somewhat reliable,,,Republican,134
+Active part,Support,I somewhat support it,,,Strongly support,Republican,135
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Other,136
+Active part,Support,I somewhat support it,,,Somewhat support,Democrat,137
+Active part,Support,I strongly oppose it,Not at all reliable,,,Other,138
+Stay out,Support,I strongly oppose it,Not at all reliable,,,Democrat,139
+Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Democrat,140
+Stay out,Oppose,I strongly oppose it,Somewhat reliable,,Somewhat support,Republican,141
+Active part,Support,I strongly oppose it,Very reliable,,Strongly oppose,Independent,142
+Stay out,Oppose,I somewhat support it,,Somewhat reliable,Strongly support,Other,143
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican,144
+Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat,145
+Stay out,Support,I somewhat support it,Not very reliable,,,Republican,146
+Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Independent,147
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Other,148
+Stay out,Support,I somewhat support it,,Not at all reliable,,Independent,149
+Active part,Support,I strongly support it,,Somewhat reliable,Somewhat support,Democrat,150
+Stay out,Support,I somewhat oppose it,,,,Independent,151
+Active part,Support,I strongly oppose it,,Not very reliable,Strongly support,Republican,152
+Stay out,Oppose,I somewhat oppose it,,,Somewhat oppose,Independent,153
+Stay out,Oppose,I somewhat support it,,,,Republican,154
+Active part,Oppose,I somewhat oppose it,,,,Republican,155
+Stay out,,,Somewhat reliable,,,Independent,156
+Stay out,Support,,,,,Democrat,157
+Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Other,158
+Active part,Oppose,I somewhat oppose it,Very reliable,,,Independent,159
+Active part,Support,I somewhat oppose it,,,Somewhat oppose,Independent,160
+Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat,161
+Stay out,Oppose,I somewhat oppose it,,Not very reliable,,Other,162
+Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat oppose,Democrat,163
+Active part,Support,I somewhat support it,,,Strongly oppose,Republican,164
+Active part,Support,I somewhat oppose it,,Not very reliable,,Democrat,165
+Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat,166
+Active part,Support,I strongly support it,Somewhat reliable,,,Republican,167
+Active part,Support,I somewhat oppose it,,,Somewhat support,Republican,168
+Stay out,Oppose,I strongly oppose it,Not at all reliable,,,Other,169
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican,170
+Active part,Oppose,I strongly oppose it,,Somewhat reliable,Somewhat oppose,Other,171
+Active part,Oppose,I somewhat oppose it,,,Somewhat support,Republican,172
+Stay out,Support,I somewhat support it,Very reliable,,,Democrat,173
+Active part,Support,I strongly oppose it,,,,Independent,174
+Active part,Support,I somewhat oppose it,,,,Independent,175
+Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Independent,176
+Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Independent,177
+Active part,Support,I somewhat support it,,,,Independent,178
+Stay out,Support,I somewhat support it,,,Somewhat support,Republican,179
+Stay out,Support,I somewhat oppose it,Not very reliable,,Somewhat oppose,Republican,180
+Stay out,Oppose,I strongly oppose it,,,,Republican,181
+Active part,Oppose,I somewhat support it,Not very reliable,,Somewhat oppose,Republican,182
+Active part,Support,I somewhat support it,,,,Democrat,183
+Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat,184
+Active part,Support,I strongly oppose it,Very reliable,,Somewhat support,Republican,185
+Active part,Support,I somewhat support it,,,Somewhat oppose,Republican,186
+Stay out,Support,I somewhat support it,Very reliable,,Strongly support,Other,187
+Active part,Oppose,I strongly oppose it,,,Somewhat oppose,Independent,188
+Stay out,Support,I somewhat support it,,,,Democrat,189
+Stay out,Support,I strongly oppose it,,Somewhat reliable,,Democrat,190
+Stay out,Support,,,,,,191
+Active part,Support,I strongly support it,Somewhat reliable,,,Independent,192
+Stay out,Support,I somewhat oppose it,,,Strongly support,Democrat,193
+Stay out,Support,I somewhat support it,,Somewhat reliable,,Democrat,194
+Active part,Oppose,I somewhat oppose it,,Not very reliable,Strongly support,,195
+Active part,Oppose,I somewhat oppose it,,Not very reliable,,Democrat,196
+Stay out,Oppose,I strongly oppose it,,Not at all reliable,Strongly oppose,Republican,197
+Stay out,Support,I somewhat oppose it,Somewhat reliable,,,Democrat,198
+Active part,Oppose,I somewhat oppose it,,,,Democrat,199
+Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Republican,200
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Independent,201
+Stay out,,I somewhat support it,,,,Democrat,202
+Active part,Support,I somewhat support it,Very reliable,,Somewhat oppose,Republican,203
+Active part,Support,I somewhat support it,,,,Republican,204
+Stay out,Support,I somewhat support it,Not at all reliable,,Strongly oppose,Independent,205
+Stay out,Support,I somewhat oppose it,,,,Other,206
+Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat,207
+Active part,Oppose,I somewhat oppose it,Somewhat reliable,,Strongly support,Republican,208
+Stay out,Support,I somewhat oppose it,,,Somewhat oppose,Independent,209
+Stay out,Support,I somewhat support it,,Very reliable,,Independent,210
+Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat,211
+Active part,Support,I strongly support it,Somewhat reliable,,Somewhat support,Republican,212
+Active part,Support,I somewhat oppose it,Somewhat reliable,,,Democrat,213
+Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent,214
+Active part,Support,I somewhat oppose it,,Very reliable,,Republican,215
+Stay out,Support,I strongly support it,Somewhat reliable,,,Democrat,216
+Stay out,Support,I somewhat oppose it,Not very reliable,,Somewhat oppose,Republican,217
+Stay out,Support,I strongly support it,,Very reliable,,Democrat,218
+Active part,Support,I somewhat support it,Somewhat reliable,,Strongly support,Republican,219
+Stay out,Oppose,I somewhat oppose it,Very reliable,,Strongly support,Republican,220
+Active part,Support,I somewhat support it,,,,Democrat,221
+Active part,Oppose,I somewhat oppose it,,,Somewhat support,Republican,222
+Stay out,Oppose,,,,,Independent,223
+Active part,,I somewhat oppose it,Not very reliable,,,Republican,224
+Stay out,Support,I somewhat oppose it,,,,Democrat,225
+Active part,Support,I somewhat oppose it,,Somewhat reliable,,Democrat,226
+Active part,Support,I somewhat oppose it,,,Strongly support,Independent,227
+Active part,Support,I strongly support it,,,,Democrat,228
+Active part,Oppose,I somewhat support it,,,,Democrat,229
+Stay out,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Republican,230
+Active part,Support,I strongly support it,,Very reliable,Strongly support,Democrat,231
+Stay out,,,,,,,232
+Stay out,Oppose,I somewhat support it,,,,Republican,233
+Stay out,Oppose,I somewhat support it,,Very reliable,,Republican,234
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Independent,235
+Stay out,Oppose,I somewhat support it,,,,Democrat,236
+Active part,Oppose,I somewhat support it,,Somewhat reliable,,Democrat,237
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican,238
+Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Democrat,239
+Stay out,,,,,,,240
+Stay out,Oppose,I strongly oppose it,Not at all reliable,,Strongly oppose,Independent,241
+Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Other,242
+Stay out,Support,I somewhat support it,Somewhat reliable,,,Other,243
+Active part,Support,I somewhat support it,,Somewhat reliable,Strongly oppose,Democrat,244
+Active part,Support,I somewhat oppose it,,,,Independent,245
+Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat,246
+Stay out,Support,I somewhat oppose it,,Not very reliable,,Other,247
+Active part,Oppose,I somewhat oppose it,,,,Republican,248
+Active part,Support,I somewhat support it,Not very reliable,,,Independent,249
+Active part,Support,,,Somewhat reliable,Somewhat support,Republican,250
+Stay out,Support,I somewhat support it,,,,Republican,251
+Active part,,,,Somewhat reliable,Somewhat support,Republican,252
+Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Independent,253
+Active part,Support,I somewhat support it,Not very reliable,,,Democrat,254
+Active part,Support,,,,,Democrat,255
+Stay out,Oppose,I strongly oppose it,,,,Republican,256
+Stay out,Support,I somewhat support it,,,Somewhat support,Independent,257
+Active part,Support,I strongly oppose it,Somewhat reliable,,Somewhat support,Republican,258
+Stay out,Oppose,I strongly oppose it,Somewhat reliable,,,Republican,259
+Stay out,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Republican,260
+Stay out,,,,,,,261
+Stay out,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Republican,262
+Stay out,Support,I somewhat support it,Not at all reliable,,,Democrat,263
+Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat,264
+Stay out,Support,I strongly oppose it,Not at all reliable,,,Republican,265
+Active part,Support,I somewhat support it,,Somewhat reliable,,Republican,266
+Active part,Oppose,I strongly oppose it,,Not very reliable,,Other,267
+Active part,Support,I somewhat support it,,,,Democrat,268
+Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Republican,269
+Active part,Support,I strongly oppose it,Somewhat reliable,,Somewhat oppose,Republican,270
+Stay out,Support,I strongly oppose it,Somewhat reliable,,,Other,271
+Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Democrat,272
+Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Democrat,273
+Active part,Support,I strongly oppose it,Not very reliable,,Strongly oppose,Independent,274
+Stay out,Support,I somewhat oppose it,,,,Republican,275
+Stay out,Oppose,I somewhat support it,Somewhat reliable,,,Democrat,276
+Stay out,Oppose,I strongly support it,,,Strongly support,Republican,277
+Active part,Oppose,I somewhat support it,Somewhat reliable,,,Republican,278
+Active part,Support,I somewhat support it,,,Somewhat oppose,Independent,279
+Active part,Support,I strongly support it,,,,Other,280
+Active part,Support,I somewhat support it,,,,Democrat,281
+Active part,Support,I somewhat support it,,,,Republican,282
+Active part,Oppose,,,,,Democrat,283
+Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Independent,284
+Stay out,Support,I somewhat oppose it,Very reliable,,Somewhat support,Other,285
+Active part,Oppose,I somewhat oppose it,Very reliable,,Somewhat support,Republican,286
+Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat,287
+Stay out,Support,I somewhat oppose it,,,,Other,288
+Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat,289
+Active part,Oppose,,,,,Other,290
+Active part,Oppose,I somewhat oppose it,,Not very reliable,,Republican,291
+Active part,,,,,,Republican,292
+Active part,Oppose,I somewhat support it,Very reliable,,,,293
+Active part,Support,I somewhat support it,Very reliable,,,Democrat,294
+Active part,,I somewhat oppose it,,,Somewhat support,Republican,295
+,,I strongly oppose it,Not at all reliable,,Strongly oppose,Independent,296
+Active part,Support,I somewhat support it,Very reliable,,,Democrat,297

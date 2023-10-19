@@ -1,5 +1,298 @@
-ID,PPHHSIZE,HHsize,HHcateg,Test
-1,6,6,5-6,test1
-2,2,2,2,test2
-3,20,20,10+,test3
-5,8,8,7-9,test5
+PPEDUCAT,PPHHSIZE,PPRENT,ID,HHsize,HHcateg,Q3,Q244_NEW,Q356,Q330A,Q330C,Q27,Q1010
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,1,3,3-4,Stay out,Oppose,I somewhat oppose it,,Somewhat reliable,,Republican
+Bachelors degree or higher,2,Rented for cash,2,2,2,Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,3,1,1,Active part,Oppose,I somewhat support it,,Somewhat reliable,,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,4,2,2,Stay out,Support,I somewhat oppose it,,Not very reliable,,Republican
+Bachelors degree or higher,8,Owned or being bought by you or someone in your household,5,8,7-9,Active part,Support,I somewhat oppose it,,Somewhat reliable,,Republican
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,6,3,3-4,Active part,Support,I somewhat support it,,,,Independent
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,7,3,3-4,Active part,Support,I somewhat support it,Very reliable,,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,8,3,3-4,Active part,Oppose,I strongly oppose it,,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,9,4,3-4,Active part,Support,I somewhat support it,,,Somewhat support,Independent
+Bachelors degree or higher,3,Rented for cash,10,3,3-4,Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Independent
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,11,5,5-6,Active part,Support,I strongly oppose it,Somewhat reliable,,,Independent
+Some college,4,Owned or being bought by you or someone in your household,12,4,3-4,Stay out,Oppose,I somewhat oppose it,,Not at all reliable,Strongly oppose,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,13,4,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,14,4,3-4,Active part,Support,I somewhat support it,Very reliable,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,15,4,3-4,Active part,Oppose,I somewhat oppose it,,,,Republican
+Some college,3,Rented for cash,16,3,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,,Other
+Some college,4,Owned or being bought by you or someone in your household,17,4,3-4,Active part,Support,I somewhat oppose it,,,,Republican
+Bachelors degree or higher,2,Rented for cash,18,2,2,Active part,Support,I somewhat support it,,,Somewhat support,Democrat
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,19,5,5-6,Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican
+Some college,4,Occupied without payment of cash rent,20,4,3-4,Stay out,Support,I somewhat oppose it,Somewhat reliable,,,Independent
+High school,5,Owned or being bought by you or someone in your household,21,5,5-6,Active part,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Republican
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,22,5,5-6,Active part,Support,I somewhat oppose it,,,,Other
+Less than high school,4,Owned or being bought by you or someone in your household,23,4,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent
+Less than high school,3,Owned or being bought by you or someone in your household,24,3,3-4,Active part,Oppose,I strongly oppose it,,Somewhat reliable,,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,25,4,3-4,Active part,Support,I somewhat support it,,,,Democrat
+Some college,3,Owned or being bought by you or someone in your household,26,3,3-4,Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Republican
+Bachelors degree or higher,2,Rented for cash,27,2,2,Stay out,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Independent
+Less than high school,3,Rented for cash,28,3,3-4,Active part,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Democrat
+Some college,2,Rented for cash,29,2,2,Active part,Support,I somewhat support it,,,,Other
+Bachelors degree or higher,1,Rented for cash,30,1,1,Stay out,Support,I strongly oppose it,,Not at all reliable,,Independent
+Bachelors degree or higher,4,Rented for cash,31,4,3-4,Active part,Support,I somewhat support it,,Not at all reliable,,Democrat
+Some college,4,Rented for cash,32,4,3-4,Active part,Oppose,I somewhat oppose it,,,,Independent
+Some college,2,Owned or being bought by you or someone in your household,33,2,2,Active part,Support,I somewhat oppose it,,,,Independent
+Some college,1,Rented for cash,34,1,1,Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,35,4,3-4,Active part,Support,I somewhat oppose it,,Somewhat reliable,Somewhat support,Independent
+Some college,3,Rented for cash,36,3,3-4,Active part,Support,I somewhat oppose it,Very reliable,,Strongly support,Other
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,37,4,3-4,Active part,Support,I somewhat support it,,Not at all reliable,Somewhat support,Independent
+Some college,3,Owned or being bought by you or someone in your household,38,3,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Republican
+Less than high school,3,Owned or being bought by you or someone in your household,39,3,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat oppose,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,40,4,3-4,Stay out,Support,I somewhat oppose it,,Not very reliable,Somewhat oppose,Republican
+Some college,3,Owned or being bought by you or someone in your household,41,3,3-4,Active part,Oppose,I strongly support it,Very reliable,,Somewhat support,Republican
+Some college,5,Owned or being bought by you or someone in your household,42,5,5-6,Stay out,Support,I somewhat support it,,,Somewhat support,Democrat
+High school,2,Owned or being bought by you or someone in your household,43,2,2,Active part,Support,I somewhat support it,Very reliable,,,Independent
+High school,3,Owned or being bought by you or someone in your household,44,3,3-4,Stay out,Support,I somewhat oppose it,Not very reliable,,,Independent
+Some college,2,Owned or being bought by you or someone in your household,45,2,2,Stay out,Support,I somewhat oppose it,,,,Republican
+Bachelors degree or higher,3,Rented for cash,46,3,3-4,Active part,Support,I somewhat oppose it,Very reliable,,Strongly support,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,47,3,3-4,Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Democrat
+Some college,5,Owned or being bought by you or someone in your household,48,5,5-6,Active part,Support,I strongly support it,,Not at all reliable,Somewhat support,Independent
+Some college,10,Owned or being bought by you or someone in your household,49,10,10+,Stay out,,,Somewhat reliable,,,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,50,2,2,Stay out,Oppose,I strongly oppose it,,,Somewhat oppose,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,51,4,3-4,Active part,Support,I somewhat oppose it,Very reliable,,,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,52,4,3-4,Active part,Support,I somewhat oppose it,,Somewhat reliable,Strongly support,Independent
+Bachelors degree or higher,3,Rented for cash,53,3,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,54,4,3-4,Active part,Support,I somewhat oppose it,,,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,55,3,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,56,4,3-4,Active part,Support,I somewhat oppose it,,,Somewhat support,Independent
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,57,3,3-4,Active part,Support,I somewhat oppose it,Not very reliable,,,Independent
+High school,3,Rented for cash,58,3,3-4,Active part,Support,I somewhat support it,,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,59,4,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Independent
+Less than high school,4,Owned or being bought by you or someone in your household,60,4,3-4,Stay out,Support,I strongly support it,,,Somewhat support,Democrat
+Bachelors degree or higher,2,Occupied without payment of cash rent,61,2,2,Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,62,3,3-4,Active part,Oppose,I somewhat support it,,Not at all reliable,,Independent
+High school,1,Owned or being bought by you or someone in your household,63,1,1,Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat
+Bachelors degree or higher,2,Occupied without payment of cash rent,64,2,2,Stay out,Support,I strongly support it,Very reliable,,Strongly support,Independent
+High school,4,Owned or being bought by you or someone in your household,65,4,3-4,Stay out,Support,I somewhat support it,Very reliable,,,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,66,2,2,Active part,Oppose,I somewhat support it,Very reliable,,Strongly support,Democrat
+Some college,2,Owned or being bought by you or someone in your household,67,2,2,Active part,Support,I somewhat support it,,Not very reliable,,Democrat
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,68,5,5-6,Active part,,I somewhat oppose it,,,,Republican
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,69,1,1,Active part,Oppose,I somewhat support it,Somewhat reliable,,,Democrat
+High school,3,Owned or being bought by you or someone in your household,70,3,3-4,Active part,Support,I somewhat oppose it,,Somewhat reliable,Strongly oppose,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,71,4,3-4,Active part,Support,I somewhat oppose it,,,,Republican
+Some college,3,Rented for cash,72,3,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,,Democrat
+Less than high school,3,Owned or being bought by you or someone in your household,73,3,3-4,Stay out,Oppose,I strongly oppose it,Not at all reliable,,Strongly oppose,Other
+High school,2,Owned or being bought by you or someone in your household,74,2,2,Stay out,Support,I somewhat support it,,,Somewhat support,Democrat
+Less than high school,2,Owned or being bought by you or someone in your household,75,2,2,Active part,Support,I strongly support it,,Very reliable,,Democrat
+Bachelors degree or higher,1,Rented for cash,76,1,1,Stay out,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Republican
+Less than high school,1,Rented for cash,77,1,1,Active part,Support,I strongly oppose it,Somewhat reliable,,,Democrat
+Less than high school,2,Rented for cash,78,2,2,Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat
+Some college,2,Owned or being bought by you or someone in your household,79,2,2,Stay out,Support,I somewhat support it,,,,Democrat
+Some college,1,Owned or being bought by you or someone in your household,80,1,1,Stay out,Support,I somewhat oppose it,,,Somewhat support,Republican
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,81,2,2,Active part,Support,I somewhat support it,,,Strongly support,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,82,2,2,Active part,Support,I somewhat support it,,,Somewhat support,Republican
+High school,2,Owned or being bought by you or someone in your household,83,2,2,Active part,Oppose,I somewhat support it,,,,Republican
+Some college,1,Occupied without payment of cash rent,84,1,1,Stay out,Support,I somewhat support it,,Not at all reliable,,Republican
+Less than high school,3,Rented for cash,85,3,3-4,Active part,Support,I somewhat oppose it,,,,Other
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,86,2,2,Active part,Support,I somewhat oppose it,,,,Democrat
+High school,4,Rented for cash,87,4,3-4,Active part,Oppose,I somewhat support it,Somewhat reliable,,,Independent
+Some college,4,Owned or being bought by you or someone in your household,88,4,3-4,Stay out,,,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,4,Rented for cash,89,4,3-4,Active part,Support,I somewhat oppose it,Very reliable,,,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,90,2,2,Stay out,Support,I somewhat support it,,Somewhat reliable,,Republican
+High school,1,Rented for cash,91,1,1,Stay out,Oppose,I strongly oppose it,Somewhat reliable,,,Independent
+High school,3,Owned or being bought by you or someone in your household,92,3,3-4,Active part,Support,I somewhat support it,,Not very reliable,Somewhat oppose,Independent
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,93,3,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,,Republican
+Some college,2,Owned or being bought by you or someone in your household,94,2,2,Active part,Oppose,I somewhat oppose it,,,Somewhat support,Other
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,95,3,3-4,Stay out,Support,I somewhat support it,,,Somewhat support,Republican
+High school,2,Owned or being bought by you or someone in your household,96,2,2,Active part,Support,I somewhat oppose it,,Not very reliable,,Democrat
+Bachelors degree or higher,1,Rented for cash,97,1,1,Active part,Oppose,I strongly oppose it,,Not at all reliable,,Republican
+Some college,3,Rented for cash,98,3,3-4,Stay out,Support,,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,99,1,1,Active part,Support,I strongly support it,,,,Republican
+Bachelors degree or higher,2,Rented for cash,100,2,2,Stay out,Oppose,I somewhat support it,,Not very reliable,Strongly support,Independent
+Bachelors degree or higher,2,Rented for cash,101,2,2,Active part,Support,I somewhat oppose it,Very reliable,,Somewhat support,Democrat
+Bachelors degree or higher,1,Rented for cash,102,1,1,Active part,Oppose,I somewhat support it,,Not very reliable,Somewhat support,Democrat
+Less than high school,6,Owned or being bought by you or someone in your household,103,6,5-6,Active part,Support,I somewhat oppose it,,,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,104,4,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,,Republican
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,105,5,5-6,,,,,,,Republican
+Some college,6,Rented for cash,106,6,5-6,Stay out,Support,I somewhat oppose it,Very reliable,,Somewhat support,Independent
+Less than high school,6,Owned or being bought by you or someone in your household,107,6,5-6,Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Independent
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,108,6,5-6,Active part,Support,I strongly support it,,Not very reliable,Somewhat support,Democrat
+High school,8,Rented for cash,109,8,7-9,Stay out,Support,I strongly support it,,,,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,110,1,1,Stay out,Support,I somewhat support it,,Not at all reliable,Somewhat support,Democrat
+High school,4,Owned or being bought by you or someone in your household,111,4,3-4,Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat oppose,Democrat
+Less than high school,5,Owned or being bought by you or someone in your household,112,5,5-6,Active part,Support,I somewhat oppose it,,Not very reliable,,Republican
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,113,2,2,Active part,Support,I strongly support it,,Not very reliable,Somewhat support,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,114,4,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,115,4,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Republican
+Less than high school,2,Owned or being bought by you or someone in your household,116,2,2,Stay out,Support,I somewhat support it,,,,Other
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,117,2,2,Active part,Support,I somewhat oppose it,,,,Republican
+Some college,3,Owned or being bought by you or someone in your household,118,3,3-4,Active part,Support,I somewhat support it,,,Somewhat support,Republican
+Some college,3,Owned or being bought by you or someone in your household,119,3,3-4,Active part,Support,I somewhat oppose it,,Somewhat reliable,,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,120,1,1,Active part,Support,I somewhat support it,,Not at all reliable,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,121,4,3-4,Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat
+Some college,1,Rented for cash,122,1,1,Active part,Support,I somewhat oppose it,,,Strongly support,Independent
+Some college,4,Owned or being bought by you or someone in your household,123,4,3-4,Active part,Support,I somewhat oppose it,,,Strongly support,Republican
+Some college,3,Owned or being bought by you or someone in your household,124,3,3-4,Stay out,Support,I strongly support it,,Somewhat reliable,,Independent
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,125,3,3-4,Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Democrat
+Some college,3,Owned or being bought by you or someone in your household,126,3,3-4,Active part,Support,I somewhat support it,,,Somewhat support,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,127,4,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,,Republican
+High school,5,Owned or being bought by you or someone in your household,128,5,5-6,Active part,Support,I somewhat support it,,,,Independent
+Some college,4,Owned or being bought by you or someone in your household,129,4,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Independent
+High school,3,Rented for cash,130,3,3-4,Active part,Oppose,I somewhat oppose it,,Somewhat reliable,Somewhat support,Republican
+High school,3,Rented for cash,131,3,3-4,Active part,Support,I somewhat support it,,,,Democrat
+High school,4,Owned or being bought by you or someone in your household,132,4,3-4,Active part,Support,I somewhat oppose it,,Somewhat reliable,,Other
+High school,6,Owned or being bought by you or someone in your household,133,6,5-6,Active part,,,,,,Other
+Some college,2,Owned or being bought by you or someone in your household,134,2,2,Stay out,Oppose,I somewhat support it,Somewhat reliable,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,135,4,3-4,Active part,Support,I somewhat support it,,,Strongly support,Republican
+Some college,2,Owned or being bought by you or someone in your household,136,2,2,Stay out,Support,I somewhat support it,,Somewhat reliable,,Other
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,137,4,3-4,Active part,Support,I somewhat support it,,,Somewhat support,Democrat
+High school,5,Owned or being bought by you or someone in your household,138,5,5-6,Active part,Support,I strongly oppose it,Not at all reliable,,,Other
+High school,5,Rented for cash,139,5,5-6,Stay out,Support,I strongly oppose it,Not at all reliable,,,Democrat
+Some college,1,Rented for cash,140,1,1,Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Democrat
+High school,2,Owned or being bought by you or someone in your household,141,2,2,Stay out,Oppose,I strongly oppose it,Somewhat reliable,,Somewhat support,Republican
+Bachelors degree or higher,2,Rented for cash,142,2,2,Active part,Support,I strongly oppose it,Very reliable,,Strongly oppose,Independent
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,143,1,1,Stay out,Oppose,I somewhat support it,,Somewhat reliable,Strongly support,Other
+High school,5,Rented for cash,144,5,5-6,Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican
+High school,3,Occupied without payment of cash rent,145,3,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat
+High school,4,Rented for cash,146,4,3-4,Stay out,Support,I somewhat support it,Not very reliable,,,Republican
+Less than high school,4,Rented for cash,147,4,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,Strongly support,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,148,4,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,,Other
+Some college,8,Owned or being bought by you or someone in your household,149,8,7-9,Stay out,Support,I somewhat support it,,Not at all reliable,,Independent
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,150,1,1,Active part,Support,I strongly support it,,Somewhat reliable,Somewhat support,Democrat
+Some college,2,Owned or being bought by you or someone in your household,151,2,2,Stay out,Support,I somewhat oppose it,,,,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,152,2,2,Active part,Support,I strongly oppose it,,Not very reliable,Strongly support,Republican
+Some college,3,Rented for cash,153,3,3-4,Stay out,Oppose,I somewhat oppose it,,,Somewhat oppose,Independent
+Less than high school,6,Owned or being bought by you or someone in your household,154,6,5-6,Stay out,Oppose,I somewhat support it,,,,Republican
+Some college,4,Owned or being bought by you or someone in your household,155,4,3-4,Active part,Oppose,I somewhat oppose it,,,,Republican
+High school,4,Owned or being bought by you or someone in your household,156,4,3-4,Stay out,,,Somewhat reliable,,,Independent
+Some college,4,Rented for cash,157,4,3-4,Stay out,Support,,,,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,158,3,3-4,Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Other
+Some college,6,Owned or being bought by you or someone in your household,159,6,5-6,Active part,Oppose,I somewhat oppose it,Very reliable,,,Independent
+High school,2,Owned or being bought by you or someone in your household,160,2,2,Active part,Support,I somewhat oppose it,,,Somewhat oppose,Independent
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,161,5,5-6,Active part,Oppose,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat
+High school,6,Owned or being bought by you or someone in your household,162,6,5-6,Stay out,Oppose,I somewhat oppose it,,Not very reliable,,Other
+Some college,2,Rented for cash,163,2,2,Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat oppose,Democrat
+Less than high school,2,Rented for cash,164,2,2,Active part,Support,I somewhat support it,,,Strongly oppose,Republican
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,165,2,2,Active part,Support,I somewhat oppose it,,Not very reliable,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,166,3,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,4,Rented for cash,167,4,3-4,Active part,Support,I strongly support it,Somewhat reliable,,,Republican
+Bachelors degree or higher,4,Rented for cash,168,4,3-4,Active part,Support,I somewhat oppose it,,,Somewhat support,Republican
+Less than high school,3,Rented for cash,169,3,3-4,Stay out,Oppose,I strongly oppose it,Not at all reliable,,,Other
+Some college,3,Owned or being bought by you or someone in your household,170,3,3-4,Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican
+High school,5,Owned or being bought by you or someone in your household,171,5,5-6,Active part,Oppose,I strongly oppose it,,Somewhat reliable,Somewhat oppose,Other
+High school,2,Owned or being bought by you or someone in your household,172,2,2,Active part,Oppose,I somewhat oppose it,,,Somewhat support,Republican
+Bachelors degree or higher,2,Rented for cash,173,2,2,Stay out,Support,I somewhat support it,Very reliable,,,Democrat
+Bachelors degree or higher,2,Rented for cash,174,2,2,Active part,Support,I strongly oppose it,,,,Independent
+Some college,2,Owned or being bought by you or someone in your household,175,2,2,Active part,Support,I somewhat oppose it,,,,Independent
+High school,4,Owned or being bought by you or someone in your household,176,4,3-4,Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Independent
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,177,3,3-4,Active part,Support,I somewhat support it,Very reliable,,Somewhat support,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,178,2,2,Active part,Support,I somewhat support it,,,,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,179,2,2,Stay out,Support,I somewhat support it,,,Somewhat support,Republican
+Some college,5,Owned or being bought by you or someone in your household,180,5,5-6,Stay out,Support,I somewhat oppose it,Not very reliable,,Somewhat oppose,Republican
+Some college,4,Rented for cash,181,4,3-4,Stay out,Oppose,I strongly oppose it,,,,Republican
+Some college,4,Rented for cash,182,4,3-4,Active part,Oppose,I somewhat support it,Not very reliable,,Somewhat oppose,Republican
+Bachelors degree or higher,3,Rented for cash,183,3,3-4,Active part,Support,I somewhat support it,,,,Democrat
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,184,5,5-6,Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat
+High school,2,Rented for cash,185,2,2,Active part,Support,I strongly oppose it,Very reliable,,Somewhat support,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,186,4,3-4,Active part,Support,I somewhat support it,,,Somewhat oppose,Republican
+High school,4,Owned or being bought by you or someone in your household,187,4,3-4,Stay out,Support,I somewhat support it,Very reliable,,Strongly support,Other
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,188,5,5-6,Active part,Oppose,I strongly oppose it,,,Somewhat oppose,Independent
+Bachelors degree or higher,2,Rented for cash,189,2,2,Stay out,Support,I somewhat support it,,,,Democrat
+Some college,2,Rented for cash,190,2,2,Stay out,Support,I strongly oppose it,,Somewhat reliable,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,191,3,3-4,Stay out,Support,,,,,
+Some college,2,Owned or being bought by you or someone in your household,192,2,2,Active part,Support,I strongly support it,Somewhat reliable,,,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,193,2,2,Stay out,Support,I somewhat oppose it,,,Strongly support,Democrat
+Some college,5,Rented for cash,194,5,5-6,Stay out,Support,I somewhat support it,,Somewhat reliable,,Democrat
+High school,3,Owned or being bought by you or someone in your household,195,3,3-4,Active part,Oppose,I somewhat oppose it,,Not very reliable,Strongly support,
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,196,4,3-4,Active part,Oppose,I somewhat oppose it,,Not very reliable,,Democrat
+Some college,5,Owned or being bought by you or someone in your household,197,5,5-6,Stay out,Oppose,I strongly oppose it,,Not at all reliable,Strongly oppose,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,198,4,3-4,Stay out,Support,I somewhat oppose it,Somewhat reliable,,,Democrat
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,199,6,5-6,Active part,Oppose,I somewhat oppose it,,,,Democrat
+Some college,5,Owned or being bought by you or someone in your household,200,5,5-6,Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Republican
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,201,6,5-6,Stay out,Support,I somewhat support it,Somewhat reliable,,,Independent
+High school,4,Owned or being bought by you or someone in your household,202,4,3-4,Stay out,,I somewhat support it,,,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,203,4,3-4,Active part,Support,I somewhat support it,Very reliable,,Somewhat oppose,Republican
+Some college,1,Rented for cash,204,1,1,Active part,Support,I somewhat support it,,,,Republican
+Some college,2,Occupied without payment of cash rent,205,2,2,Stay out,Support,I somewhat support it,Not at all reliable,,Strongly oppose,Independent
+Bachelors degree or higher,2,Rented for cash,206,2,2,Stay out,Support,I somewhat oppose it,,,,Other
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,207,1,1,Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,208,2,2,Active part,Oppose,I somewhat oppose it,Somewhat reliable,,Strongly support,Republican
+Some college,5,Rented for cash,209,5,5-6,Stay out,Support,I somewhat oppose it,,,Somewhat oppose,Independent
+High school,4,Rented for cash,210,4,3-4,Stay out,Support,I somewhat support it,,Very reliable,,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,211,4,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat
+Some college,5,Owned or being bought by you or someone in your household,212,5,5-6,Active part,Support,I strongly support it,Somewhat reliable,,Somewhat support,Republican
+Bachelors degree or higher,4,Rented for cash,213,4,3-4,Active part,Support,I somewhat oppose it,Somewhat reliable,,,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,214,2,2,Active part,Support,I somewhat oppose it,Somewhat reliable,,,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,215,4,3-4,Active part,Support,I somewhat oppose it,,Very reliable,,Republican
+Some college,3,Rented for cash,216,3,3-4,Stay out,Support,I strongly support it,Somewhat reliable,,,Democrat
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,217,5,5-6,Stay out,Support,I somewhat oppose it,Not very reliable,,Somewhat oppose,Republican
+High school,5,Rented for cash,218,5,5-6,Stay out,Support,I strongly support it,,Very reliable,,Democrat
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,219,3,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,Strongly support,Republican
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,220,2,2,Stay out,Oppose,I somewhat oppose it,Very reliable,,Strongly support,Republican
+Some college,6,Rented for cash,221,6,5-6,Active part,Support,I somewhat support it,,,,Democrat
+High school,1,Owned or being bought by you or someone in your household,222,1,1,Active part,Oppose,I somewhat oppose it,,,Somewhat support,Republican
+Some college,4,Owned or being bought by you or someone in your household,223,4,3-4,Stay out,Oppose,,,,,Independent
+High school,5,Owned or being bought by you or someone in your household,224,5,5-6,Active part,,I somewhat oppose it,Not very reliable,,,Republican
+High school,4,Owned or being bought by you or someone in your household,225,4,3-4,Stay out,Support,I somewhat oppose it,,,,Democrat
+Bachelors degree or higher,6,Occupied without payment of cash rent,226,6,5-6,Active part,Support,I somewhat oppose it,,Somewhat reliable,,Democrat
+Bachelors degree or higher,1,Rented for cash,227,1,1,Active part,Support,I somewhat oppose it,,,Strongly support,Independent
+High school,2,Rented for cash,228,2,2,Active part,Support,I strongly support it,,,,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,229,1,1,Active part,Oppose,I somewhat support it,,,,Democrat
+Some college,5,Rented for cash,230,5,5-6,Stay out,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Republican
+Some college,4,Rented for cash,231,4,3-4,Active part,Support,I strongly support it,,Very reliable,Strongly support,Democrat
+High school,5,Owned or being bought by you or someone in your household,232,5,5-6,Stay out,,,,,,
+Some college,4,Rented for cash,233,4,3-4,Stay out,Oppose,I somewhat support it,,,,Republican
+Some college,4,Owned or being bought by you or someone in your household,234,4,3-4,Stay out,Oppose,I somewhat support it,,Very reliable,,Republican
+High school,2,Owned or being bought by you or someone in your household,235,2,2,Stay out,Support,I somewhat support it,Somewhat reliable,,,Independent
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,236,2,2,Stay out,Oppose,I somewhat support it,,,,Democrat
+Less than high school,2,Occupied without payment of cash rent,237,2,2,Active part,Oppose,I somewhat support it,,Somewhat reliable,,Democrat
+High school,3,Owned or being bought by you or someone in your household,238,3,3-4,Stay out,Support,I somewhat support it,Somewhat reliable,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,239,4,3-4,Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Democrat
+Less than high school,1,Rented for cash,240,1,1,Stay out,,,,,,
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,241,4,3-4,Stay out,Oppose,I strongly oppose it,Not at all reliable,,Strongly oppose,Independent
+High school,2,Owned or being bought by you or someone in your household,242,2,2,Stay out,Oppose,I strongly oppose it,,Not at all reliable,,Other
+Some college,3,Owned or being bought by you or someone in your household,243,3,3-4,Stay out,Support,I somewhat support it,Somewhat reliable,,,Other
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,244,3,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,Strongly oppose,Democrat
+High school,4,Owned or being bought by you or someone in your household,245,4,3-4,Active part,Support,I somewhat oppose it,,,,Independent
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,246,4,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat
+High school,6,Owned or being bought by you or someone in your household,247,6,5-6,Stay out,Support,I somewhat oppose it,,Not very reliable,,Other
+High school,2,Owned or being bought by you or someone in your household,248,2,2,Active part,Oppose,I somewhat oppose it,,,,Republican
+Less than high school,4,Rented for cash,249,4,3-4,Active part,Support,I somewhat support it,Not very reliable,,,Independent
+High school,4,Rented for cash,250,4,3-4,Active part,Support,,,Somewhat reliable,Somewhat support,Republican
+Some college,5,Owned or being bought by you or someone in your household,251,5,5-6,Stay out,Support,I somewhat support it,,,,Republican
+Some college,3,Owned or being bought by you or someone in your household,252,3,3-4,Active part,,,,Somewhat reliable,Somewhat support,Republican
+Less than high school,4,Owned or being bought by you or someone in your household,253,4,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Independent
+Less than high school,6,Occupied without payment of cash rent,254,6,5-6,Active part,Support,I somewhat support it,Not very reliable,,,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,255,4,3-4,Active part,Support,,,,,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,256,4,3-4,Stay out,Oppose,I strongly oppose it,,,,Republican
+Some college,2,Rented for cash,257,2,2,Stay out,Support,I somewhat support it,,,Somewhat support,Independent
+Some college,2,Owned or being bought by you or someone in your household,258,2,2,Active part,Support,I strongly oppose it,Somewhat reliable,,Somewhat support,Republican
+Bachelors degree or higher,8,Owned or being bought by you or someone in your household,259,8,7-9,Stay out,Oppose,I strongly oppose it,Somewhat reliable,,,Republican
+High school,3,Rented for cash,260,3,3-4,Stay out,Support,I somewhat support it,,Somewhat reliable,Somewhat support,Republican
+Some college,1,Rented for cash,261,1,1,Stay out,,,,,,
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,262,3,3-4,Stay out,Oppose,I somewhat support it,,Somewhat reliable,Somewhat support,Republican
+High school,7,Rented for cash,263,7,7-9,Stay out,Support,I somewhat support it,Not at all reliable,,,Democrat
+Some college,3,Rented for cash,264,3,3-4,Active part,Support,I somewhat support it,Somewhat reliable,,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,265,4,3-4,Stay out,Support,I strongly oppose it,Not at all reliable,,,Republican
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,266,3,3-4,Active part,Support,I somewhat support it,,Somewhat reliable,,Republican
+Some college,4,Owned or being bought by you or someone in your household,267,4,3-4,Active part,Oppose,I strongly oppose it,,Not very reliable,,Other
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,268,4,3-4,Active part,Support,I somewhat support it,,,,Democrat
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,269,1,1,Active part,Support,I somewhat support it,Somewhat reliable,,Somewhat support,Republican
+High school,4,Owned or being bought by you or someone in your household,270,4,3-4,Active part,Support,I strongly oppose it,Somewhat reliable,,Somewhat oppose,Republican
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,271,5,5-6,Stay out,Support,I strongly oppose it,Somewhat reliable,,,Other
+Bachelors degree or higher,2,Rented for cash,272,2,2,Active part,Support,I somewhat oppose it,,Not very reliable,Somewhat support,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,273,2,2,Active part,Support,I somewhat support it,,Not very reliable,Strongly support,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,274,2,2,Active part,Support,I strongly oppose it,Not very reliable,,Strongly oppose,Independent
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,275,1,1,Stay out,Support,I somewhat oppose it,,,,Republican
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,276,4,3-4,Stay out,Oppose,I somewhat support it,Somewhat reliable,,,Democrat
+Some college,4,Owned or being bought by you or someone in your household,277,4,3-4,Stay out,Oppose,I strongly support it,,,Strongly support,Republican
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,278,5,5-6,Active part,Oppose,I somewhat support it,Somewhat reliable,,,Republican
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,279,3,3-4,Active part,Support,I somewhat support it,,,Somewhat oppose,Independent
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,280,5,5-6,Active part,Support,I strongly support it,,,,Other
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,281,4,3-4,Active part,Support,I somewhat support it,,,,Democrat
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,282,2,2,Active part,Support,I somewhat support it,,,,Republican
+High school,7,Owned or being bought by you or someone in your household,283,7,7-9,Active part,Oppose,,,,,Democrat
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,284,4,3-4,Active part,Support,I somewhat support it,,Not very reliable,Somewhat support,Independent
+High school,2,Owned or being bought by you or someone in your household,285,2,2,Stay out,Support,I somewhat oppose it,Very reliable,,Somewhat support,Other
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,286,5,5-6,Active part,Oppose,I somewhat oppose it,Very reliable,,Somewhat support,Republican
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,287,1,1,Stay out,Support,I somewhat oppose it,,,Somewhat support,Democrat
+High school,3,Owned or being bought by you or someone in your household,288,3,3-4,Stay out,Support,I somewhat oppose it,,,,Other
+Some college,2,Rented for cash,289,2,2,Active part,Support,I somewhat oppose it,Somewhat reliable,,Somewhat support,Democrat
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,290,5,5-6,Active part,Oppose,,,,,Other
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,291,5,5-6,Active part,Oppose,I somewhat oppose it,,Not very reliable,,Republican
+Some college,3,Rented for cash,292,3,3-4,Active part,,,,,,Republican
+High school,4,Owned or being bought by you or someone in your household,293,4,3-4,Active part,Oppose,I somewhat support it,Very reliable,,,
+Bachelors degree or higher,2,Rented for cash,294,2,2,Active part,Support,I somewhat support it,Very reliable,,,Democrat
+Some college,2,Owned or being bought by you or someone in your household,295,2,2,Active part,,I somewhat oppose it,,,Somewhat support,Republican
+High school,3,Rented for cash,296,3,3-4,,,I strongly oppose it,Not at all reliable,,Strongly oppose,Independent
+Some college,3,Owned or being bought by you or someone in your household,297,3,3-4,Active part,Support,I somewhat support it,Very reliable,,,Democrat

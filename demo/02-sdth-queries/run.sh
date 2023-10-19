@@ -4,22 +4,13 @@ SDTH_JSONLD_FILE="data/sdth.jsonld"
 
 # ------------------------------------------------------------------------------
 
-bash_cell 'import sdtl' << END_CELL
+bash_cell 'import sdth' << END_CELL
 
 # Destroy the dataset
 geist destroy --dataset kb --quiet
 
-# Import the SDTL JSON-LD file
+# Import the SDTH JSON-LD file
 geist create --dataset kb --inputformat json-ld --inputfile ${SDTH_JSONLD_FILE} --infer owl
-
-END_CELL
-
-# ------------------------------------------------------------------------------
-
-bash_cell 'export sdtl as ntriples' << END_CELL
-
-# Export as N-TRIPLES
-geist export --dataset kb --outputformat nt | sort
 
 END_CELL
 

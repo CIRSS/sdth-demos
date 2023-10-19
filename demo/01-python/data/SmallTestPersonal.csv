@@ -1,6 +1,298 @@
-ID,PPHHSIZE
-1,6
-2,2
-3,20
-4,5
-5,8
+PPEDUCAT,PPHHSIZE,PPRENT,ID
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,1
+Bachelors degree or higher,2,Rented for cash,2
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,3
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,4
+Bachelors degree or higher,8,Owned or being bought by you or someone in your household,5
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,6
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,7
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,8
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,9
+Bachelors degree or higher,3,Rented for cash,10
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,11
+Some college,4,Owned or being bought by you or someone in your household,12
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,13
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,14
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,15
+Some college,3,Rented for cash,16
+Some college,4,Owned or being bought by you or someone in your household,17
+Bachelors degree or higher,2,Rented for cash,18
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,19
+Some college,4,Occupied without payment of cash rent,20
+High school,5,Owned or being bought by you or someone in your household,21
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,22
+Less than high school,4,Owned or being bought by you or someone in your household,23
+Less than high school,3,Owned or being bought by you or someone in your household,24
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,25
+Some college,3,Owned or being bought by you or someone in your household,26
+Bachelors degree or higher,2,Rented for cash,27
+Less than high school,3,Rented for cash,28
+Some college,2,Rented for cash,29
+Bachelors degree or higher,1,Rented for cash,30
+Bachelors degree or higher,4,Rented for cash,31
+Some college,4,Rented for cash,32
+Some college,2,Owned or being bought by you or someone in your household,33
+Some college,1,Rented for cash,34
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,35
+Some college,3,Rented for cash,36
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,37
+Some college,3,Owned or being bought by you or someone in your household,38
+Less than high school,3,Owned or being bought by you or someone in your household,39
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,40
+Some college,3,Owned or being bought by you or someone in your household,41
+Some college,5,Owned or being bought by you or someone in your household,42
+High school,2,Owned or being bought by you or someone in your household,43
+High school,3,Owned or being bought by you or someone in your household,44
+Some college,2,Owned or being bought by you or someone in your household,45
+Bachelors degree or higher,3,Rented for cash,46
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,47
+Some college,5,Owned or being bought by you or someone in your household,48
+Some college,10,Owned or being bought by you or someone in your household,49
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,50
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,51
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,52
+Bachelors degree or higher,3,Rented for cash,53
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,54
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,55
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,56
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,57
+High school,3,Rented for cash,58
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,59
+Less than high school,4,Owned or being bought by you or someone in your household,60
+Bachelors degree or higher,2,Occupied without payment of cash rent,61
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,62
+High school,1,Owned or being bought by you or someone in your household,63
+Bachelors degree or higher,2,Occupied without payment of cash rent,64
+High school,4,Owned or being bought by you or someone in your household,65
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,66
+Some college,2,Owned or being bought by you or someone in your household,67
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,68
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,69
+High school,3,Owned or being bought by you or someone in your household,70
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,71
+Some college,3,Rented for cash,72
+Less than high school,3,Owned or being bought by you or someone in your household,73
+High school,2,Owned or being bought by you or someone in your household,74
+Less than high school,2,Owned or being bought by you or someone in your household,75
+Bachelors degree or higher,1,Rented for cash,76
+Less than high school,1,Rented for cash,77
+Less than high school,2,Rented for cash,78
+Some college,2,Owned or being bought by you or someone in your household,79
+Some college,1,Owned or being bought by you or someone in your household,80
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,81
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,82
+High school,2,Owned or being bought by you or someone in your household,83
+Some college,1,Occupied without payment of cash rent,84
+Less than high school,3,Rented for cash,85
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,86
+High school,4,Rented for cash,87
+Some college,4,Owned or being bought by you or someone in your household,88
+Bachelors degree or higher,4,Rented for cash,89
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,90
+High school,1,Rented for cash,91
+High school,3,Owned or being bought by you or someone in your household,92
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,93
+Some college,2,Owned or being bought by you or someone in your household,94
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,95
+High school,2,Owned or being bought by you or someone in your household,96
+Bachelors degree or higher,1,Rented for cash,97
+Some college,3,Rented for cash,98
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,99
+Bachelors degree or higher,2,Rented for cash,100
+Bachelors degree or higher,2,Rented for cash,101
+Bachelors degree or higher,1,Rented for cash,102
+Less than high school,6,Owned or being bought by you or someone in your household,103
+Some college,4,Owned or being bought by you or someone in your household,104
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,105
+Some college,6,Rented for cash,106
+Less than high school,6,Owned or being bought by you or someone in your household,107
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,108
+High school,8,Rented for cash,109
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,110
+High school,4,Owned or being bought by you or someone in your household,111
+Less than high school,5,Owned or being bought by you or someone in your household,112
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,113
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,114
+Some college,4,Owned or being bought by you or someone in your household,115
+Less than high school,2,Owned or being bought by you or someone in your household,116
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,117
+Some college,3,Owned or being bought by you or someone in your household,118
+Some college,3,Owned or being bought by you or someone in your household,119
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,120
+Some college,4,Owned or being bought by you or someone in your household,121
+Some college,1,Rented for cash,122
+Some college,4,Owned or being bought by you or someone in your household,123
+Some college,3,Owned or being bought by you or someone in your household,124
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,125
+Some college,3,Owned or being bought by you or someone in your household,126
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,127
+High school,5,Owned or being bought by you or someone in your household,128
+Some college,4,Owned or being bought by you or someone in your household,129
+High school,3,Rented for cash,130
+High school,3,Rented for cash,131
+High school,4,Owned or being bought by you or someone in your household,132
+High school,6,Owned or being bought by you or someone in your household,133
+Some college,2,Owned or being bought by you or someone in your household,134
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,135
+Some college,2,Owned or being bought by you or someone in your household,136
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,137
+High school,5,Owned or being bought by you or someone in your household,138
+High school,5,Rented for cash,139
+Some college,1,Rented for cash,140
+High school,2,Owned or being bought by you or someone in your household,141
+Bachelors degree or higher,2,Rented for cash,142
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,143
+High school,5,Rented for cash,144
+High school,3,Occupied without payment of cash rent,145
+High school,4,Rented for cash,146
+Less than high school,4,Rented for cash,147
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,148
+Some college,8,Owned or being bought by you or someone in your household,149
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,150
+Some college,2,Owned or being bought by you or someone in your household,151
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,152
+Some college,3,Rented for cash,153
+Less than high school,6,Owned or being bought by you or someone in your household,154
+Some college,4,Owned or being bought by you or someone in your household,155
+High school,4,Owned or being bought by you or someone in your household,156
+Some college,4,Rented for cash,157
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,158
+Some college,6,Owned or being bought by you or someone in your household,159
+High school,2,Owned or being bought by you or someone in your household,160
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,161
+High school,6,Owned or being bought by you or someone in your household,162
+Some college,2,Rented for cash,163
+Less than high school,2,Rented for cash,164
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,165
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,166
+Bachelors degree or higher,4,Rented for cash,167
+Bachelors degree or higher,4,Rented for cash,168
+Less than high school,3,Rented for cash,169
+Some college,3,Owned or being bought by you or someone in your household,170
+High school,5,Owned or being bought by you or someone in your household,171
+High school,2,Owned or being bought by you or someone in your household,172
+Bachelors degree or higher,2,Rented for cash,173
+Bachelors degree or higher,2,Rented for cash,174
+Some college,2,Owned or being bought by you or someone in your household,175
+High school,4,Owned or being bought by you or someone in your household,176
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,177
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,178
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,179
+Some college,5,Owned or being bought by you or someone in your household,180
+Some college,4,Rented for cash,181
+Some college,4,Rented for cash,182
+Bachelors degree or higher,3,Rented for cash,183
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,184
+High school,2,Rented for cash,185
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,186
+High school,4,Owned or being bought by you or someone in your household,187
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,188
+Bachelors degree or higher,2,Rented for cash,189
+Some college,2,Rented for cash,190
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,191
+Some college,2,Owned or being bought by you or someone in your household,192
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,193
+Some college,5,Rented for cash,194
+High school,3,Owned or being bought by you or someone in your household,195
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,196
+Some college,5,Owned or being bought by you or someone in your household,197
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,198
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,199
+Some college,5,Owned or being bought by you or someone in your household,200
+Bachelors degree or higher,6,Owned or being bought by you or someone in your household,201
+High school,4,Owned or being bought by you or someone in your household,202
+Some college,4,Owned or being bought by you or someone in your household,203
+Some college,1,Rented for cash,204
+Some college,2,Occupied without payment of cash rent,205
+Bachelors degree or higher,2,Rented for cash,206
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,207
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,208
+Some college,5,Rented for cash,209
+High school,4,Rented for cash,210
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,211
+Some college,5,Owned or being bought by you or someone in your household,212
+Bachelors degree or higher,4,Rented for cash,213
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,214
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,215
+Some college,3,Rented for cash,216
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,217
+High school,5,Rented for cash,218
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,219
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,220
+Some college,6,Rented for cash,221
+High school,1,Owned or being bought by you or someone in your household,222
+Some college,4,Owned or being bought by you or someone in your household,223
+High school,5,Owned or being bought by you or someone in your household,224
+High school,4,Owned or being bought by you or someone in your household,225
+Bachelors degree or higher,6,Occupied without payment of cash rent,226
+Bachelors degree or higher,1,Rented for cash,227
+High school,2,Rented for cash,228
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,229
+Some college,5,Rented for cash,230
+Some college,4,Rented for cash,231
+High school,5,Owned or being bought by you or someone in your household,232
+Some college,4,Rented for cash,233
+Some college,4,Owned or being bought by you or someone in your household,234
+High school,2,Owned or being bought by you or someone in your household,235
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,236
+Less than high school,2,Occupied without payment of cash rent,237
+High school,3,Owned or being bought by you or someone in your household,238
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,239
+Less than high school,1,Rented for cash,240
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,241
+High school,2,Owned or being bought by you or someone in your household,242
+Some college,3,Owned or being bought by you or someone in your household,243
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,244
+High school,4,Owned or being bought by you or someone in your household,245
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,246
+High school,6,Owned or being bought by you or someone in your household,247
+High school,2,Owned or being bought by you or someone in your household,248
+Less than high school,4,Rented for cash,249
+High school,4,Rented for cash,250
+Some college,5,Owned or being bought by you or someone in your household,251
+Some college,3,Owned or being bought by you or someone in your household,252
+Less than high school,4,Owned or being bought by you or someone in your household,253
+Less than high school,6,Occupied without payment of cash rent,254
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,255
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,256
+Some college,2,Rented for cash,257
+Some college,2,Owned or being bought by you or someone in your household,258
+Bachelors degree or higher,8,Owned or being bought by you or someone in your household,259
+High school,3,Rented for cash,260
+Some college,1,Rented for cash,261
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,262
+High school,7,Rented for cash,263
+Some college,3,Rented for cash,264
+Some college,4,Owned or being bought by you or someone in your household,265
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,266
+Some college,4,Owned or being bought by you or someone in your household,267
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,268
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,269
+High school,4,Owned or being bought by you or someone in your household,270
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,271
+Bachelors degree or higher,2,Rented for cash,272
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,273
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,274
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,275
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,276
+Some college,4,Owned or being bought by you or someone in your household,277
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,278
+Bachelors degree or higher,3,Owned or being bought by you or someone in your household,279
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,280
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,281
+Bachelors degree or higher,2,Owned or being bought by you or someone in your household,282
+High school,7,Owned or being bought by you or someone in your household,283
+Bachelors degree or higher,4,Owned or being bought by you or someone in your household,284
+High school,2,Owned or being bought by you or someone in your household,285
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,286
+Bachelors degree or higher,1,Owned or being bought by you or someone in your household,287
+High school,3,Owned or being bought by you or someone in your household,288
+Some college,2,Rented for cash,289
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,290
+Bachelors degree or higher,5,Owned or being bought by you or someone in your household,291
+Some college,3,Rented for cash,292
+High school,4,Owned or being bought by you or someone in your household,293
+Bachelors degree or higher,2,Rented for cash,294
+Some college,2,Owned or being bought by you or someone in your household,295
+High school,3,Rented for cash,296
+Some college,3,Owned or being bought by you or someone in your household,297
