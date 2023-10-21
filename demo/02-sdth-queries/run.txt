@@ -1,4 +1,4 @@
-=========================== bash cell | import sdth ============================
+===================================================== bash cell | import sdth ======================================================
 
 # Destroy the dataset
 geist destroy --dataset kb --quiet
@@ -6,11 +6,11 @@ geist destroy --dataset kb --quiet
 # Import the SDTH JSON-LD file
 geist create --dataset kb --inputformat json-ld --inputfile data/sdth.jsonld --infer owl
 
---------------------------------- cell outputs ---------------------------------
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-======================== bash cell | query object names ========================
+================================================== bash cell | query object names ==================================================
 
 geist report << __END_TEMPLATE__
 
@@ -33,7 +33,7 @@ Object Names:
     
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 Object Names:
@@ -65,10 +65,10 @@ Object Names:
     <http://test/#VarIns014b> has name "HHcateg"
     <http://test/#VarIns014c> has name "HHcateg"
     
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-========= bash cell | wasDerivedFrom query for variable name HHcatege ==========
+=================================== bash cell | wasDerivedFrom query for variable name HHcatege ====================================
 
 geist report << __END_TEMPLATE__
 
@@ -94,7 +94,7 @@ wasDerivedFrom query for variable name HHcateg:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 wasDerivedFrom query for variable name HHcateg:
@@ -102,10 +102,10 @@ wasDerivedFrom query for variable name HHcateg:
     "HHcateg" is derived from "HHsize"
     "HHcateg" is derived from "PPHHSIZE"
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-======== bash cell | has an impact on query for variable name PPHHSIZE =========
+================================== bash cell | has an impact on query for variable name PPHHSIZE ===================================
 
 geist report << __END_TEMPLATE__
 
@@ -131,7 +131,7 @@ Has an impact on query for variable name PPHHSIZE:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 Has an impact on query for variable name PPHHSIZE:
@@ -139,10 +139,10 @@ Has an impact on query for variable name PPHHSIZE:
     "PPHHSIZE" has an impact on "HHcateg"
     "PPHHSIZE" has an impact on "HHsize"
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========== bash cell | ProgramSteps affecting variable name HHcateg ===========
+===================================== bash cell | ProgramSteps affecting variable name HHcateg =====================================
 
 geist report << __END_TEMPLATE__
 
@@ -170,7 +170,7 @@ ProgramSteps affecting variable name HHcateg:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 ProgramSteps affecting variable name HHcateg:
@@ -180,10 +180,10 @@ ProgramSteps affecting variable name HHcateg:
     "HHcateg" is affected by "PPHHSIZE" in command ["MergedData = PersonalData.merge(PoliticalData, on="ID", how="inner")"]
     "HHcateg" is affected by "PPHHSIZE" in command ["PersonalData = pd.read_csv("SmallTestPersonal.csv")"]
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-===== bash cell | Variables indirectly affected by ProgramStep ProgStep004 =====
+=============================== bash cell | Variables indirectly affected by ProgramStep ProgStep004 ===============================
 
 geist report << __END_TEMPLATE__
 
@@ -217,17 +217,17 @@ Variables indirectly affected by ProgramStep ProgStep004:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 Variables indirectly affected by ProgramStep ProgStep004:
 
     "HHcateg" is affected by "HHsize", which is modified in command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"]
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=== bash cell | Find a File containing variable PPHHSIZE that is Loaded in the Program ===
+======================== bash cell | Find a File containing variable PPHHSIZE that is Loaded in the Program ========================
 
 geist report << __END_TEMPLATE__
 
@@ -254,17 +254,17 @@ Find a File containing variable PPHHSIZE that is Loaded in the Program:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 Find a File containing variable PPHHSIZE that is Loaded in the Program:
 
     Command ["PersonalData = pd.read_csv("SmallTestPersonal.csv")"] loads "SmallTestPersonal.csv" containing variable 'PPHHSIZE'
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-========== bash cell | elaborationOf query for variable name HHcateg ===========
+==================================== bash cell | elaborationOf query for variable name HHcateg =====================================
 
 geist report << __END_TEMPLATE__
 
@@ -292,7 +292,7 @@ elaborationOf query for variable name HHcateg:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 elaborationOf query for variable name HHcateg:
@@ -301,10 +301,10 @@ elaborationOf query for variable name HHcateg:
     <http://test/#VarIns014c> named "HHcateg" is elaboration of <http://test/#VarIns014a> named "HHcateg" in command ""command": "SetDataType""
     <http://test/#VarIns014c> named "HHcateg" is elaboration of <http://test/#VarIns014b> named "HHcateg" in command ""command": "SetValueLabels""
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-========== bash cell | usesVariable query for variable name PPHHSIZE ===========
+==================================== bash cell | usesVariable query for variable name PPHHSIZE =====================================
 
 geist report << __END_TEMPLATE__
 
@@ -330,7 +330,7 @@ usesVariable query for variable name PPHHSIZE:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 usesVariable query for variable name PPHHSIZE:
@@ -339,10 +339,10 @@ usesVariable query for variable name PPHHSIZE:
     Command ["MergedData.to_csv("SmallTestMerged.csv")"] is affected by "PPHHSIZE"
     Command ["PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )"] is affected by "PPHHSIZE"
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=== bash cell | usesVariable query for indirect effects of variable name PPHHSIZE ===
+========================== bash cell | usesVariable query for indirect effects of variable name PPHHSIZE ===========================
 
 geist report << __END_TEMPLATE__
 
@@ -376,7 +376,7 @@ usesVariable query for indirect effects of variable name PPHHSIZE:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 usesVariable query for indirect effects of variable name PPHHSIZE:
@@ -386,10 +386,10 @@ usesVariable query for indirect effects of variable name PPHHSIZE:
     Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHcateg" which is affected by "PPHHSIZE"
     Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHsize" which is affected by "PPHHSIZE"
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=== bash cell | usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE ===
+========================== bash cell | usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE ===========================
 
 geist report << __END_TEMPLATE__
 
@@ -436,7 +436,7 @@ usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE:
 
 __END_TEMPLATE__
 
---------------------------------- cell outputs ---------------------------------
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 
 
 usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE:
@@ -450,6 +450,6 @@ usesVariable query DIRECT AND INDIRECT for variable name PPHHSIZE:
     Command ["PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )"] is affected by "HHsize"
 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
