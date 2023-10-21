@@ -18,6 +18,7 @@ Finally, exit the REPRO using the `exit` command.
 
 The demonstration and its products are stored in the `demo` directory tree:
 ```
+sdth-demos$ tree demo
 demo
 ├── 01-python
 │   ├── Makefile
@@ -123,7 +124,7 @@ sdth-demos$ make run-demo
 
 Finally, use `git status` to confirm that the demostration products have been restored:
 ```
-sdth-demo$ 
+sdth-demo$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -240,7 +241,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Re-run the and confirm the `run.txt` file was restored:
+Re-run the demonstration and confirm the `run.txt` file and the `products` folder were restored:
 ```
 repro@f5322e10343e:/mnt/sdth-demos/demo/01-python$ make
 bash run.sh > run.txt
