@@ -18,3 +18,19 @@ Node: sdtest:ProgStep002
 Error Message: Node sdtest:ProgStep002 is closed. It cannot have value: sdtest:VarIns001
 Suggested Node(s) to be Updated: ['sdtest:VarIns001']
 
+Node: sdtest:ProgStep005c 
+Error Message: ProgramSteps can have an outbound relation describing a variable that was assigned some value
+Suggested Node(s) to be Updated: ['sdtest:VarIns014c']
+
+Node: sdtest:ProgStep006 
+Error Message: Value does not have class sdth:VariableInstance
+Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+
+Node: sdtest:ProgStep006 
+Error Message: ProgramSteps can have an outbound relation describing a variable that was assigned some value
+Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+
+Node: sdtest:ProgStep007 
+Error Message: Value does not have class sdth:VariableInstance
+Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+

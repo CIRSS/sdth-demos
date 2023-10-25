@@ -29,36 +29,120 @@
 ## Shapes for SDTH classes  ###############################
 ###############################################################
 
-## Shape for sdth:Program and sdth:ProgramStep ############
+## Shape for sdth:Program #################################
 sdtest:ProgramShape
-	a sh:NodeShape;
-	sh:targetClass sdth:Program, sdth:ProgramStep ;
+	a sh:NodeShape ;
+	sh:targetClass sdth:Program ;
 	sh:closed true ;
-	sh:ignoredProperties (rdf:type sdth:hasProgramStep sdth:loadsFile sdth:savesFile sdth:consumesDataframe sdth:producesDataframe sdth:usesVariable sdth:assignsVariable );
-	sh:property <s2-hasSDTL>, <s3-hasSourceCode>, <s4-assignsVariable> .
+	sh:ignoredProperties (rdf:type) ;
+	sh:property [ # One Program has at LEAST ONE ProgramStep
+        sh:path sdth:hasProgramStep ;
+		sh:minCount 1 ;
+        sh:class sdth:ProgramStep ;
+    ] .
+
+## Shape for sdth:ProgramStep ############
+sdtest:ProgramStepShape
+	a sh:NodeShape;
+	sh:targetClass sdth:ProgramStep ;
+	sh:closed true ;
+	sh:ignoredProperties (rdf:type) ;
+	sh:property [ # One ProgramStep has ANY number of ProgramStep
+		sh:path sdth:hasProgramStep ;
+		sh:class sdth:ProgramStep ;
+	] ;
+	sh:property [ # One ProgramStep has EXACTLY ONE source code
+		sh:path sdth:hasSourceCode ;
+		sh:minCount 1 ;
+        sh:maxCount 1 ;
+		sh:datatype xsd:string ;
+		sh:message "ProgramSteps must have a text string containing source code"@en ;
+	] ;
+	sh:property [ # One ProgramStep has AT MOST ONE SDTL
+		sh:path sdth:hasSDTL;
+		sh:maxCount 1 ;
+		sh:datatype xsd:string ;
+		sh:message "ProgramSteps can have a text string containing SDTL"@en ;
+	] ;
+	sh:property [ # One ProgramStep loads ANY number of files
+		sh:path sdth:loadsFile ;
+		sh:class sdth:FileInstance ;
+	] ;
+	sh:property [ # One ProgramStep saves ANY number of files
+		sh:path sdth:savesFile ;
+		sh:class sdth:FileInstance ;
+	] ;
+	sh:property [ # One ProgramStep consumes ANY number of dataframes
+		sh:path sdth:consumesDataframe ;
+		sh:class sdth:DataframeInstance ;
+	] ;
+	sh:property [ # One ProgramStep produces ANY number of dataframes
+		sh:path sdth:producesDataframe ;
+		sh:class sdth:DataframeInstance ;
+	] ;
+	sh:property [ # One ProgramStep uses ANY number of variables
+		sh:path sdth:usesVariable ;
+		sh:class sdth:VariableInstance ;
+	] ;
+	sh:property [ # One ProgramStep assigns ANY number of variables
+		sh:path sdth:assignsVariable ;
+		sh:class sdth:VariableInstance ;
+		sh:message "ProgramSteps can have an outbound relation describing a variable that was assigned some value"@en ;
+	] .
 
 ## Shape for sdth:FileInstance  ###########################
 sdtest:FileShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:FileInstance ;	
 	sh:closed true ;
-	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf  sdth:hasName sdth:loadsFile sdth:savesFile );
-	sh:property <s1-hasVarInstance> ,  <s5-hasName> .
+	sh:ignoredProperties (rdf:type) ;
+	sh:property [ # One FileInstance was derived from ANY number of dataframes
+		sh:path sdth:wasDerivedFrom ;
+		sh:class sdth:DataframeInstance ;
+	] ;
+	sh:property [ # One FileInstance elaborates ANY number of dataframes
+		sh:path sdth:elaborationOf ;
+		sh:class sdth:DataframeInstance ;
+	] ;
+	sh:property <s1-hasVarInstance> , <s5-hasName> .
 
 ## Shape for sdth:DataframeInstance  ###########################
 sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
 	sh:closed true ;
-	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf  sdth:consumesDataframe sdth:producesDataframe );
-	sh:property  <s1-hasVarInstance> ,  <s5-hasName> .
+	sh:ignoredProperties (rdf:type) ;
+	sh:property [ # One DataframeInstance was derived from ANY number of dataframes or files
+		sh:path sdth:wasDerivedFrom ;
+		sh:or (
+			[sh:class sdth:DataframeInstance ]
+			[sh:class sdth:FileInstance ]
+		) ;
+	] ;
+	sh:property [ # One DataframeInstance elaborates ANY number of dataframes or files
+		sh:path sdth:elaborationOf ;
+		sh:or (
+			[sh:class sdth:DataframeInstance ]
+			[sh:class sdth:FileInstance ]
+		) ;
+	] ;	
+	sh:property  <s1-hasVarInstance> , <s5-hasName> .
 
 ## Shape for sdth:VariableInstance  ###########################
 sdtest:VariableShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:VariableInstance ;
 	sh:closed true ;
-	sh:ignoredProperties (rdf:type sdth:wasDerivedFrom sdth:elaborationOf sdth:usesVariable sdth:assignsVariable  sdth:hasVarInstance ddi-l:NumericDomain ddi-l:CodeList  );
+	sh:ignoredProperties (rdf:type) ;
+	sh:property [ # One VariableInstance was derived from ANY number of variables
+		sh:path sdth:wasDerivedFrom ;
+		sh:class sdth:VariableInstance;
+	] ;
+	sh:property [ # One VariableInstance elaborates ANY number of variables
+		sh:path sdth:elaborationOf ;
+		sh:class sdth:VariableInstance;
+	] ;
+	sh:ignoredProperties ( ddi-l:NumericDomain ddi-l:CodeList );
 	sh:property <s5-hasName> .
 
 ###############################################################
@@ -73,31 +157,12 @@ sdtest:VariableShape
 	sh:severity sh:Warning ;
 	sh:message "Files and dataframes should have at least one variable instance"@en .
 
-##  Property:  sdth:hasSDTL ############################
-<s2-hasSDTL>
-	a sh:PropertyShape ;
-	sh:path sdth:hasSDTL;
-	sh:datatype xsd:string ;
-	sh:message "ProgramSteps can have a text string containing SDTL"@en .
-
-##  Property:  sdth:hasSourceCode ############################
-<s3-hasSourceCode>
-	a sh:PropertyShape ;
-	sh:path sdth:hasSourceCode;
-	sh:datatype xsd:string ;
-	sh:message "ProgramSteps can have a text string containing source code"@en .
-
-##  Property:  sdth:assignsVariable ############################
-<s4-assignsVariable>
-	a sh:PropertyShape ;
-	sh:path sdth:assignsVariable ;
-	sh:message "ProgramSteps can have an outbound relation describing a variable that was assigned some value"@en .
-
 ##  Property:  sdth:hasName ############################
 <s5-hasName>
 	a sh:PropertyShape ;
 	sh:path sdth:hasName ;
 	sh:datatype xsd:string ;
 	sh:minCount 1 ;
+	sh:maxCount 1 ;
 	sh:severity sh:Warning ;
 	sh:message "A FileInstance, DataframeInstance, or a VariableInstance should have a name"@en .
