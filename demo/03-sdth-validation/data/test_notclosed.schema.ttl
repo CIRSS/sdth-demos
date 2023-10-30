@@ -33,9 +33,7 @@
 sdtest:ProgramShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:Program ;
-	sh:closed true ;
-	sh:ignoredProperties (rdf:type) ;
-	sh:property [ # One Program has at LEAST ONE ProgramStep (Q: can we have zero ProgramStep?)
+	sh:property [ # One Program has at LEAST ONE ProgramStep
         sh:path sdth:hasProgramStep ;
 		sh:minCount 1 ;
         sh:class sdth:ProgramStep ;
@@ -45,8 +43,6 @@ sdtest:ProgramShape
 sdtest:ProgramStepShape
 	a sh:NodeShape;
 	sh:targetClass sdth:ProgramStep ;
-	sh:closed true ;
-	sh:ignoredProperties (rdf:type) ;
 	sh:property [ # One ProgramStep has ANY number of ProgramStep
 		sh:path sdth:hasProgramStep ;
 		sh:class sdth:ProgramStep ;
@@ -93,13 +89,11 @@ sdtest:ProgramStepShape
 sdtest:FileShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:FileInstance ;	
-	sh:closed true ;
-	sh:ignoredProperties (rdf:type) ;
-	sh:property [ # One FileInstance was derived from ANY number of dataframes (Q: can it be derived from files?)
+	sh:property [ # One FileInstance was derived from ANY number of dataframes
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:DataframeInstance ;
 	] ;
-	sh:property [ # One FileInstance elaborates ANY number of dataframes (Q: can it elaborates files?)
+	sh:property [ # One FileInstance elaborates ANY number of dataframes
 		sh:path sdth:elaborationOf ;
 		sh:class sdth:DataframeInstance ;
 	] ;
@@ -109,8 +103,6 @@ sdtest:FileShape
 sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
-	sh:closed true ;
-	sh:ignoredProperties (rdf:type) ;
 	sh:property [ # One DataframeInstance was derived from ANY number of dataframes or files
 		sh:path sdth:wasDerivedFrom ;
 		sh:or (
@@ -131,8 +123,6 @@ sdtest:DataframeShape
 sdtest:VariableShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:VariableInstance ;
-	sh:closed true ;
-	sh:ignoredProperties (rdf:type) ;
 	sh:property [ # One VariableInstance was derived from ANY number of variables
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:VariableInstance;
