@@ -1,0 +1,892 @@
+======================================================== bash cell | sdth1 =========================================================
+
+# Destroy the dataset
+geist destroy --dataset kb --quiet
+
+# Import the SDTH JSON-LD file
+geist create --dataset kb --inputformat json-ld --inputfile data/sdth1.jsonld --infer none
+
+# Export all triples
+geist export --dataset kb --outputformat nt
+
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns007> .
+<http://test/#ProgStep003> <http://DDI/SDTH/loadsFile> <http://test/#FileIns002> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns011> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns005> .
+<http://test/#ProgStep003> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep003" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns005> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns007> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns003> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#VarIns011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#DFIns001> <http://DDI/SDTH/wasDerivedFrom> <http://test/#FileIns001> .
+<http://test/#ProgStep003> <http://DDI/SDTH/hasSDTL> "\"command\": \"Load\"" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns012> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns007> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014c> .
+<http://test/#VarIns010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns012> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns010> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns012> .
+<http://test/#VarIns006> <http://DDI/SDTH/hasName> "Q27" .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns010> .
+<http://test/#VarIns003> <http://DDI/SDTH/hasName> "Q356" .
+<http://test/#VarIns009> <http://DDI/SDTH/hasName> "PPEDUCAT" .
+<http://test/#ProgStep007> <http://DDI/SDTH/savesFile> <http://test/#FileIns003> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#ProgStep004> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns003> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns004> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014c> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#VarIns001> <http://DDI/SDTH/hasName> "Q3" .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014a> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#ProgStep004> <http://DDI/SDTH/hasSourceCode> "PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasName> "SmallTestMerged.csv" .
+<http://test/#VarIns014a> <http://DDI/SDTH/wasDerivedFrom> <http://test/#VarIns013> .
+<http://test/#FileIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns006> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#VarIns006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#DFIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#ProgStep005a> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasName> "PoliticalData" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns002> .
+<http://test/#DFIns004b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005a" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns001> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005b" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<http://test/#ProgStep007> <http://DDI/SDTH/hasSourceCode> "MergedData.to_csv(\"SmallTestMerged.csv\")" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep005c" .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns001> .
+<http://test/#DFIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#DFIns004c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns003> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#ProgStep001> <http://DDI/SDTH/hasSourceCode> "import pandas as pd" .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns008> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns003> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014a> .
+<http://test/#ProgStep006> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns004c> .
+<http://test/#ProgStep005c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns013> .
+<http://test/#ProgramEx5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:Program" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns009> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/hasSDTL> "\"command\": \"SetDataType\"" .
+<http://test/#DFIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns009> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns003> .
+<http://test/#ProgStep002> <http://DDI/SDTH/hasSDTL> "\"command\": \"Load\"" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns008> .
+<http://test/#VarIns005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#FileIns002> <http://DDI/SDTH/hasName> "SmallTestPersonal.csv" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014a> .
+<http://test/#DFIns004c> <http://DDI/SDTH/elaborationOf> <http://test/#DFIns004b> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#VarIns014a> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004b> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#VarIns013> <http://DDI/SDTH/wasDerivedFrom> <http://test/#VarIns010> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/hasSDTL> "\"command\": \"SetValueLabels\"" .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns005> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns001> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns007> .
+<http://test/#DFIns003> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#VarIns002> <http://DDI/SDTH/hasName> "Q244_NEW" .
+<http://test/#DFIns005> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns004c> .
+<http://test/#VarIns013> <http://DDI/SDTH/hasName> "HHsize" .
+<http://test/#VarIns009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#DFIns005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#VarIns013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep006> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns012> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgStep005b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005b> .
+<http://test/#VarIns014b> <http://DDI/SDTH/elaborationOf> <http://test/#VarIns014a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep002" .
+<http://test/#ProgStep005a> <http://DDI/SDTH/hasSDTL> "\"command\": \"Compute\"" .
+<http://test/#VarIns014c> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns004> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep007> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#VarIns012> <http://DDI/SDTH/hasName> "ID" .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns004> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns012> .
+<http://test/#DFIns005> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns001> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns010> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns003> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns004> .
+<http://test/#ProgStep007> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns005> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004a> .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#VarIns012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#DFIns002> <http://DDI/SDTH/wasDerivedFrom> <http://test/#FileIns002> .
+<http://test/#VarIns011> <http://DDI/SDTH/hasName> "PPRENT" .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns006> .
+<http://test/#VarIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns014c> <http://DDI/SDTH/elaborationOf> <http://test/#VarIns014b> .
+<http://test/#VarIns014c> <http://ddi-l/CodeList> "<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep001> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014b> .
+<http://test/#DFIns004a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:DataframeInstance" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns004> .
+<http://test/#ProgStep004> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns013> .
+<http://test/#ProgStep001> <http://DDI/SDTH/hasSDTL> "\"command\": \"NoTransformOp\"" .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns001> .
+<http://test/#VarIns001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns006> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns001> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014c> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns001> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns002> .
+<http://test/#VarIns014c> <http://ddi-l/NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns002> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns005> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns003> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns001> .
+<http://test/#ProgStep005a> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#VarIns014b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns013> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep004> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#FileIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#DFIns003> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns009> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004c> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns007> .
+<http://test/#VarIns005> <http://DDI/SDTH/hasName> "Q330C" .
+<http://test/#ProgStep005a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep004" .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#VarIns007> <http://DDI/SDTH/hasName> "Q1010" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns005> .
+<http://test/#ProgStep003> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns011> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns013> .
+<http://test/#DFIns002> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep001" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns009> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#VarIns002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#DFIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014c> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/usesVariable> <http://test/#VarIns014b> .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns014c> .
+<http://test/#ProgStep004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep005c> .
+<http://test/#VarIns004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns004> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014a> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#ProgStep005c> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#VarIns010> <http://DDI/SDTH/hasName> "PPHHSIZE" .
+<http://test/#DFIns004c> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014c> .
+<http://test/#VarIns014b> <http://DDI/SDTH/hasName> "HHcateg" .
+<http://test/#DFIns004a> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns003> .
+<http://test/#ProgStep002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasName> "MergedData" .
+<http://test/#DFIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns011> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns006> .
+<http://test/#ProgStep001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep003> <http://DDI/SDTH/hasSourceCode> "PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" .
+<http://test/#ProgStep003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#ProgStep006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:ProgramStep" .
+<http://test/#FileIns003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:FileInstance" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns004c> .
+<http://test/#VarIns014a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#VarIns008> <http://DDI/SDTH/hasName> "ID" .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns001> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns002> .
+<http://test/#VarIns004> <http://DDI/SDTH/hasName> "Q330A" .
+<http://test/#ProgStep004> <http://DDI/SDTH/usesVariable> <http://test/#VarIns010> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep006" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns003> .
+<http://test/#VarIns008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep002> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns001> .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns003> .
+<http://test/#DFIns004b> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns014b> .
+<http://test/#ProgStep004> <http://DDI/SDTH/hasSDTL> "\"command\": \"Compute\"" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasName> "SmallTestPolitical.csv" .
+<http://test/#ProgStep007> <http://DDI/SDTH/usesVariable> <http://test/#VarIns008> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns013> .
+<http://test/#VarIns007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns008> .
+<http://test/#ProgStep006> <http://DDI/SDTH/usesVariable> <http://test/#VarIns006> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/DataframeInstance> <http://test/#DFIns001> .
+<http://test/#FileIns003> <http://DDI/SDTH/wasDerivedFrom> <http://test/#DFIns005> .
+<http://test/#DFIns005> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#ProgStep002> <http://DDI/SDTH/hasSourceCode> "PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns005> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns012> .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns010> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns003> .
+<http://test/#FileIns003> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+<http://test/#ProgStep004> <http://DDI/SDTH/consumesDataframe> <http://test/#DFIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns014b> .
+<http://test/#ProgStep002> <http://DDI/SDTH/loadsFile> <http://test/#FileIns001> .
+<http://test/#ProgStep006> <http://DDI/SDTH/hasSourceCode> "MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" .
+<http://test/#DFIns004b> <http://DDI/SDTH/elaborationOf> <http://test/#DFIns004a> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/VariableInstance> <http://test/#VarIns006> .
+<http://test/#VarIns014c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "sdth:VariableInstance" .
+<http://test/#FileIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns007> .
+<http://test/#ProgStep002> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns005> .
+<http://test/#ProgStep005b> <http://DDI/SDTH/producesDataframe> <http://test/#DFIns004b> .
+<http://test/#FileIns002> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns009> .
+<http://test/#VarIns014b> <http://ddi-l/NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<http://test/#ProgramEx5> <http://DDI/SDTH/FileInstance> <http://test/#FileIns002> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/ProgramStep> <http://test/#ProgStep002> .
+<http://test/#ProgStep006> <http://DDI/SDTH/assignsVariable> <http://test/#VarIns005> .
+<http://test/#ProgramEx5> <http://DDI/SDTH/hasProgramStep> "sdtest:ProgStep007" .
+<http://test/#DFIns004a> <http://DDI/SDTH/hasName> "PersonalData" .
+<http://test/#DFIns001> <http://DDI/SDTH/hasVarInstance> <http://test/#VarIns008> .
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======================================================== bash cell | sdth2 =========================================================
+
+# Destroy the dataset
+geist destroy --dataset kb --quiet
+
+# Import the SDTH JSON-LD file
+geist create --dataset kb --inputformat json-ld --inputfile data/sdth2.jsonld --infer none
+
+# Export all triples
+geist export --dataset kb --outputformat nt
+
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns013> .
+<sdtest:VarIns003> <sdth:hasName> "Q356" .
+<sdtest:VarIns014b> <sdth:elaborationOf> <sdtest:VarIns014a> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns001> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:DFIns003> <sdth:hasName> "PersonalData" .
+<sdtest:FileIns003> <sdth:hasName> "SmallTestMerged.csv" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep005a> <sdth:producesDataframe> <sdtest:DFIns004a> .
+<sdtest:ProgStep005a> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns008> .
+<sdtest:ProgStep007> <sdth:hasSourceCode> "MergedData.to_csv(\"SmallTestMerged.csv\")" .
+<sdtest:ProgStep005c> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns013> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep002> <sdth:loadsFile> <sdtest:FileIns001> .
+<sdtest:VarIns011> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep002> <rdf:type> "sdth:ProgramStep" .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns014a> .
+<sdtest:VarIns012> <sdth:hasName> "ID" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:VarIns006> <sdth:hasName> "Q27" .
+<sdtest:ProgStep002> <sdth:hasSourceCode> "PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" .
+<sdtest:ProgramEx5> <rdf:type> "sdth:Program" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:ProgStep004> <sdth:consumesDataframe> <sdtest:DFIns002> .
+<sdtest:ProgStep003> <sdth:hasSourceCode> "PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns011> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:ProgStep004> <sdth:hasSourceCode> "PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns004a> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:VarIns013> <sdth:hasName> "HHsize" .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep002> .
+<sdtest:DFIns001> <sdth:hasName> "PoliticalData" .
+<sdtest:ProgStep006> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns014c> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep001> <sdth:hasSourceCode> "import pandas as pd" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns005> .
+<sdtest:ProgStep007> <sdth:consumesDataframe> <sdtest:DFIns005> .
+<sdtest:VarIns007> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns014c> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns014b> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep007> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns002> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns008> .
+<sdtest:ProgStep005c> <sdth:producesDataframe> <sdtest:DFIns004c> .
+<sdtest:ProgStep007> <sdth:savesFile> <sdtest:FileIns003> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:ProgStep005b> <sdth:usesVariable> <sdtest:VarIns014a> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns007> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns009> .
+<sdtest:DFIns005> <sdth:hasName> "MergedData" .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:FileIns001> <sdth:hasName> "SmallTestPolitical.csv" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns003> .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns011> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns013> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns006> .
+<sdtest:VarIns008> <sdth:hasName> "ID" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns014c> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns002> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns011> .
+<sdtest:VarIns001> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep005c" .
+<sdtest:ProgStep005c> <sdth:assignsVariable> <sdtest:VarIns014c> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns012> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:DFIns005> <sdth:wasDerivedFrom> <sdtest:DFIns004c> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep001> .
+<sdtest:VarIns014c> <ddi-l:NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<sdtest:ProgramEx5> <@include> <sdtest:FileIns003> .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep004> <sdth:assignsVariable> <sdtest:VarIns013> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:VarIns014b> <rdf:type> "sdth:VariableInstance" .
+<sdtest:FileIns003> <rdf:type> "sdth:FileInstance" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns008> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns002> .
+<sdtest:ProgStep004> <rdf:type> "sdth:ProgramStep" .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep005a" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns006> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns007> .
+<sdtest:ProgStep005a> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns014a> .
+<sdtest:ProgStep001> <rdf:type> "sdth:ProgramStep" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns014c> .
+<sdtest:ProgStep003> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns009> <sdth:hasName> "PPEDUCAT" .
+<sdtest:ProgStep006> <sdth:consumesDataframe> <sdtest:DFIns001> .
+<sdtest:FileIns001> <rdf:type> "sdth:FileInstance" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns003> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns002> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:ProgStep004> <sdth:producesDataframe> <sdtest:DFIns003> .
+<sdtest:DFIns004a> <sdth:hasName> "PersonalData" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:ProgStep005b> <sdth:producesDataframe> <sdtest:DFIns004b> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:ProgStep005b> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns014c> <sdth:hasName> "HHcateg" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns006> .
+<sdtest:DFIns002> <sdth:wasDerivedFrom> <sdtest:FileIns002> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:DFIns004a> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:VarIns007> <sdth:hasName> "Q1010" .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns006> .
+<sdtest:VarIns014c> <sdth:elaborationOf> <sdtest:VarIns014b> .
+<sdtest:DFIns003> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:ProgramEx5> <@include> <sdtest:FileIns002> .
+<sdtest:FileIns002> <sdth:hasName> "SmallTestPersonal.csv" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns012> .
+<sdtest:ProgStep005a> <sdth:assignsVariable> <sdtest:VarIns014a> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns009> .
+<sdtest:ProgStep005c> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<sdtest:VarIns005> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:DFIns004c> <sdth:hasName> "PersonalData" .
+<sdtest:ProgStep006> <sdth:producesDataframe> <sdtest:DFIns005> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns005> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns002> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep002" .
+<sdtest:DFIns004c> <sdth:elaborationOf> <sdtest:DFIns004b> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep003> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep003" .
+<sdtest:ProgStep005b> <sdth:hasSDTL> "\"command\": \"SetDataType\"" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns005> .
+<sdtest:VarIns005> <sdth:hasName> "Q330C" .
+<sdtest:VarIns014a> <sdth:wasDerivedFrom> <sdtest:VarIns013> .
+<sdtest:ProgStep003> <sdth:loadsFile> <sdtest:FileIns002> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep007" .
+<sdtest:VarIns010> <rdf:type> "sdth:VariableInstance" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep005b> .
+<sdtest:ProgStep005a> <rdf:type> "sdth:ProgramStep" .
+<sdtest:ProgStep006> <sdth:hasSourceCode> "MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:ProgStep001> <sdth:hasSDTL> "\"command\": \"NoTransformOp\"" .
+<sdtest:ProgStep005c> <sdth:usesVariable> <sdtest:VarIns014b> .
+<sdtest:VarIns002> <sdth:hasName> "Q244_NEW" .
+<sdtest:VarIns014b> <ddi-l:NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns012> .
+<sdtest:ProgStep002> <sdth:producesDataframe> <sdtest:DFIns001> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns006> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns005> .
+<sdtest:DFIns001> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep004> .
+<sdtest:VarIns014c> <ddi-l:CodeList> "<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns004c> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:VarIns014a> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns012> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:ProgramEx5> <@include> <sdtest:FileIns001> .
+<sdtest:DFIns003> <sdth:wasDerivedFrom> <sdtest:DFIns002> .
+<sdtest:VarIns009> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns004b> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:DFIns002> <sdth:hasName> "PersonalData" .
+<sdtest:DFIns005> <sdth:wasDerivedFrom> <sdtest:DFIns001> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns004> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep001" .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns002> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns009> .
+<sdtest:ProgStep002> <sdth:hasSDTL> "\"command\": \"Load\"" .
+<sdtest:VarIns014b> <sdth:hasName> "HHcateg" .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns003> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns001> .
+<sdtest:VarIns002> <rdf:type> "sdth:VariableInstance" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns007> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:DFIns004b> <sdth:elaborationOf> <sdtest:DFIns004a> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:VarIns004> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns004> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns003> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns008> .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep003> <sdth:producesDataframe> <sdtest:DFIns002> .
+<sdtest:ProgStep005c> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgStep007> <rdf:type> "sdth:ProgramStep" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:ProgStep004> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns007> .
+<sdtest:ProgStep004> <sdth:hasSDTL> "\"command\": \"Compute\"" .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns009> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:DFIns004c> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns001> .
+<sdtest:FileIns003> <sdth:wasDerivedFrom> <sdtest:DFIns005> .
+<sdtest:ProgStep005b> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns004> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns003> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns005> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns009> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:VarIns008> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:ProgStep005b> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:DFIns004b> <sdth:hasName> "PersonalData" .
+<sdtest:VarIns011> <sdth:hasName> "PPRENT" .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns001> .
+<sdtest:VarIns004> <sdth:hasName> "Q330A" .
+<sdtest:DFIns001> <sdth:wasDerivedFrom> <sdtest:FileIns001> .
+<sdtest:VarIns014a> <sdth:hasName> "HHcateg" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns004> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns014c> .
+<sdtest:DFIns004b> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns001> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep005c> .
+<sdtest:ProgStep005b> <sdth:assignsVariable> <sdtest:VarIns014b> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:VarIns006> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns011> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep005b" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:DFIns002> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:DFIns005> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:VarIns010> <sdth:hasName> "PPHHSIZE" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:VarIns013> <sdth:wasDerivedFrom> <sdtest:VarIns010> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns014b> .
+<sdtest:ProgStep003> <sdth:hasSDTL> "\"command\": \"Load\"" .
+<sdtest:VarIns003> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep005a> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgStep005c> <sdth:hasSDTL> "\"command\": \"SetValueLabels\"" .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep004" .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns008> .
+<sdtest:ProgramEx5> <@include> <sdtest:ProgStep006> .
+<sdtest:ProgramEx5> <@include> <sdtest:DFIns001> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> "sdtest:ProgStep006" .
+<sdtest:DFIns004a> <sdth:wasDerivedFrom> <sdtest:DFIns003> .
+<sdtest:ProgStep006> <sdth:consumesDataframe> <sdtest:DFIns004c> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns010> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns004> .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns007> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns012> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns011> .
+<sdtest:ProgStep005a> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns005> .
+<sdtest:FileIns002> <rdf:type> "sdth:FileInstance" .
+<sdtest:ProgStep005a> <sdth:hasSDTL> "\"command\": \"Compute\"" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:VarIns001> <sdth:hasName> "Q3" .
+<sdtest:VarIns012> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgramEx5> <@include> <sdtest:VarIns003> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns011> .
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+======================================================== bash cell | sdth3 =========================================================
+
+# Destroy the dataset
+geist destroy --dataset kb --quiet
+
+# Import the SDTH JSON-LD file
+geist create --dataset kb --inputformat json-ld --inputfile data/sdth3.jsonld --infer none
+
+# Export all triples
+geist export --dataset kb --outputformat nt
+
+# Destroy the dataset
+geist destroy --dataset kb
+
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:VarIns001> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:VarIns009> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns011> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns007> .
+<sdtest:DFIns002> <sdth:wasDerivedFrom> <sdtest:FileIns002> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns002> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:ProgStep005b> <sdth:hasSDTL> "\"command\": \"SetDataType\"" .
+<sdtest:VarIns014b> <sdth:elaborationOf> <sdtest:VarIns014a> .
+<sdtest:VarIns005> <sdth:hasName> "Q330C" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns006> .
+<sdtest:ProgStep003> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns006> <sdth:hasName> "Q27" .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:ProgStep003> <sdth:hasSDTL> "\"command\": \"Load\"" .
+<sdtest:DFIns002> <sdth:hasName> "PersonalData" .
+<sdtest:VarIns014a> <sdth:wasDerivedFrom> <sdtest:VarIns013> .
+<sdtest:VarIns004> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns001> <sdth:hasName> "PoliticalData" .
+<sdtest:ProgStep004> <sdth:hasSDTL> "\"command\": \"Compute\"" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns004> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep002> .
+<sdtest:VarIns014b> <ddi-l:NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep004> <sdth:assignsVariable> <sdtest:VarIns013> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep007> .
+<sdtest:ProgStep001> <sdth:hasSourceCode> "import pandas as pd" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns010> .
+<sdtest:DFIns005> <sdth:wasDerivedFrom> <sdtest:DFIns001> .
+<sdtest:VarIns010> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns001> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:ProgStep002> <sdth:producesDataframe> <sdtest:DFIns001> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:VarIns014a> <sdth:hasName> "HHcateg" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns006> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns014c> .
+<sdtest:DFIns005> <sdth:hasName> "MergedData" .
+<sdtest:DFIns005> <sdth:wasDerivedFrom> <sdtest:DFIns004c> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:VarIns013> <sdth:wasDerivedFrom> <sdtest:VarIns010> .
+<sdtest:ProgStep006> <sdth:hasSourceCode> "MergedData = PersonalData.merge(PoliticalData, on=\"ID\", how=\"inner\")" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:VarIns006> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgStep005a> <sdth:assignsVariable> <sdtest:VarIns014a> .
+<sdtest:VarIns008> <rdf:type> "sdth:VariableInstance" .
+<sdtest:VarIns013> <sdth:hasName> "HHsize" .
+<sdtest:VarIns008> <sdth:hasName> "ID" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns005> .
+<sdtest:DFIns004c> <sdth:elaborationOf> <sdtest:DFIns004b> .
+<sdtest:ProgStep002> <sdth:hasSourceCode> "PoliticalData = pd.read_csv(\"SmallTestPolitical.csv\")" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns009> .
+<sdtest:DFIns004a> <sdth:hasName> "PersonalData" .
+<sdtest:DFIns004b> <sdth:hasName> "PersonalData" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns005> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:FileIns002> <sdth:hasName> "SmallTestPersonal.csv" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns006> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns003> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep005c> .
+<sdtest:VarIns009> <sdth:hasName> "PPEDUCAT" .
+<sdtest:VarIns014a> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgramEx5> <rdf:type> "sdth:Program" .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep005a> .
+<sdtest:ProgStep005c> <sdth:assignsVariable> <sdtest:VarIns014c> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:VarIns014b> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns012> .
+<sdtest:FileIns001> <sdth:hasName> "SmallTestPolitical.csv" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:VarIns003> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns004> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep003> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:VarIns004> <sdth:hasName> "Q330A" .
+<sdtest:ProgStep007> <sdth:savesFile> <sdtest:FileIns003> .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns011> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns014b> .
+<sdtest:ProgStep005a> <sdth:producesDataframe> <sdtest:DFIns004a> .
+<sdtest:VarIns007> <sdth:hasName> "Q1010" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns005> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns001> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns013> .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:FileIns003> <sdth:wasDerivedFrom> <sdtest:DFIns005> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns014c> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep004> .
+<sdtest:DFIns003> <sdth:hasName> "PersonalData" .
+<sdtest:ProgStep003> <sdth:hasSourceCode> "PersonalData = pd.read_csv(\"SmallTestPersonal.csv\")" .
+<sdtest:ProgStep005a> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:VarIns014c> <ddi-l:NumericDomain> "<NumericDomain> <classificationLevel>\"Ordinal\"</classificationLevel> <type>\"Integer\"</type> </NumericDomain>" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns012> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns009> .
+<sdtest:ProgStep005b> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns005> .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:ProgStep007> <sdth:hasSourceCode> "MergedData.to_csv(\"SmallTestMerged.csv\")" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns006> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgStep005c> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns002> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:VarIns014c> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep001> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns014a> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns003> .
+<sdtest:DFIns002> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:VarIns013> <rdf:type> "sdth:VariableInstance" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns004> .
+<sdtest:ProgStep005b> <sdth:usesVariable> <sdtest:VarIns014a> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns008> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns004> .
+<sdtest:VarIns014c> <sdth:hasName> "HHcateg" .
+<sdtest:ProgStep001> <sdth:hasSDTL> "\"command\": \"NoTransformOp\"" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns008> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep005b> .
+<sdtest:FileIns002> <rdf:type> "sdth:FileInstance" .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:VarIns014c> <ddi-l:CodeList> "<CodeList> <Code> <Value>1</Value> <Label>\"1\"</Label> </Code> <Code> <Value>2</Value> <Label>\"2\"</Label> </Code> <Code> <Value>3</Value> <Label>\"3-4\"</Label> </Code> <Code> <Value>5</Value> <Label>\"5-6\"</Label> </Code> <Code> <Value>7</Value> <Label>\"7-9\"</Label> </Code> <Code> <Value>10</Value> <Label>\"10+\"</Label> </Code> </CodeScheme>" .
+<sdtest:DFIns004c> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:ProgStep006> <rdf:type> "sdth:ProgramStep" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns001> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns014c> .
+<sdtest:ProgStep007> <sdth:consumesDataframe> <sdtest:DFIns005> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep002> <rdf:type> "sdth:ProgramStep" .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns014c> .
+<sdtest:ProgStep007> <rdf:type> "sdth:ProgramStep" .
+<sdtest:VarIns001> <sdth:hasName> "Q3" .
+<sdtest:ProgStep005b> <rdf:type> "sdth:ProgramStep" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns002> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns004> .
+<sdtest:FileIns003> <rdf:type> "sdth:FileInstance" .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:VarIns014c> <sdth:elaborationOf> <sdtest:VarIns014b> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns008> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep003> <sdth:loadsFile> <sdtest:FileIns002> .
+<sdtest:DFIns004a> <sdth:wasDerivedFrom> <sdtest:DFIns003> .
+<sdtest:DFIns004c> <sdth:hasName> "PersonalData" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns001> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns012> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns007> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns003> .
+<sdtest:ProgStep006> <sdth:consumesDataframe> <sdtest:DFIns001> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns003> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:DFIns004b> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:ProgStep005b> <sdth:producesDataframe> <sdtest:DFIns004b> .
+<sdtest:VarIns003> <sdth:hasName> "Q356" .
+<sdtest:FileIns001> <rdf:type> "sdth:FileInstance" .
+<sdtest:VarIns007> <rdf:type> "sdth:VariableInstance" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep005c> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+<sdtest:DFIns001> <sdth:wasDerivedFrom> <sdtest:FileIns001> .
+<sdtest:ProgStep004> <sdth:producesDataframe> <sdtest:DFIns003> .
+<sdtest:ProgStep004> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:VarIns002> <sdth:hasName> "Q244_NEW" .
+<sdtest:FileIns003> <sdth:hasName> "SmallTestMerged.csv" .
+<sdtest:ProgStep003> <sdth:producesDataframe> <sdtest:DFIns002> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns008> .
+<sdtest:ProgStep006> <sdth:consumesDataframe> <sdtest:DFIns004c> .
+<sdtest:ProgStep001> <rdf:type> "sdth:ProgramStep" .
+<sdtest:DFIns005> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:DFIns004c> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgStep002> <sdth:loadsFile> <sdtest:FileIns001> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:DFIns004b> <sdth:elaborationOf> <sdtest:DFIns004a> .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns009> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:VarIns011> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns003> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:ProgStep002> <sdth:assignsVariable> <sdtest:VarIns007> .
+<sdtest:ProgStep005c> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:DFIns003> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:DFIns003> <sdth:wasDerivedFrom> <sdtest:DFIns002> .
+<sdtest:DFIns001> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:ProgStep006> <sdth:producesDataframe> <sdtest:DFIns005> .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns002> .
+<sdtest:ProgStep005c> <sdth:hasSDTL> "\"command\": \"SetValueLabels\"" .
+<sdtest:ProgStep004> <sdth:consumesDataframe> <sdtest:DFIns002> .
+<sdtest:DFIns004a> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:ProgStep003> <sdth:assignsVariable> <sdtest:VarIns010> .
+<sdtest:ProgStep005a> <sdth:hasSDTL> "\"command\": \"Compute\"" .
+<sdtest:ProgStep005c> <sdth:usesVariable> <sdtest:VarIns014b> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns012> .
+<sdtest:FileIns002> <sdth:hasVarInstance> <sdtest:VarIns010> .
+<sdtest:VarIns014b> <sdth:hasName> "HHcateg" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns011> .
+<sdtest:FileIns001> <sdth:hasVarInstance> <sdtest:VarIns007> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns011> .
+<sdtest:ProgStep006> <sdth:assignsVariable> <sdtest:VarIns007> .
+<sdtest:ProgStep005c> <sdth:producesDataframe> <sdtest:DFIns004c> .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns009> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns008> .
+<sdtest:ProgStep005b> <sdth:consumesDataframe> <sdtest:DFIns003> .
+<sdtest:ProgStep005a> <sdth:usesVariable> <sdtest:VarIns013> .
+<sdtest:VarIns010> <sdth:hasName> "PPHHSIZE" .
+<sdtest:ProgStep004> <sdth:hasSourceCode> "PersonalData  = PersonalData.assign(HHsize=PersonalData['PPHHSIZE'] )" .
+<sdtest:ProgStep005a> <rdf:type> "sdth:ProgramStep" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns001> .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:ProgramEx5> <sdth:hasProgramStep> <sdtest:ProgStep006> .
+<sdtest:ProgStep005b> <sdth:assignsVariable> <sdtest:VarIns014b> .
+<sdtest:VarIns005> <rdf:type> "sdth:VariableInstance" .
+<sdtest:VarIns012> <rdf:type> "sdth:VariableInstance" .
+<sdtest:ProgStep002> <sdth:hasSDTL> "\"command\": \"Load\"" .
+<sdtest:ProgStep006> <sdth:usesVariable> <sdtest:VarIns010> .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns012> .
+<sdtest:ProgStep004> <rdf:type> "sdth:ProgramStep" .
+<sdtest:DFIns003> <rdf:type> "sdth:DataframeInstance" .
+<sdtest:DFIns005> <sdth:hasVarInstance> <sdtest:VarIns002> .
+<sdtest:DFIns004a> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns009> .
+<sdtest:DFIns004b> <sdth:hasVarInstance> <sdtest:VarIns013> .
+<sdtest:VarIns012> <sdth:hasName> "ID" .
+<sdtest:DFIns001> <sdth:hasVarInstance> <sdtest:VarIns006> .
+<sdtest:DFIns002> <sdth:hasVarInstance> <sdtest:VarIns011> .
+<sdtest:FileIns003> <sdth:hasVarInstance> <sdtest:VarIns005> .
+<sdtest:ProgStep007> <sdth:usesVariable> <sdtest:VarIns002> .
+<sdtest:VarIns011> <sdth:hasName> "PPRENT" .
+<sdtest:ProgStep005a> <sdth:hasSourceCode> "PersonalData['HHcateg'] = pd.cut(PersonalData['HHsize'], [1, 2, 3, 5, 7, 10, 999], include_lowest=True, right=False, labels=['1', '2', '3-4', '5-6', '7-9', '10+'] )" .
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
