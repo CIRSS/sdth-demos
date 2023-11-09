@@ -1,0 +1,23 @@
+{
+    "@context": [{
+        "sdth": "http://DDI/SDTH/",
+        "sdtest": "http://test/#",
+        "ddi-l": "http://ddi-l/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"		
+    }],
+
+    "@graph": [
+    {
+        "@id" : "sdtest:Program",
+        "@type" : "sdth:Program",
+        "sdth:hasProgramStep": [{"@id": "sdtest:ProgStep001"}]
+    },
+    {
+        "sdth:ProgramStep": [
+            {
+                "@id" : "sdtest:ProgStep001",
+                "@type" : "sdth:ProgramStep"
+            }
+        ]
+    }]
+}

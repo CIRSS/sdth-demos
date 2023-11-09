@@ -5,8 +5,8 @@ ERROR_ADDED_SDTH_TTL_FILE="data/error_added_sdth.ttl"
 SDTH_SCHEMA_PATH="data/sdth.schema.ttl"
 MAPPINGS_PATH="data/mappings.json"
 
-TEST_JSONLD_FILE="data/test.jsonld"
-TEST_SCHEMA_PATH_NOTCLOSED="data/test_notclosed.schema.ttl"
+TEST_JSONLD_FILE_1="data/test1.jsonld"
+TEST_JSONLD_FILE_2="data/test2.jsonld"
 
 # ------------------------------------------------------------------------------
 
@@ -34,17 +34,27 @@ END_CELL
 
 # ------------------------------------------------------------------------------
 
-bash_cell 'closed demo' << END_CELL
+bash_cell 'test reverse predicate' << END_CELL
 
-rdfvr -f ${TEST_JSONLD_FILE} -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH}
+echo "Test JSON-LD File"
+echo "-----------------"
+cat ${TEST_JSONLD_FILE_1}
 
-END_CELL
+echo ""
+echo "Validation Report"
+echo "-----------------"
+rdfvr -f ${TEST_JSONLD_FILE_1} -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH}
 
-# ------------------------------------------------------------------------------
+echo "*****************************************************************"
 
-bash_cell 'not closed demo' << END_CELL
+echo "Test JSON-LD File"
+echo "-----------------"
+cat ${TEST_JSONLD_FILE_2}
 
-rdfvr -f ${TEST_JSONLD_FILE} -s ${TEST_SCHEMA_PATH_NOTCLOSED} -m ${MAPPINGS_PATH}
+echo ""
+echo "Validation Report"
+echo "-----------------"
+rdfvr -f ${TEST_JSONLD_FILE_2} -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH}
 
 END_CELL
 

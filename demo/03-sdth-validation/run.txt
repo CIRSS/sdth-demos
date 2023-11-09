@@ -24,21 +24,9 @@ Node: sdtest:DFIns002
 Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
 Suggested Node(s) to be Updated: [nan]
 
-Node: sdtest:DFIns004a 
-Error Message: Node sdtest:DFIns004a is closed. It cannot have value: sdtest:VarIns001
-Suggested Node(s) to be Updated: ['sdtest:VarIns001']
-
-Node: sdtest:FileIns001 
-Error Message: Node sdtest:FileIns001 is closed. It cannot have value: sdtest:VarIns001
-Suggested Node(s) to be Updated: ['sdtest:VarIns001']
-
 Node: sdtest:FileIns003 
 Error Message: Files and dataframes should have at least one variable instance
 Suggested Node(s) to be Updated: [nan]
-
-Node: sdtest:ProgStep002 
-Error Message: Node sdtest:ProgStep002 is closed. It cannot have value: sdtest:VarIns001
-Suggested Node(s) to be Updated: ['sdtest:VarIns001']
 
 Node: sdtest:ProgStep005c 
 Error Message: ProgramSteps can have an outbound relation describing a variable that was assigned some value
@@ -60,24 +48,84 @@ Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-===================================================== bash cell | closed demo ======================================================
+================================================ bash cell | test reverse predicate ================================================
 
-rdfvr -f data/test.jsonld -s data/sdth.schema.ttl -m data/mappings.json
+echo "Test JSON-LD File"
+echo "-----------------"
+cat data/test1.jsonld
+
+echo ""
+echo "Validation Report"
+echo "-----------------"
+rdfvr -f data/test1.jsonld -s data/sdth.schema.ttl -m data/mappings.json
+
+echo "*****************************************************************"
+
+echo "Test JSON-LD File"
+echo "-----------------"
+cat data/test2.jsonld
+
+echo ""
+echo "Validation Report"
+echo "-----------------"
+rdfvr -f data/test2.jsonld -s data/sdth.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
-Node: sdtest:ProgramTest 
-Error Message: Node sdtest:ProgramTest is closed. It cannot have value: sdtest:ProgStep001
-Suggested Node(s) to be Updated: ['sdtest:ProgStep001']
+Test JSON-LD File
+-----------------
+{
+    "@context": [{
+        "sdth": "http://DDI/SDTH/",
+        "sdtest": "http://test/#",
+        "ddi-l": "http://ddi-l/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"		
+    }],
+
+    "@graph": [
+    {
+        "sdth:ProgramStep": [
+            {
+                "@id" : "sdtest:ProgStep001",
+                "@type" : "sdth:ProgramStep"
+            }
+        ]
+    }]
+}
+Validation Report
+-----------------
+Node: sdtest:ProgStep001 
+Error Message: Less than 1 values on sdtest:ProgStep001->[ sh:inversePath sdth:hasProgramStep ]
+Suggested Node(s) to be Updated: [nan]
 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*****************************************************************
+Test JSON-LD File
+-----------------
+{
+    "@context": [{
+        "sdth": "http://DDI/SDTH/",
+        "sdtest": "http://test/#",
+        "ddi-l": "http://ddi-l/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"		
+    }],
 
-
-=================================================== bash cell | not closed demo ====================================================
-
-rdfvr -f data/test.jsonld -s data/test_notclosed.schema.ttl -m data/mappings.json
-
------------------------------------------------------------ cell outputs -----------------------------------------------------------
+    "@graph": [
+    {
+        "@id" : "sdtest:Program",
+        "@type" : "sdth:Program",
+        "sdth:hasProgramStep": [{"@id": "sdtest:ProgStep001"}]
+    },
+    {
+        "sdth:ProgramStep": [
+            {
+                "@id" : "sdtest:ProgStep001",
+                "@type" : "sdth:ProgramStep"
+            }
+        ]
+    }]
+}
+Validation Report
+-----------------
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

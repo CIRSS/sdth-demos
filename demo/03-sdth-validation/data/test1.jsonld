@@ -8,13 +8,6 @@
 
     "@graph": [
     {
-        "@id" : "sdtest:ProgramTest",
-        "@type" : "sdth:Program",
-        "sdth:hasProgramStep": [{"@id": "sdtest:ProgStep001"}],
-        "sdth:addedPredicate": [{"@id": "sdtest:ProgStep001"}]
-    },
-
-    {
         "sdth:ProgramStep": [
             {
                 "@id" : "sdtest:ProgStep001",
