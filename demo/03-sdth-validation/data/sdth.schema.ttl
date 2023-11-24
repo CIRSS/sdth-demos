@@ -94,11 +94,11 @@ sdtest:ProgramStepShape
 sdtest:FileShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:FileInstance ;
-	sh:property [ # One FileInstance was derived from ANY number of dataframes (Q: can it be derived from files?)
+	sh:property [ # One FileInstance was derived from ANY number of dataframes
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:DataframeInstance ;
 	] ;
-	sh:property [ # One FileInstance elaborates ANY number of dataframes (Q: can it elaborates files?)
+	sh:property [ # One FileInstance elaborates ANY number of dataframes
 		sh:path sdth:elaborationOf ;
 		sh:class sdth:DataframeInstance ;
 	] ;
@@ -121,7 +121,7 @@ sdtest:DataframeShape
 			[sh:class sdth:DataframeInstance ]
 			[sh:class sdth:FileInstance ]
 		) ;
-	] ;	
+	] ;
 	sh:property  <s1-hasVarInstance> , <s5-hasName> .
 
 ## Shape for sdth:VariableInstance  ###########################

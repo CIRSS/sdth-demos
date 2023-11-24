@@ -1,0 +1,14 @@
+{
+    "@context": [{
+        "sdth": "http://DDI/SDTH/",
+        "sdtest": "http://test/#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"		
+    }],
+
+    "@graph": [
+        {
+            "@id": "sdtest:DFIns001",
+            "@type": "sdth:DataframeInstance"
+        }
+    ]
+}
