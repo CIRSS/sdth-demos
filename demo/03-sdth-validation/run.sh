@@ -11,6 +11,9 @@ TEST_JSONLD_FILE_2="data/test2.jsonld"
 TEST_JSONLD_FILE_3="data/test3.jsonld"
 SDTH_SCHEMA_PATH_3="data/test3.schema.ttl"
 
+TEST_JSONLD_FILE_4="data/test4.nq"
+SDTH_SCHEMA_PATH_4="data/test4.schema.ttl"
+
 # ------------------------------------------------------------------------------
 
 bash_cell 'sdth validation' << END_CELL
@@ -71,3 +74,12 @@ rdfvr -f ${TEST_JSONLD_FILE_3} -s ${SDTH_SCHEMA_PATH_3} -m ${MAPPINGS_PATH}
 END_CELL
 
 # ------------------------------------------------------------------------------
+
+bash_cell 'test4' << END_CELL
+
+# https://www.w3.org/TR/shacl/#OrConstraintComponent
+rdfvr -f ${TEST_JSONLD_FILE_4} -s ${SDTH_SCHEMA_PATH_4} -ff nt
+
+END_CELL
+
+# -------------------
