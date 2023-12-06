@@ -130,22 +130,16 @@ Validation Report
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-================================= bash cell | test3: wasDerivedFrom or elaborationOf does not work =================================
+======================================== bash cell | test3: wasDerivedFrom or elaborationOf ========================================
 
 # https://www.w3.org/TR/shacl/#OrConstraintComponent
 rdfvr -f data/test3.jsonld -s data/test3.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Node: sdtest:DFIns001 
+Error Message: Node sdtest:DFIns001 does not conform to one or more shapes in [ sh:minCount Literal("1", datatype=xsd:integer) ; sh:path sdth:wasDerivedFrom ] , [ sh:minCount Literal("1", datatype=xsd:integer) ; sh:path sdth:elaborationOf ]
+Suggested Node(s) to be Updated: [nan]
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-======================================================== bash cell | test4 =========================================================
-
-# https://www.w3.org/TR/shacl/#OrConstraintComponent
-rdfvr -f data/test4.nq -s data/test4.schema.ttl -ff nt
-
------------------------------------------------------------ cell outputs -----------------------------------------------------------
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
