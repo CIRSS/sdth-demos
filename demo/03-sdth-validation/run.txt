@@ -24,6 +24,18 @@ Node: sdtest:DFIns002
 Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
 Suggested Node(s) to be Updated: [nan]
 
+Node: sdtest:DFIns004c 
+Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: ['sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+
+Node: sdtest:DFIns004ca 
+Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: ['sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+
+Node: sdtest:DFIns005 
+Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
+
 Node: sdtest:FileIns003 
 Error Message: Files and dataframes should have at least one variable instance
 Suggested Node(s) to be Updated: [nan]

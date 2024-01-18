@@ -150,6 +150,7 @@ sdtest:VariableShape
 	a sh:PropertyShape ;
 	sh:path sdth:hasVarInstance ;
 	sh:minCount 1 ;
+	sh:class sdth:VariableInstance;
 	sh:severity sh:Warning ;
 	sh:message "Files and dataframes should have at least one variable instance"@en .
 
