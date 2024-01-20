@@ -56,11 +56,13 @@ sdtest:ProgramStepShape
 		sh:path sdth:hasProgramStep ;
 		sh:class sdth:ProgramStep ;
 	] ;
-	sh:property [ # One ProgramStep has AT MOST ONE source code
+	sh:property [ # One ProgramStep has EXACTLY ONE source code
 		sh:path sdth:hasSourceCode ;
-        sh:maxCount 1 ;
+        sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:severity sh:Warning ;
 		sh:datatype xsd:string ;
-		sh:message "ProgramSteps must have a text string containing source code"@en ;
+		sh:message "ProgramSteps have exactly a text string containing source code"@en ;
 	] ;
 	sh:property [ # One ProgramStep has AT MOST ONE SDTL
 		sh:path sdth:hasSDTL;
@@ -112,10 +114,11 @@ sdtest:FileShape
 sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
-	sh:or ( #One DataframeInstance was derived from or elaborates AT LEAST ONE dataframe or file
+	sh:or ( #One DataframeInstance was derived from or was an elaboration of AT LEAST ONE dataframe or file
 	[
 		sh:path sdth:wasDerivedFrom ;
 		sh:minCount 1 ;
+		sh:severity sh:Warning ;
 		sh:or (
 			[sh:class sdth:DataframeInstance ]
 			[sh:class sdth:FileInstance ]
@@ -124,6 +127,7 @@ sdtest:DataframeShape
 	[
 		sh:path sdth:elaborationOf ;
 		sh:minCount 1 ;
+		sh:severity sh:Warning ;
 		sh:or (
 			[sh:class sdth:DataframeInstance ]
 			[sh:class sdth:FileInstance ]
@@ -165,5 +169,4 @@ sdtest:VariableShape
 	sh:datatype xsd:string ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
-	sh:severity sh:Warning ;
 	sh:message "A FileInstance, DataframeInstance, or a VariableInstance should have a name"@en .

@@ -109,6 +109,10 @@ Node: sdtest:ProgStep001
 Error Message: Less than 1 values on sdtest:ProgStep001->[ sh:inversePath sdth:hasProgramStep ]
 Suggested Node(s) to be Updated: [nan]
 
+Node: sdtest:ProgStep001 
+Error Message: ProgramSteps have exactly a text string containing source code
+Suggested Node(s) to be Updated: [nan]
+
 
 *****************************************************************
 Test JSON-LD File
@@ -138,6 +142,10 @@ Test JSON-LD File
 }
 Validation Report
 -----------------
+Node: sdtest:ProgStep001 
+Error Message: ProgramSteps have exactly a text string containing source code
+Suggested Node(s) to be Updated: [nan]
+
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
