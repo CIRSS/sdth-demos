@@ -43,10 +43,14 @@ sdtest:ProgramShape
 sdtest:ProgramStepShape
 	a sh:NodeShape;
 	sh:targetClass sdth:ProgramStep ;
-	sh:property [ # One ProgramStep must belong to at LEAST ONE Program
+	sh:property [ # One ProgramStep must belong to EXACTLY ONE Program or ProgramStep
 		sh:path [ sh:inversePath sdth:hasProgramStep ] ;
 		sh:minCount 1 ;
-		sh:node sdth:Program ;
+		sh:maxCount 1 ;
+		sh:or (
+			[sh:class sdth:Program ]
+			[sh:class sdth:ProgramStep ]
+		) ;
 	] ;
 	sh:property [ # One ProgramStep has ANY number of ProgramStep
 		sh:path sdth:hasProgramStep ;
