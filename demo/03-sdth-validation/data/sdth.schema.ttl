@@ -104,9 +104,9 @@ sdtest:FileShape
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:DataframeInstance ;
 	] ;
-	sh:property [ # One FileInstance elaborates ANY number of dataframes
+	sh:property [ # One FileInstance elaborates ANY number of files
 		sh:path sdth:elaborationOf ;
-		sh:class sdth:DataframeInstance ;
+		sh:class sdth:FileInstance ;
 	] ;
 	sh:property <s1-hasVarInstance> , <s5-hasName> .
 
@@ -118,7 +118,6 @@ sdtest:DataframeShape
 	[
 		sh:path sdth:wasDerivedFrom ;
 		sh:minCount 1 ;
-		sh:severity sh:Warning ;
 		sh:or (
 			[sh:class sdth:DataframeInstance ]
 			[sh:class sdth:FileInstance ]
@@ -127,11 +126,7 @@ sdtest:DataframeShape
 	[
 		sh:path sdth:elaborationOf ;
 		sh:minCount 1 ;
-		sh:severity sh:Warning ;
-		sh:or (
-			[sh:class sdth:DataframeInstance ]
-			[sh:class sdth:FileInstance ]
-		) ;
+		sh:class sdth:DataframeInstance ;
 	]) ;
 	sh:property  <s1-hasVarInstance> , <s5-hasName> .
 
