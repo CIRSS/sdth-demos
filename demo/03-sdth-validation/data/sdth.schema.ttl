@@ -114,7 +114,7 @@ sdtest:FileShape
 sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
-	sh:or ( #One DataframeInstance was derived from or was an elaboration of AT LEAST ONE dataframe or file
+	sh:or ( # One DataframeInstance was derived from or was an elaboration of AT LEAST ONE dataframe or file
 	[
 		sh:path sdth:wasDerivedFrom ;
 		sh:minCount 1 ;
@@ -122,11 +122,13 @@ sdtest:DataframeShape
 			[sh:class sdth:DataframeInstance ]
 			[sh:class sdth:FileInstance ]
 		) ;
+		sh:severity sh:Warning ;
 	]
 	[
 		sh:path sdth:elaborationOf ;
 		sh:minCount 1 ;
 		sh:class sdth:DataframeInstance ;
+		sh:severity sh:Warning ;
 	]) ;
 	sh:property  <s1-hasVarInstance> , <s5-hasName> .
 
