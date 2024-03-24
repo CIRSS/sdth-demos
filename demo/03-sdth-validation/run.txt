@@ -24,6 +24,10 @@ Node: sdtest:DFIns002
 Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
 Suggested Node(s) to be Updated: [nan]
 
+Node: sdtest:DFIns004a 
+Error Message: A DataframeInstance cannot be used with sdth:assignsVariable
+Suggested Node(s) to be Updated: [nan]
+
 Node: sdtest:DFIns004c 
 Error Message: Files and dataframes should have at least one variable instance
 Suggested Node(s) to be Updated: ['sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
@@ -36,8 +40,16 @@ Node: sdtest:DFIns005
 Error Message: Files and dataframes should have at least one variable instance
 Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
 
+Node: sdtest:FileIns001 
+Error Message: A FileInstance cannot be used with sdth:assignsVariable
+Suggested Node(s) to be Updated: [nan]
+
 Node: sdtest:FileIns003 
 Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:ProgStep002 
+Error Message: A ProgramStep cannot be used with sdth:hasVarInstance
 Suggested Node(s) to be Updated: [nan]
 
 Node: sdtest:ProgStep005c 
@@ -161,6 +173,43 @@ Error Message: Node sdtest:DFIns001 does not conform to one or more shapes in [ 
 Suggested Node(s) to be Updated: [nan]
 
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========================================= bash cell | error added ex6 sdth validation txt ==========================================
+
+rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json
+
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Node: sdtest:DFIns002 
+Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:DFIns004a 
+Error Message: A DataframeInstance cannot be used with sdth:assignsVariable
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:FileIns001 
+Error Message: A FileInstance cannot be used with sdth:assignsVariable
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:FileIns003 
+Error Message: Files and dataframes should have at least one variable instance
+Suggested Node(s) to be Updated: [nan]
+
+Node: sdtest:ProgStep002 
+Error Message: A ProgramStep cannot be used with sdth:hasVarInstance
+Suggested Node(s) to be Updated: [nan]
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+========================================= bash cell | error added ex6 sdth validation png ==========================================
+
+rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json -o products/ex6_error_added_sdth -of png
+
+----------------------------------------------------------- cell outputs -----------------------------------------------------------
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

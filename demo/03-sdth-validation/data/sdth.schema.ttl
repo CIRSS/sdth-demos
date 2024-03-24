@@ -33,6 +33,17 @@
 sdtest:ProgramShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:Program ;
+	sh:sparql [
+		sh:message "A Program cannot be used with {$predicate}" ;
+		sh:select """
+			SELECT $this ?predicate ?object
+			WHERE {
+				$this ?predicate ?object .
+				FILTER(STRSTARTS(STR(?predicate), STR(sdth:)) && 
+					(?predicate != sdth:hasProgramStep))
+			}
+			""" ;
+	] ;
 	sh:property [ # One Program has at LEAST ONE ProgramStep
         sh:path sdth:hasProgramStep ;
 		sh:minCount 1 ;
@@ -43,6 +54,17 @@ sdtest:ProgramShape
 sdtest:ProgramStepShape
 	a sh:NodeShape;
 	sh:targetClass sdth:ProgramStep ;
+	sh:sparql [
+		sh:message "A ProgramStep cannot be used with {$predicate}" ;
+		sh:select """
+			SELECT $this ?predicate ?object
+			WHERE {
+				$this ?predicate ?object .
+				FILTER(STRSTARTS(STR(?predicate), STR(sdth:)) && 
+					?predicate NOT IN (sdth:hasProgramStep, sdth:hasSourceCode, sdth:hasSDTL, sdth:loadsFile, sdth:savesFile, sdth:consumesDataframe, sdth:producesDataframe, sdth:usesVariable, sdth:assignsVariable))
+			}
+			""" ;
+	] ;
 	sh:property [ # One ProgramStep must belong to EXACTLY ONE Program or ProgramStep
 		sh:path [ sh:inversePath sdth:hasProgramStep ] ;
 		sh:minCount 1 ;
@@ -100,6 +122,17 @@ sdtest:ProgramStepShape
 sdtest:FileShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:FileInstance ;
+	sh:sparql [
+		sh:message "A FileInstance cannot be used with {$predicate}" ;
+		sh:select """
+			SELECT $this ?predicate ?object
+			WHERE {
+				$this ?predicate ?object .
+				FILTER(STRSTARTS(STR(?predicate), STR(sdth:)) && 
+					?predicate NOT IN (sdth:wasDerivedFrom, sdth:elaborationOf, sdth:hasVarInstance, sdth:hasName))
+			}
+			""" ;
+	] ;
 	sh:property [ # One FileInstance was derived from ANY number of dataframes
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:DataframeInstance ;
@@ -114,6 +147,17 @@ sdtest:FileShape
 sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
+	sh:sparql [
+		sh:message "A DataframeInstance cannot be used with {$predicate}" ;
+		sh:select """
+			SELECT $this ?predicate ?object
+			WHERE {
+				$this ?predicate ?object .
+				FILTER(STRSTARTS(STR(?predicate), STR(sdth:)) && 
+					?predicate NOT IN (sdth:wasDerivedFrom, sdth:elaborationOf, sdth:hasVarInstance, sdth:hasName))
+			}
+			""" ;
+	] ;
 	sh:or ( # One DataframeInstance was derived from or was an elaboration of AT LEAST ONE dataframe or file
 	[
 		sh:path sdth:wasDerivedFrom ;
@@ -136,6 +180,17 @@ sdtest:DataframeShape
 sdtest:VariableShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:VariableInstance ;
+	sh:sparql [
+		sh:message "A VariableInstance cannot be used with {$predicate}" ;
+		sh:select """
+			SELECT $this ?predicate ?object
+			WHERE {
+				$this ?predicate ?object .
+				FILTER(STRSTARTS(STR(?predicate), STR(sdth:)) && 
+					?predicate NOT IN (sdth:wasDerivedFrom, sdth:elaborationOf, sdth:hasName))
+			}
+			""" ;
+	] ;
 	sh:property [ # One VariableInstance was derived from ANY number of variables
 		sh:path sdth:wasDerivedFrom ;
 		sh:class sdth:VariableInstance;
