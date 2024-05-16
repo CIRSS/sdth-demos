@@ -3,6 +3,10 @@
 rdfvr -f data/sdth.jsonld -s data/sdth.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/sdth.jsonld
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:04.183195
+
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -12,6 +16,11 @@ rdfvr -f data/sdth.jsonld -s data/sdth.schema.ttl -m data/mappings.json
 rdfvr -f data/error_added_sdth.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json -o products/error_added_sdth -of png
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/error_added_sdth.ttl
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:05.396074
+
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -20,53 +29,63 @@ rdfvr -f data/error_added_sdth.ttl -ff turtle -s data/sdth.schema.ttl -m data/ma
 rdfvr -f data/error_added_sdth.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/error_added_sdth.ttl
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:08.512931
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:DFIns002']     *
+************************************************************
 Node: sdtest:DFIns002 
 Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
-Suggested Node(s) to be Updated: [nan]
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:DFIns004a']    *
+************************************************************
 Node: sdtest:DFIns004a 
 Error Message: A DataframeInstance cannot be used with sdth:assignsVariable
-Suggested Node(s) to be Updated: [nan]
 
-Node: sdtest:DFIns004c 
-Error Message: Files and dataframes should have at least one variable instance
-Suggested Node(s) to be Updated: ['sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
-
-Node: sdtest:DFIns004ca 
-Error Message: Files and dataframes should have at least one variable instance
-Suggested Node(s) to be Updated: ['sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
-
-Node: sdtest:DFIns005 
-Error Message: Files and dataframes should have at least one variable instance
-Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
-
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:FileIns001']   *
+************************************************************
 Node: sdtest:FileIns001 
 Error Message: A FileInstance cannot be used with sdth:assignsVariable
-Suggested Node(s) to be Updated: [nan]
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:FileIns003']   *
+************************************************************
 Node: sdtest:FileIns003 
-Error Message: Files and dataframes should have at least one variable instance
-Suggested Node(s) to be Updated: [nan]
+Error Message: Less than 1 values on sdtest:FileIns003->sdth:hasVarInstance
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:ProgStep002']  *
+************************************************************
 Node: sdtest:ProgStep002 
 Error Message: A ProgramStep cannot be used with sdth:hasVarInstance
-Suggested Node(s) to be Updated: [nan]
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:VarIns014c']   *
+************************************************************
+Node: sdtest:DFIns004c 
+Error Message: Value does not have class sdth:VariableInstance
+
+Node: sdtest:DFIns004ca 
+Error Message: Value does not have class sdth:VariableInstance
+
+Node: sdtest:DFIns005 
+Error Message: Value does not have class sdth:VariableInstance
 
 Node: sdtest:ProgStep005c 
 Error Message: ProgramSteps can have an outbound relation describing a variable that was assigned some value
-Suggested Node(s) to be Updated: ['sdtest:VarIns014c']
 
 Node: sdtest:ProgStep006 
 Error Message: Value does not have class sdth:VariableInstance
-Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
 
 Node: sdtest:ProgStep006 
 Error Message: ProgramSteps can have an outbound relation describing a variable that was assigned some value
-Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
 
 Node: sdtest:ProgStep007 
 Error Message: Value does not have class sdth:VariableInstance
-Suggested Node(s) to be Updated: ['sdtest:VarIns001', 'sdtest:VarIns002', 'sdtest:VarIns003', 'sdtest:VarIns004', 'sdtest:VarIns005', 'sdtest:VarIns006', 'sdtest:VarIns007', 'sdtest:VarIns008', 'sdtest:VarIns009', 'sdtest:VarIns010', 'sdtest:VarIns011', 'sdtest:VarIns012', 'sdtest:VarIns013', 'sdtest:VarIns014c']
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -117,13 +136,18 @@ Test JSON-LD File
 }
 Validation Report
 -----------------
+Path of the RDF graph to be validated: data/test1.jsonld
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:09.827435
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:ProgStep001']  *
+************************************************************
 Node: sdtest:ProgStep001 
 Error Message: Less than 1 values on sdtest:ProgStep001->[ sh:inversePath sdth:hasProgramStep ]
-Suggested Node(s) to be Updated: [nan]
 
 Node: sdtest:ProgStep001 
 Error Message: ProgramSteps have exactly a text string containing source code
-Suggested Node(s) to be Updated: [nan]
 
 
 *****************************************************************
@@ -154,9 +178,15 @@ Test JSON-LD File
 }
 Validation Report
 -----------------
+Path of the RDF graph to be validated: data/test2.jsonld
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:10.417365
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:ProgStep001']  *
+************************************************************
 Node: sdtest:ProgStep001 
 Error Message: ProgramSteps have exactly a text string containing source code
-Suggested Node(s) to be Updated: [nan]
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -168,9 +198,15 @@ Suggested Node(s) to be Updated: [nan]
 rdfvr -f data/test3.jsonld -s data/test3.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/test3.jsonld
+Path of the SHACL file: data/test3.schema.ttl
+Datetime: 2024-05-16 21:05:11.034019
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:DFIns001']     *
+************************************************************
 Node: sdtest:DFIns001 
 Error Message: Node sdtest:DFIns001 does not conform to one or more shapes in [ sh:minCount Literal("1", datatype=xsd:integer) ; sh:path sdth:wasDerivedFrom ] , [ sh:minCount Literal("1", datatype=xsd:integer) ; sh:path sdth:elaborationOf ]
-Suggested Node(s) to be Updated: [nan]
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -181,25 +217,39 @@ Suggested Node(s) to be Updated: [nan]
 rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/error_added_ex6.ttl
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:11.662415
+
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:DFIns002']     *
+************************************************************
 Node: sdtest:DFIns002 
 Error Message: A FileInstance, DataframeInstance, or a VariableInstance should have a name
-Suggested Node(s) to be Updated: [nan]
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:DFIns004a']    *
+************************************************************
 Node: sdtest:DFIns004a 
 Error Message: A DataframeInstance cannot be used with sdth:assignsVariable
-Suggested Node(s) to be Updated: [nan]
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:FileIns001']   *
+************************************************************
 Node: sdtest:FileIns001 
 Error Message: A FileInstance cannot be used with sdth:assignsVariable
-Suggested Node(s) to be Updated: [nan]
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:FileIns003']   *
+************************************************************
 Node: sdtest:FileIns003 
-Error Message: Files and dataframes should have at least one variable instance
-Suggested Node(s) to be Updated: [nan]
+Error Message: Less than 1 values on sdtest:FileIns003->sdth:hasVarInstance
 
+************************************************************
+* Suggested Node(s) to be Updated: ['sdtest:ProgStep002']  *
+************************************************************
 Node: sdtest:ProgStep002 
 Error Message: A ProgramStep cannot be used with sdth:hasVarInstance
-Suggested Node(s) to be Updated: [nan]
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,6 +260,11 @@ Suggested Node(s) to be Updated: [nan]
 rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/mappings.json -o products/ex6_error_added_sdth -of png
 
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
+Path of the RDF graph to be validated: data/error_added_ex6.ttl
+Path of the SHACL file: data/sdth.schema.ttl
+Datetime: 2024-05-16 21:05:12.904435
+
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
