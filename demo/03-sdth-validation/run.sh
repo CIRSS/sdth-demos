@@ -22,9 +22,9 @@ END_CELL
 
 # ------------------------------------------------------------------------------
 
-bash_cell 'error added sdth validation png' << END_CELL
+bash_cell 'error added sdth validation html' << END_CELL
 
-rdfvr -f ${ERROR_ADDED_SDTH_TTL_FILE} -ff turtle -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH} -o products/error_added_sdth -of png
+rdfvr -f ${ERROR_ADDED_SDTH_TTL_FILE} -ff turtle -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH} -o products/error_added_sdth -of html
 
 END_CELL
 
@@ -81,9 +81,9 @@ END_CELL
 
 # ------------------------------------------------------------------------------
 
-bash_cell 'error added ex6 sdth validation png' << END_CELL
+bash_cell 'error added ex6 sdth validation html' << END_CELL
 
-rdfvr -f ${ERROR_ADDED_EX6_TTL_TILE} -ff turtle -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH} -o products/ex6_error_added_sdth -of png
+rdfvr -f ${ERROR_ADDED_EX6_TTL_TILE} -ff turtle -s ${SDTH_SCHEMA_PATH} -m ${MAPPINGS_PATH} -o products/ex6_error_added_sdth -of html
 
 END_CELL
 
