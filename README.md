@@ -71,7 +71,7 @@ demo
 Below gives a brief description of these demonstrations:
 - __01-python__: run an example python data transformation script and print the results step by step.
 - __02-sdth-queries__: query the __01-python__'s _Structured Data Transformation History_ (__SDTH__).
-- __03-sdth-validation__: validate the __01-python__'s SDTH JSON-LD file. Furthermore, an error added SDTH turtle file was tested.
+- __03-sdth-validation__: validate the __01-python__'s SDTH JSON-LD file. Furthermore, an error added SDTH turtle file was tested. There are two example visualizations: [error_added_sdth.html](https://cirss.github.io/sdth-demos/demo/03-sdth-validation/products/error_added_sdth.html) and [ex6_error_added_sdth.html](https://cirss.github.io/sdth-demos/demo/03-sdth-validation/products/ex6_error_added_sdth.html).
 
 To establish that the demonstrations can be reproduced, first use the `make clean-demo` command to delete the files produced by the demo:
 ```
