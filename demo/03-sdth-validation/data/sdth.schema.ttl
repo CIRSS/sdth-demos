@@ -44,11 +44,10 @@ sdtest:ProgramShape
 			}
 			""" ;
 	] ;
-	sh:property [ # One Program has at LEAST ONE ProgramStep
-        sh:path sdth:hasProgramStep ;
+	sh:property [ # One Program has at LEAST ONE hasProgramStep
+		sh:path sdth:hasProgramStep ;
 		sh:minCount 1 ;
-        sh:class sdth:ProgramStep ;
-    ] .
+	] .
 
 ## Shape for sdth:ProgramStep ############
 sdtest:ProgramStepShape
@@ -74,10 +73,6 @@ sdtest:ProgramStepShape
 			[sh:class sdth:ProgramStep ]
 		) ;
 	] ;
-	sh:property [ # One ProgramStep has ANY number of ProgramStep
-		sh:path sdth:hasProgramStep ;
-		sh:class sdth:ProgramStep ;
-	] ;
 	sh:property [ # One ProgramStep has EXACTLY ONE source code
 		sh:path sdth:hasSourceCode ;
         sh:minCount 1 ;
@@ -91,31 +86,6 @@ sdtest:ProgramStepShape
 		sh:maxCount 1 ;
 		sh:datatype xsd:string ;
 		sh:message "ProgramSteps can have a text string containing SDTL"@en ;
-	] ;
-	sh:property [ # One ProgramStep loads ANY number of files
-		sh:path sdth:loadsFile ;
-		sh:class sdth:FileInstance ;
-	] ;
-	sh:property [ # One ProgramStep saves ANY number of files
-		sh:path sdth:savesFile ;
-		sh:class sdth:FileInstance ;
-	] ;
-	sh:property [ # One ProgramStep consumes ANY number of dataframes
-		sh:path sdth:consumesDataframe ;
-		sh:class sdth:DataframeInstance ;
-	] ;
-	sh:property [ # One ProgramStep produces ANY number of dataframes
-		sh:path sdth:producesDataframe ;
-		sh:class sdth:DataframeInstance ;
-	] ;
-	sh:property [ # One ProgramStep uses ANY number of variables
-		sh:path sdth:usesVariable ;
-		sh:class sdth:VariableInstance ;
-	] ;
-	sh:property [ # One ProgramStep assigns ANY number of variables
-		sh:path sdth:assignsVariable ;
-		sh:class sdth:VariableInstance ;
-		sh:message "ProgramSteps can have an outbound relation describing a variable that was assigned some value"@en ;
 	] .
 
 ## Shape for sdth:FileInstance  ###########################
@@ -205,13 +175,126 @@ sdtest:VariableShape
 ## Shapes for SDTH properties  ################################
 ###############################################################
 
+sdth:hasProgramStepShape
+    a sh:PropertyShape ;
+	sh:targetSubjectsOf sdth:hasProgramStep ;
+    sh:path sdth:hasProgramStep ;
+    sh:sparql [
+        sh:message "Object ({$value}) of the hasProgramStep predicate must be a ProgramStep" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:hasProgramStep ?value .
+                FILTER NOT EXISTS { ?value a sdth:ProgramStep }
+            }
+            """ ;
+    ] .
+
+sdth:loadsFileShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:loadsFile ;
+    sh:path sdth:loadsFile ;
+    sh:sparql [
+        sh:message "Object ({$value}) of the loadsFile predicate must be a FileInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:loadsFile ?value .
+                FILTER NOT EXISTS { ?value a sdth:FileInstance }
+            }
+            """ ;
+    ] .
+
+sdth:savesFileShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:savesFile ;
+    sh:path sdth:savesFile ;
+    sh:sparql [
+        sh:message "Object ({$value}) of the savesFile predicate must be a FileInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:savesFile ?value .
+                FILTER NOT EXISTS { ?value a sdth:FileInstance }
+            }
+            """ ;
+    ] .
+
+sdth:consumesDataframeShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:consumesDataframe ;
+    sh:path sdth:consumesDataframe ;
+    sh:sparql [
+        sh:message "Object ({$value}) of consumesDataframe must be a DataframeInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:consumesDataframe ?value .
+                FILTER NOT EXISTS { ?value a sdth:DataframeInstance }
+            }
+            """ ;
+    ] .
+
+sdth:producesDataframeShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:producesDataframe ;
+    sh:path sdth:producesDataframe ;
+    sh:sparql [
+        sh:message "Object ({$value}) of producesDataframe must be a DataframeInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:producesDataframe ?value .
+                FILTER NOT EXISTS { ?value a sdth:DataframeInstance }
+            }
+            """ ;
+    ] .
+
+sdth:usesVariableShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:usesVariable ;
+    sh:path sdth:usesVariable ;
+    sh:sparql [
+        sh:message "Object ({$value}) of usesVariable must be a VariableInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:usesVariable ?value .
+                FILTER NOT EXISTS { ?value a sdth:VariableInstance }
+            }
+            """ ;
+    ] .
+
+sdth:assignsVariableShape
+    a sh:PropertyShape ;
+    sh:targetSubjectsOf sdth:assignsVariable ;
+    sh:path sdth:assignsVariable ;
+    sh:sparql [
+        sh:message "Object ({$value}) of assignsVariable must be a VariableInstance" ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this sdth:assignsVariable ?value .
+                FILTER NOT EXISTS { ?value a sdth:VariableInstance }
+            }
+            """ ;
+    ] .
+
 ##  Property:  sdth:hasVarInstance ############################
-<s1-hasVarInstance> # Files and dataframes should have at least one variable instance
+<s1-hasVarInstance>
 	a sh:PropertyShape ;
 	sh:path sdth:hasVarInstance ;
-	sh:minCount 1 ;
-	sh:class sdth:VariableInstance;
-	sh:severity sh:Warning .
+	sh:sparql [
+		sh:severity sh:Warning ;
+		sh:message "A FileInstance or a DataframeInstance usually has at least one variable instance"@en ;
+		sh:select """
+			SELECT $this WHERE {
+				FILTER NOT EXISTS { $this sdth:hasVarInstance ?any }
+			}
+			""" ;
+	] ;
+	sh:sparql [
+		sh:message "Object ({$value}) of the hasVarInstance predicate must be a VariableInstance" ;
+		sh:select """
+			SELECT $this ?value WHERE {
+				$this sdth:hasVarInstance ?value .
+				FILTER NOT EXISTS { ?value a sdth:VariableInstance }
+			}
+			""" ;
+	] .
 
 ##  Property:  sdth:hasName ############################
 <s5-hasName>
