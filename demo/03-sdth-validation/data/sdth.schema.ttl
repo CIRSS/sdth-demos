@@ -34,6 +34,7 @@ sdtest:ProgramShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:Program ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "A Program cannot be used with {$predicate}" ;
 		sh:select """
 			SELECT $this ?predicate ?object
@@ -54,6 +55,7 @@ sdtest:ProgramStepShape
 	a sh:NodeShape;
 	sh:targetClass sdth:ProgramStep ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "A ProgramStep cannot be used with {$predicate}" ;
 		sh:select """
 			SELECT $this ?predicate ?object
@@ -93,6 +95,7 @@ sdtest:FileShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:FileInstance ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "A FileInstance cannot be used with {$predicate}" ;
 		sh:select """
 			SELECT $this ?predicate ?object
@@ -118,6 +121,7 @@ sdtest:DataframeShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:DataframeInstance ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "A DataframeInstance cannot be used with {$predicate}" ;
 		sh:select """
 			SELECT $this ?predicate ?object
@@ -151,6 +155,7 @@ sdtest:VariableShape
 	a sh:NodeShape ;
 	sh:targetClass sdth:VariableInstance ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "A VariableInstance cannot be used with {$predicate}" ;
 		sh:select """
 			SELECT $this ?predicate ?object
@@ -180,6 +185,7 @@ sdth:hasProgramStepShape
 	sh:targetSubjectsOf sdth:hasProgramStep ;
     sh:path sdth:hasProgramStep ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the hasProgramStep predicate must be a ProgramStep" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -194,6 +200,7 @@ sdth:loadsFileShape
     sh:targetSubjectsOf sdth:loadsFile ;
     sh:path sdth:loadsFile ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the loadsFile predicate must be a FileInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -208,6 +215,7 @@ sdth:savesFileShape
     sh:targetSubjectsOf sdth:savesFile ;
     sh:path sdth:savesFile ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the savesFile predicate must be a FileInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -222,6 +230,7 @@ sdth:consumesDataframeShape
     sh:targetSubjectsOf sdth:consumesDataframe ;
     sh:path sdth:consumesDataframe ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of consumesDataframe must be a DataframeInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -236,6 +245,7 @@ sdth:producesDataframeShape
     sh:targetSubjectsOf sdth:producesDataframe ;
     sh:path sdth:producesDataframe ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of producesDataframe must be a DataframeInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -250,6 +260,7 @@ sdth:usesVariableShape
     sh:targetSubjectsOf sdth:usesVariable ;
     sh:path sdth:usesVariable ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of usesVariable must be a VariableInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -264,6 +275,7 @@ sdth:assignsVariableShape
     sh:targetSubjectsOf sdth:assignsVariable ;
     sh:path sdth:assignsVariable ;
     sh:sparql [
+		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of assignsVariable must be a VariableInstance" ;
         sh:select """
             SELECT $this ?value WHERE {
@@ -278,6 +290,7 @@ sdth:assignsVariableShape
 	a sh:PropertyShape ;
 	sh:path sdth:hasVarInstance ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:severity sh:Warning ;
 		sh:message "A FileInstance or a DataframeInstance usually has at least one variable instance"@en ;
 		sh:select """
@@ -287,6 +300,7 @@ sdth:assignsVariableShape
 			""" ;
 	] ;
 	sh:sparql [
+		a sh:SPARQLConstraint ;
 		sh:message "Object ({$value}) of the hasVarInstance predicate must be a VariableInstance" ;
 		sh:select """
 			SELECT $this ?value WHERE {
