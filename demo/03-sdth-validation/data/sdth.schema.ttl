@@ -1,8 +1,5 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ddi-l: <http://ddi-l/> .
 @prefix sdtest: <http://test/#> .
 @prefix sdth: <http://DDI/SDTH/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -37,6 +34,7 @@ sdtest:ProgramShape
 		a sh:SPARQLConstraint ;
 		sh:message "A Program cannot be used with {$predicate}" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?predicate ?object
 			WHERE {
 				$this ?predicate ?object .
@@ -58,6 +56,7 @@ sdtest:ProgramStepShape
 		a sh:SPARQLConstraint ;
 		sh:message "A ProgramStep cannot be used with {$predicate}" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?predicate ?object
 			WHERE {
 				$this ?predicate ?object .
@@ -98,6 +97,7 @@ sdtest:FileShape
 		a sh:SPARQLConstraint ;
 		sh:message "A FileInstance cannot be used with {$predicate}" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?predicate ?object
 			WHERE {
 				$this ?predicate ?object .
@@ -124,6 +124,7 @@ sdtest:DataframeShape
 		a sh:SPARQLConstraint ;
 		sh:message "A DataframeInstance cannot be used with {$predicate}" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?predicate ?object
 			WHERE {
 				$this ?predicate ?object .
@@ -158,6 +159,7 @@ sdtest:VariableShape
 		a sh:SPARQLConstraint ;
 		sh:message "A VariableInstance cannot be used with {$predicate}" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?predicate ?object
 			WHERE {
 				$this ?predicate ?object .
@@ -188,6 +190,7 @@ sdth:hasProgramStepShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the hasProgramStep predicate must be a ProgramStep" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:hasProgramStep ?value .
                 FILTER NOT EXISTS { ?value a sdth:ProgramStep }
@@ -203,6 +206,7 @@ sdth:loadsFileShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the loadsFile predicate must be a FileInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:loadsFile ?value .
                 FILTER NOT EXISTS { ?value a sdth:FileInstance }
@@ -218,6 +222,7 @@ sdth:savesFileShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of the savesFile predicate must be a FileInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:savesFile ?value .
                 FILTER NOT EXISTS { ?value a sdth:FileInstance }
@@ -233,6 +238,7 @@ sdth:consumesDataframeShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of consumesDataframe must be a DataframeInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:consumesDataframe ?value .
                 FILTER NOT EXISTS { ?value a sdth:DataframeInstance }
@@ -248,6 +254,7 @@ sdth:producesDataframeShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of producesDataframe must be a DataframeInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:producesDataframe ?value .
                 FILTER NOT EXISTS { ?value a sdth:DataframeInstance }
@@ -263,6 +270,7 @@ sdth:usesVariableShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of usesVariable must be a VariableInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:usesVariable ?value .
                 FILTER NOT EXISTS { ?value a sdth:VariableInstance }
@@ -278,6 +286,7 @@ sdth:assignsVariableShape
 		a sh:SPARQLConstraint ;
         sh:message "Object ({$value}) of assignsVariable must be a VariableInstance" ;
         sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
             SELECT $this ?value WHERE {
                 $this sdth:assignsVariable ?value .
                 FILTER NOT EXISTS { ?value a sdth:VariableInstance }
@@ -294,6 +303,7 @@ sdth:assignsVariableShape
 		sh:severity sh:Warning ;
 		sh:message "A FileInstance or a DataframeInstance usually has at least one variable instance"@en ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this WHERE {
 				FILTER NOT EXISTS { $this sdth:hasVarInstance ?any }
 			}
@@ -303,6 +313,7 @@ sdth:assignsVariableShape
 		a sh:SPARQLConstraint ;
 		sh:message "Object ({$value}) of the hasVarInstance predicate must be a VariableInstance" ;
 		sh:select """
+			PREFIX sdth: <http://DDI/SDTH/>
 			SELECT $this ?value WHERE {
 				$this sdth:hasVarInstance ?value .
 				FILTER NOT EXISTS { ?value a sdth:VariableInstance }
