@@ -76,11 +76,33 @@ sdtest:ProgramStepShape
 	] ;
 	sh:property [ # One ProgramStep has EXACTLY ONE source code
 		sh:path sdth:hasSourceCode ;
-        sh:minCount 1 ;
-		sh:maxCount 1 ;
 		sh:severity sh:Warning ;
 		sh:datatype xsd:string ;
 		sh:message "ProgramSteps have exactly a text string containing source code"@en ;
+		sh:sparql [
+			a sh:SPARQLConstraint ;
+			sh:select """
+				PREFIX sdth: <http://DDI/SDTH/>
+				SELECT $this WHERE {
+					{
+						# Case 1: does not have source code, and is not inherited from any ProgramSteps
+						FILTER NOT EXISTS {
+							$this sdth:hasSourceCode ?any
+						}
+						FILTER NOT EXISTS {
+							$this sdth:hasSDTL ?sdtl .
+							?ancestor sdth:hasProgramStep+ $this .
+							?this sdth:hasSourceCode ?any .
+						}
+					} UNION {
+						# Case 2: has more than one source code
+						$this sdth:hasSourceCode ?sc1 .
+						$this sdth:hasSourceCode ?sc2 .
+						FILTER (?sc1 != ?sc2)
+					}
+				}
+			""" ;
+		] ;
 	] ;
 	sh:property [ # One ProgramStep has AT MOST ONE SDTL
 		sh:path sdth:hasSDTL;
