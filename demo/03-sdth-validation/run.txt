@@ -5,7 +5,7 @@ rdfvr -f data/sdth.jsonld -s data/sdth.schema.ttl -m data/mappings.json
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/sdth.jsonld
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:41.408051
+Datetime: 2025-06-03 21:24:52.596752
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -18,7 +18,7 @@ rdfvr -f data/error_added_sdth.ttl -ff turtle -s data/sdth.schema.ttl -m data/ma
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/error_added_sdth.ttl
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:43.263613
+Datetime: 2025-06-03 21:24:54.903836
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -29,7 +29,7 @@ rdfvr -f data/error_added_sdth.ttl -ff turtle -s data/sdth.schema.ttl -m data/ma
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/error_added_sdth.ttl
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:45.187868
+Datetime: 2025-06-03 21:24:57.131541
 
 ************************************************************
 * Suggested Node(s) to be Updated: ['sdtest:DFIns002']     *
@@ -136,7 +136,7 @@ Validation Report
 -----------------
 Path of the RDF graph to be validated: data/test1.jsonld
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:47.298041
+Datetime: 2025-06-03 21:24:59.350331
 
 ************************************************************
 * Suggested Node(s) to be Updated: ['sdtest:ProgStep001']  *
@@ -178,7 +178,7 @@ Validation Report
 -----------------
 Path of the RDF graph to be validated: data/test2.jsonld
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:48.223433
+Datetime: 2025-06-03 21:25:00.521630
 
 ************************************************************
 * Suggested Node(s) to be Updated: ['sdtest:ProgStep001']  *
@@ -198,7 +198,7 @@ rdfvr -f data/test3.jsonld -s data/test3.schema.ttl -m data/mappings.json
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/test3.jsonld
 Path of the SHACL file: data/test3.schema.ttl
-Datetime: 2025-05-25 20:38:49.188020
+Datetime: 2025-06-03 21:25:01.681995
 
 ************************************************************
 * Suggested Node(s) to be Updated: ['sdtest:DFIns001']     *
@@ -217,7 +217,7 @@ rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/map
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/error_added_ex6.ttl
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:50.111308
+Datetime: 2025-06-03 21:25:02.782604
 
 ************************************************************
 * Suggested Node(s) to be Updated: ['sdtest:DFIns002']     *
@@ -260,7 +260,7 @@ rdfvr -f data/error_added_ex6.ttl -ff turtle -s data/sdth.schema.ttl -m data/map
 ----------------------------------------------------------- cell outputs -----------------------------------------------------------
 Path of the RDF graph to be validated: data/error_added_ex6.ttl
 Path of the SHACL file: data/sdth.schema.ttl
-Datetime: 2025-05-25 20:38:52.063855
+Datetime: 2025-06-03 21:25:05.007079
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

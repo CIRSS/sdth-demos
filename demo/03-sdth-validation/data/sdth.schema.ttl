@@ -16,9 +16,9 @@
 		sdo:name "DDI Alliance"@en ;
 		sdo:url "https://ddialliance.org/"^^xsd:anyURI ;
 	] ;
-	dcterms:creator "George Alter"@en ;
-	dcterms:created "2023-08-01"^^xsd:date ;
-    dcterms:license "LICENSE URL HERE"^^xsd:anyURI ;
+	dcterms:creator "Meng Li"@en ;
+	dcterms:created "2025-06-03"^^xsd:date ;
+    dcterms:license "https://opensource.org/licenses/MIT"^^xsd:anyURI ;
 	dcterms:rights "(c) 2023 DDI Alliance"@en ; 	
 	owl:versionInfo "version of these shapes" .
 
@@ -92,7 +92,7 @@ sdtest:ProgramStepShape
 						FILTER NOT EXISTS {
 							$this sdth:hasSDTL ?sdtl .
 							?ancestor sdth:hasProgramStep+ $this .
-							?this sdth:hasSourceCode ?any .
+							?ancestor sdth:hasSourceCode ?any .
 						}
 					} UNION {
 						# Case 2: has more than one source code
